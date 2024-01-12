@@ -26,7 +26,7 @@ export default function Projects(props: any) {
 const ProjectCard = (props: any) => {
   return (
     <Reveal>
-      <div className="border-[1px] rounded-[6px]">
+      <div className="border-[1px] rounded-[6px] bg-gray-50">
         <div className="p-[50px]">
           <h1 className="text-[30px] mb-[20px]">{props.Obj.heading}</h1>
           <p className="w-[80%]">{props.Obj.description}</p>
