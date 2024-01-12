@@ -90,7 +90,7 @@ export default function Navbar({ page }: { page: PAGES }) {
             </div>
           </div>
 
-          <div className="flex items-center gap-[30px]">
+          <div className="flex items-center gap-[30px] xl:hidden">
             <div>
               <Link className="flex items-center gap-[10px]" href={"support"}>
                 <LifeBuoy size={20} />

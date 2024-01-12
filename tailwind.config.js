@@ -24,7 +24,7 @@ module.exports = {
         main: "#051d40",
       },
       gridTemplateColumns: {
-        features: "40%, 1fr",
+        main: "40% 1fr",
       },
       screens: {
         "2xl": { max: "1535px" },
