@@ -13,7 +13,7 @@ export default function TechStack() {
         section="udvikling"
         icon={<FileStack color="#ffffff" size={70} />}
       />
-      <Description description="Har du et projekt i tankerne, som kræver enten en webapp, hjemmeside eller et unikt design? Vi tilbyder dig en gratis samtale, hvor du kan stille dine ønsker og krav til netop den software-løsning du drømmer om. Vi vil undervejs komme med rådgivning og sparing ud fra vores erfaringer og kompetencer - helt gratis." />
+      <Description description="Få et indblik i hvilke værktøjer samt eksterne software vi hver dag bruger til at udvikle de bedst mulige løsninger for vores kunder. " />
       <Tools />
     </Layout>
   );

@@ -21,10 +21,9 @@ export default function Footer() {
                     Ydelser
                   </h1>
                   <div className="flex flex-col gap-[12px] text-gray-600">
-                    <Link href={"/"}>Web apps</Link>
-                    <Link href={"/"}>Hjemmesider</Link>
+                    <Link href={"/"}>Web Udvikling</Link>
                     <Link href={"/"}>UI/UX Design</Link>
-                    <Link href={"/"}>Vedligeholdelse</Link>
+                    <Link href={"/"}>Hastighedsoptimering</Link>
                   </div>
                 </div>
                 <div>
@@ -32,9 +31,18 @@ export default function Footer() {
                     Arbejde
                   </h1>
                   <div className="flex flex-col gap-[12px] text-gray-600">
-                    <Link href={"/"}>Kunde cases</Link>
-                    <Link href={"/"}>Interne projekter</Link>
+                    <Link href={"/"}>Kunde Cases</Link>
+                    <Link href={"/"}>Interne Projekter</Link>
                     <Link href={"/"}>Priser</Link>
+                  </div>
+                </div>
+                <div>
+                  <h1 className="text-[18px] font-[600] mb-[20px] text-main">
+                    Udvikling
+                  </h1>
+                  <div className="flex flex-col gap-[12px] text-gray-600">
+                    <Link href={"/"}>Arbejdsprocesser</Link>
+                    <Link href={"/"}>Tech Stack</Link>
                   </div>
                 </div>
                 <div>
@@ -42,16 +50,12 @@ export default function Footer() {
                     Virsomheden
                   </h1>
                   <div className="flex flex-col gap-[12px] text-gray-600">
-                    <Link href={"/"}>Hvem er vi</Link>
-                    <Link href={"/"}>Anmeldelser</Link>
-                    <Link href={"/"}>Ledige jobs</Link>
+                    <Link href={"/"}>Om Os</Link>
+                    <Link href={"/"}>Kontakt</Link>
+                    <Link href={"/"}>Support</Link>
                   </div>
                 </div>
               </div>
-              <img
-                className="w-[200px] h-[200px] object-cover rounded-[300px] object-top xl:hidden"
-                src="/lasseosmann.jpg"
-              ></img>
             </div>
             <div className="flex justify-between items-center">
               <p className="text-gray-600">
