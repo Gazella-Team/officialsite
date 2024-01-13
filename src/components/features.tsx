@@ -17,7 +17,7 @@ export default function Features(props: any) {
 const FeatureCard = (props: any) => {
   return (
     <Reveal>
-      <div className="bg-gray-50 p-[30px] rounded-[6px]">
+      <div className="bg-gray-50 border-[1px] p-[30px] rounded-[6px]">
         <h2 className="text-[24px] font-[600] mb-[14px]">
           {props.Obj.heading}
         </h2>

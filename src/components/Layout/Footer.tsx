@@ -49,7 +49,7 @@ export default function Footer() {
                 </div>
               </div>
               <img
-                className="w-[200px] h-[200px] object-cover rounded-[300px] object-top"
+                className="w-[200px] h-[200px] object-cover rounded-[300px] object-top xl:hidden"
                 src="/lasseosmann.jpg"
               ></img>
             </div>

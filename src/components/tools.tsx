@@ -46,6 +46,7 @@ const toolData = [
       "We use React for efficient web app development, creating intricate user interfaces by reusing components to reduce redundancy and simplify maintenance. React’s virtual DOM ensures fast updates, delivering a seamless user experience. Its declarative syntax aids debugging and collaboration, and the extensive ecosystem and community support enable us to build feature-rich apps effectively.",
   },
   {
+    tag: "bug fixing",
     image: "/chatgpt.png",
     headline: "ChatGPT",
     description:
@@ -62,7 +63,7 @@ const toolData = [
 export default function Tools() {
   return (
     <section className="py-[60px] w-full border-b-[1px]">
-      <div className="w-[90%] mx-auto max-w-main z-[1] grid grid-cols-2 gap-[30px]">
+      <div className="w-[90%] mx-auto max-w-main z-[1] grid grid-cols-2 gap-[30px] lg:grid-cols-1">
         {toolData.map((v) => (
           <ToolCard Obj={v} key={v} />
         ))}

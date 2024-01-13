@@ -69,7 +69,7 @@ export default function Navbar({ page }: { page: PAGES }) {
 
   return (
     <>
-      <nav className="py-[14px] fixed w-full bg-white shadow-md z-[2]">
+      <nav className="py-[14px] fixed w-full bg-white shadow-md z-[10]">
         <div className="w-[98%] mx-auto max-w-[1400px] flex items-center justify-between">
           <div className="flex items-center gap-[90px]">
             <Link href={"/"}>
@@ -91,18 +91,11 @@ export default function Navbar({ page }: { page: PAGES }) {
           </div>
 
           <div className="flex items-center gap-[30px] xl:hidden">
-            <div>
-              <Link className="flex items-center gap-[10px]" href={"support"}>
-                <LifeBuoy size={20} />
-                Support
-              </Link>
-            </div>
-
             <Link
               className="bg-main text-white p-[10px] px-[20px] text-[14px] rounded-[100px]"
               href={"/kontakt"}
             >
-              Book et møde
+              Snak med os
             </Link>
           </div>
 
@@ -113,6 +106,19 @@ export default function Navbar({ page }: { page: PAGES }) {
           ></img>
         </div>
       </nav>
+      {menuClicked ? (
+        <div className="fixed z-[9] bg-white top-[79px] w-full shadow-md py-[100px] smaller:hidden">
+          <Reveal>
+            <div className="w-[90%] mx-auto max-w-main flex flex-col gap-[20px] text-[40px] text-main font-[500] text-center">
+              <Link href={"/ydelser"}>Ydelser</Link>
+              <Link href={"/arbejde"}>Arbejde</Link>
+              <Link href={"/udvikling"}>Udvikling</Link>
+              <Link href={"/om-os"}>Om os</Link>
+              <Link href={"/kontakt"}>Kontakt</Link>
+            </div>
+          </Reveal>
+        </div>
+      ) : null}
     </>
   );
 }
