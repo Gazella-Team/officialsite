@@ -18,7 +18,7 @@ export default function Pricing() {
           <div className="flex gap-[30px]">
             <div>
               <p className="bg-gray-50 border-l-[1px] border-r-[1px] border-t-[1px] text-center rounded-t-[6px] py-[10px] text-gray-600">
-                Kodning og udvikling
+                Fullstack
               </p>
               <div className="bg-main p-[60px] border-[1px] border-main rounded-[6px] rounded-t-[0px]">
                 <h1 className="text-[80px] text-white leading-[60px] mb-[10px]">

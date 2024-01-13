@@ -1,5 +1,6 @@
 import { Reveal } from "./Animations/Reveal";
 import Slider from "react-infinite-logo-slider";
+import Link from "next/link";
 
 const reviewData = [
   {
@@ -66,6 +67,16 @@ export default function Reviews() {
               </Slider.Slide>
             ))}
           </Slider>
+        </div>
+      </Reveal>
+      <Reveal>
+        <div className="flex justify-center mb-[100px]">
+          <Link
+            className="p-[10px] font-[500] px-[16px] rounded-[6px] text-white border-[2px] hover:bg-white hover:text-main transition-all"
+            href={"https://dk.trustpilot.com/review/gazellateam.com"}
+          >
+            Se alle anmeldelser
+          </Link>
         </div>
       </Reveal>
     </section>

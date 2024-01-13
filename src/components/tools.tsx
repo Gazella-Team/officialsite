@@ -18,6 +18,20 @@ const toolData = [
       "We use React for efficient web app development, creating intricate user interfaces by reusing components to reduce redundancy and simplify maintenance. React’s virtual DOM ensures fast updates, delivering a seamless user experience. Its declarative syntax aids debugging and collaboration, and the extensive ecosystem and community support enable us to build feature-rich apps effectively.",
   },
   {
+    tag: "backend",
+    image: "/mysql.png",
+    headline: "MySQL",
+    description:
+      "We use React for efficient web app development, creating intricate user interfaces by reusing components to reduce redundancy and simplify maintenance. React’s virtual DOM ensures fast updates, delivering a seamless user experience. Its declarative syntax aids debugging and collaboration, and the extensive ecosystem and community support enable us to build feature-rich apps effectively.",
+  },
+  {
+    tag: "backend",
+    image: "/nodejs.png",
+    headline: "NodeJs",
+    description:
+      "We use React for efficient web app development, creating intricate user interfaces by reusing components to reduce redundancy and simplify maintenance. React’s virtual DOM ensures fast updates, delivering a seamless user experience. Its declarative syntax aids debugging and collaboration, and the extensive ecosystem and community support enable us to build feature-rich apps effectively.",
+  },
+  {
     tag: "design",
     image: "/figma.png",
     headline: "Figma",
@@ -32,13 +46,6 @@ const toolData = [
       "We use React for efficient web app development, creating intricate user interfaces by reusing components to reduce redundancy and simplify maintenance. React’s virtual DOM ensures fast updates, delivering a seamless user experience. Its declarative syntax aids debugging and collaboration, and the extensive ecosystem and community support enable us to build feature-rich apps effectively.",
   },
   {
-    tag: "backend",
-    image: "/nodejs.png",
-    headline: "NodeJs",
-    description:
-      "We use React for efficient web app development, creating intricate user interfaces by reusing components to reduce redundancy and simplify maintenance. React’s virtual DOM ensures fast updates, delivering a seamless user experience. Its declarative syntax aids debugging and collaboration, and the extensive ecosystem and community support enable us to build feature-rich apps effectively.",
-  },
-  {
     tag: "design",
     image: "/tailwind.png",
     headline: "Tailwind CSS",
@@ -49,12 +56,6 @@ const toolData = [
     tag: "bug fixing",
     image: "/chatgpt.png",
     headline: "ChatGPT",
-    description:
-      "We use React for efficient web app development, creating intricate user interfaces by reusing components to reduce redundancy and simplify maintenance. React’s virtual DOM ensures fast updates, delivering a seamless user experience. Its declarative syntax aids debugging and collaboration, and the extensive ecosystem and community support enable us to build feature-rich apps effectively.",
-  },
-  {
-    image: "/canva.png",
-    headline: "Canva",
     description:
       "We use React for efficient web app development, creating intricate user interfaces by reusing components to reduce redundancy and simplify maintenance. React’s virtual DOM ensures fast updates, delivering a seamless user experience. Its declarative syntax aids debugging and collaboration, and the extensive ecosystem and community support enable us to build feature-rich apps effectively.",
   },
