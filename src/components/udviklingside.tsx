@@ -24,7 +24,7 @@ export default function Udviklingside() {
         </div>
       </Reveal>
 
-      <div className="w-[90%] mx-auto max-w-main z-[1] grid grid-cols-2 gap-[30px]">
+      <div className="w-[90%] mx-auto max-w-main z-[1] grid grid-cols-2 gap-[30px] navigation:grid-cols-1">
         {udviklingData.map((v) => (
           <UdviklingCard Obj={v} key={v} />
         ))}

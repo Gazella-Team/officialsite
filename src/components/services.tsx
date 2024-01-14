@@ -29,7 +29,7 @@ export default function Services() {
         </div>
       </Reveal>
 
-      <div className="w-[90%] mx-auto max-w-main z-[1] grid grid-cols-3 gap-[30px]">
+      <div className="w-[90%] mx-auto max-w-main z-[1] grid grid-cols-3 gap-[30px] navigation:grid-cols-1">
         {serviceData.map((v) => (
           <ServiceCard Obj={v} key={v} />
         ))}

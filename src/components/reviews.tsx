@@ -72,7 +72,7 @@ export default function Reviews() {
       <Reveal>
         <div className="flex justify-center mb-[100px]">
           <Link
-            className="p-[10px] font-[500] px-[16px] rounded-[6px] text-white border-[2px] hover:bg-white hover:text-main transition-all"
+            className="p-[10px] font-[500] px-[16px] rounded-[100px] text-white border-[2px] hover:bg-white hover:text-main transition-all"
             href={"https://dk.trustpilot.com/review/gazellateam.com"}
           >
             Se alle anmeldelser

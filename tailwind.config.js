@@ -44,6 +44,8 @@ module.exports = {
         // => @media (max-width: 639px) { ... }
         small: { max: "1278px" },
         smaller: { min: "1278px" },
+        footer: { max: "1130px" },
+        navigation: { max: "900px" },
       },
       maxWidth: {
         main: "1300px",

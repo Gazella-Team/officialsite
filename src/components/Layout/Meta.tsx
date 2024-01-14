@@ -1,9 +1,9 @@
 import Head from "next/head";
 
 const Meta = ({
-  title = "Gazella Team ┃ Unik softwareudvikling til din virksomhed",
-  keywords = "A modern dat software group",
-  description = "For ofte bliver unges idéer ikke til virkelighed, derfor samler vi unge iværksættere.",
+  title = "Gazella Team ┃ Unikke web-løsninger til din virksomhed",
+  keywords = "Unikke web-løsninger til din virksomhed",
+  description = "Unikke web-løsninger til din virksomhed",
   icon = "/favicon.ico",
   banner = "/seo/banner.png",
   url = "https://gazellateam.com",
