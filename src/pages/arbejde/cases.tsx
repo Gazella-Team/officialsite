@@ -4,6 +4,7 @@ import { PAGES } from "@/components/Layout/Navbar";
 import Hero from "@/components/Layout/hero";
 import Description from "@/components/description";
 import { User2 } from "lucide-react";
+import Link from "next/link";
 
 export default function Cases() {
   return (
@@ -27,7 +28,7 @@ export default function Cases() {
                 krav til projektet overholdes
               </p>
             </div>
-            <button>Kontakt os</button>
+            <Link href={"/coad"}>COAD</Link>
           </div>
         </Reveal>
       </div>
