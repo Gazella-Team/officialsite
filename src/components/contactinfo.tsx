@@ -4,8 +4,8 @@ export default function ContactInfo() {
   return (
     <section className="py-[60px] border-b-[1px]">
       <Reveal>
-        <div className="w-[90%] mx-auto max-w-main grid grid-cols-contact">
-          <div>
+        <div className="w-[90%] mx-auto max-w-main grid grid-cols-contact mid:grid-cols-1">
+          <div className="mid:mb-[60px]">
             <h1 className="text-[32px] font-[600] mb-[14px] text-main">
               Kontakt os
             </h1>
@@ -14,7 +14,7 @@ export default function ContactInfo() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-y-[60px]">
+          <div className="grid grid-cols-2 gap-y-[60px] contactSm:grid-cols-1 contactSm:grid-rows-1 contactSm:gap-y-[40px]">
             <div>
               <h1 className="font-[600] text-[22px] mb-[10px] text-main">
                 Kontakt

@@ -46,6 +46,9 @@ module.exports = {
         smaller: { min: "1278px" },
         footer: { max: "1130px" },
         navigation: { max: "900px" },
+        hero: { max: "880px" },
+        heroSm: { max: "470px" },
+        contactSm: { max: "670px" },
       },
       maxWidth: {
         main: "1300px",

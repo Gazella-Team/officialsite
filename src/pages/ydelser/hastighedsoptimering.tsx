@@ -8,7 +8,7 @@ export default function Hastighedsoptimering() {
   return (
     <Layout page={PAGES.TEAM}>
       <Hero
-        heading="Hastighedsoptimering"
+        heading="Hastighed og optimering"
         section="Ydelser"
         icon={<GaugeCircle color="#ffffff" size={70} />}
       />

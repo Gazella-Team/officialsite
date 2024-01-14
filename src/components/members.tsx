@@ -34,7 +34,7 @@ export default function Members() {
   return (
     <section className="py-[60px] border-b-[1px]">
       <div className="w-[90%] mx-auto max-w-main">
-        <div className="grid grid-cols-4 gap-x-[30px] gap-y-[30px] xl:grid-cols-2">
+        <div className="grid grid-cols-4 gap-x-[30px] gap-y-[30px] xl:grid-cols-3 lg:grid-cols-2">
           {memberData.map((v) => (
             <MemberCard key={v} Obj={v} />
           ))}

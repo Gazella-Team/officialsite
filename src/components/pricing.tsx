@@ -5,7 +5,7 @@ export default function Pricing() {
     <section className="py-[60px] border-b-[1px]">
       <div className="w-[90%] mx-auto max-w-main">
         <Reveal>
-          <div className="grid grid-cols-3 gap-[30px]">
+          <div className="grid grid-cols-3 gap-[30px] lg:grid-cols-1">
             <div>
               <p className="bg-gray-50 border-l-[1px] border-r-[1px] border-t-[1px] text-center rounded-t-[6px] py-[10px] text-gray-600">
                 Fullstack fra
