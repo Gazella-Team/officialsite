@@ -7,26 +7,26 @@ const memberData = [
   {
     name: "Lasse Osmann",
     position: "Stifter & Frontend Udvikler",
-    imageUrl: "/lasseosmann.jpg",
+    imageUrl: "/simonmaribo.jpg",
     secondImageUrl: "/simonmaribo.jpg",
   },
   {
     name: "Simon Maribo",
     position: "Medstifter & backend Udvikler",
     imageUrl: "/simonmaribo.jpg",
-    secondImageUrl: "/lasseosmann.jpg",
+    secondImageUrl: "/simonmaribo.jpg",
   },
   {
     name: "Asger Willumsen",
     position: "SoMe Manager",
     imageUrl: "/emptymember.jpg",
-    secondImageUrl: "/lasseosmann.jpg",
+    secondImageUrl: "/simonmaribo.jpg",
   },
   {
     name: "Mik Lønborg",
     position: "Marketing og PR",
     imageUrl: "/emptymember.jpg",
-    secondImageUrl: "/lasseosmann.jpg",
+    secondImageUrl: "/simonmaribo.jpg",
   },
 ];
 
@@ -34,7 +34,7 @@ export default function Members() {
   return (
     <section className="py-[60px] border-b-[1px]">
       <div className="w-[90%] mx-auto max-w-main">
-        <div className="grid grid-cols-4 gap-x-[30px] gap-y-[30px] xl:grid-cols-3 lg:grid-cols-2">
+        <div className="grid grid-cols-4 gap-x-[30px] gap-y-[50px] members:grid-cols-3 membersSm:grid-cols-2 membersSmallest:grid-cols-1">
           {memberData.map((v) => (
             <MemberCard key={v} Obj={v} />
           ))}
@@ -52,7 +52,7 @@ const MemberCard = (props: any) => {
         <img
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
-          className="h-[300px] w-full object-cover object-top mb-[20px] transition-all rounded-[6px]"
+          className="aspect-w-1 aspect-h-1 object-cover object-top mb-[20px] transition-all rounded-[6px]"
           src={isHovered ? props.Obj.secondImageUrl : props.Obj.imageUrl}
         ></img>
 

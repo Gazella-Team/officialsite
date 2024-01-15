@@ -13,7 +13,7 @@ export default function TechStack() {
         section="udvikling"
         icon={<FileStack color="#ffffff" size={70} />}
       />
-      <Description description="Få et indblik i hvilke værktøjer samt eksterne software vi hver dag bruger til at udvikle de bedst mulige løsninger for vores kunder. " />
+      <Description description="Få et indblik i hvilke værktøjer samt eksterne software vi hver dag bruger til at udvikle de bedst mulige løsninger for vores kunder. Hos Gazella Team holder vi os konstant opdateret på de seneste teknologier, således vi altid sikrer top-kvalitets løsninger til vores kunder." />
       <Tools />
     </Layout>
   );

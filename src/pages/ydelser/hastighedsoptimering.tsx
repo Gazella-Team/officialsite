@@ -12,7 +12,7 @@ export default function Hastighedsoptimering() {
         section="Ydelser"
         icon={<GaugeCircle color="#ffffff" size={70} />}
       />
-      <Description description="We bring together public and commercial healthcare organizations, offering a 360-degree industry approach to solving your most complex challenges. Our comprehensive suite of healthcare advisory, digital, and managed services drives innovation, growth, and resiliency so you can best serve your communities." />
+      <Description description="Din hjemmesides hastighed har stor betydning for brugeroplevelsen samt dine samlede konverteringer. Ved hvert web-projekt, sørger vi for, at løsningen er optimeret efter de nyeste teknologier, såldes at hastigheden og hermed brugeroplevelsen gøres så god som muligt." />
       <Features
         Obj={[
           {

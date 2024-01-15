@@ -49,6 +49,9 @@ module.exports = {
         hero: { max: "880px" },
         heroSm: { max: "470px" },
         contactSm: { max: "670px" },
+        members: { max: "1069px" },
+        membersSm: { max: "860px" },
+        membersSmallest: { max: "530px" },
       },
       maxWidth: {
         main: "1300px",

@@ -21,9 +21,22 @@ export default function Footer() {
                     Ydelser
                   </h1>
                   <div className="flex flex-col gap-[12px] text-gray-600">
-                    <Link href={"/ydelser/webudvikling"}>Web Udvikling</Link>
-                    <Link href={"/ydelser/uiux"}>UI/UX Design</Link>
-                    <Link href={"/ydelser/hastighedsoptimering"}>
+                    <Link
+                      className="hover:text-main transition-all"
+                      href={"/ydelser/webudvikling"}
+                    >
+                      Web Udvikling
+                    </Link>
+                    <Link
+                      className="hover:text-main transition-all"
+                      href={"/ydelser/uiux"}
+                    >
+                      UI/UX Design
+                    </Link>
+                    <Link
+                      className="hover:text-main transition-all"
+                      href={"/ydelser/hastighedsoptimering"}
+                    >
                       Hastighedsoptimering
                     </Link>
                   </div>
@@ -33,11 +46,24 @@ export default function Footer() {
                     Arbejde
                   </h1>
                   <div className="flex flex-col gap-[12px] text-gray-600">
-                    <Link href={"/arbejde/cases"}>Kunde Cases</Link>
-                    <Link href={"/arbejde/interneprojekter"}>
+                    <Link
+                      className="hover:text-main transition-all"
+                      href={"/arbejde/cases"}
+                    >
+                      Kunde Cases
+                    </Link>
+                    <Link
+                      className="hover:text-main transition-all"
+                      href={"/arbejde/interneprojekter"}
+                    >
                       Interne Projekter
                     </Link>
-                    <Link href={"/arbejde/priser"}>Priser</Link>
+                    <Link
+                      className="hover:text-main transition-all"
+                      href={"/arbejde/priser"}
+                    >
+                      Priser
+                    </Link>
                   </div>
                 </div>
                 <div>
@@ -45,10 +71,18 @@ export default function Footer() {
                     Udvikling
                   </h1>
                   <div className="flex flex-col gap-[12px] text-gray-600">
-                    <Link href={"/udvikling/arbejdsprocesser"}>
+                    <Link
+                      className="hover:text-main transition-all"
+                      href={"/udvikling/arbejdsprocesser"}
+                    >
                       Arbejdsprocesser
                     </Link>
-                    <Link href={"/udvikling/techstack"}>Tech Stack</Link>
+                    <Link
+                      className="hover:text-main transition-all"
+                      href={"/udvikling/techstack"}
+                    >
+                      Tech Stack
+                    </Link>
                   </div>
                 </div>
                 <div>
@@ -56,9 +90,24 @@ export default function Footer() {
                     Virsomheden
                   </h1>
                   <div className="flex flex-col gap-[12px] text-gray-600">
-                    <Link href={"/om-os"}>Om Os</Link>
-                    <Link href={"/kontakt"}>Kontakt</Link>
-                    <Link href={"/support"}>Support</Link>
+                    <Link
+                      className="hover:text-main transition-all"
+                      href={"/om-os"}
+                    >
+                      Om Os
+                    </Link>
+                    <Link
+                      className="hover:text-main transition-all"
+                      href={"/kontakt"}
+                    >
+                      Kontakt
+                    </Link>
+                    <Link
+                      className="hover:text-main transition-all"
+                      href={"/support"}
+                    >
+                      Support
+                    </Link>
                   </div>
                 </div>
               </div>

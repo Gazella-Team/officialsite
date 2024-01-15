@@ -12,7 +12,7 @@ export default function Webudvikling() {
         section="Ydelser"
         icon={<Layers color="#ffffff" size={70} />}
       />
-      <Description description="We bring together public and commercial healthcare organizations, offering a 360-degree industry approach to solving your most complex challenges. Our comprehensive suite of healthcare advisory, digital, and managed services drives innovation, growth, and resiliency so you can best serve your communities." />
+      <Description description="Vi specialiserer os inden for web udviklingsprojekter fra A-Z. Med vores web udviklingsservice står vi til rådighed uanset om dit projekt kræver en funktionsfyldt web app eller bare et professionelt online visitkort. Uanset projektets størrelse, garanterer vi en unik, responsiv og fremtidssikret løsning." />
       <Features
         Obj={[
           {

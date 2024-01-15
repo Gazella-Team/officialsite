@@ -4,19 +4,11 @@ import { Reveal } from "./Animations/Reveal";
 const workData = [
   {
     company: "Centox.io",
-    heading: "En discord-fokuseret webapp til ledelse af applikationer",
+    date: "En discord-fokuseret webapp til ledelse af applikationer",
     description:
       "Cross-platform solution for managing micro-investments and savings, compatible with SAMA fintech regulations including multi-factor authorization and KYC verification",
     imageUrl: "/centox.jpg",
     url: "https://centox.io/",
-  },
-  {
-    company: "Unge Ivaerksaettere",
-    heading: "Unik skrædersyet hjemmeside til at fremstå professionel online",
-    description:
-      "Cross-platform solution for managing micro-investments and savings, compatible with SAMA fintech regulations including multi-factor authorization and KYC verification",
-    imageUrl: "/ui.jpg",
-    url: "https://ui.plexit.group/",
   },
 ];
 

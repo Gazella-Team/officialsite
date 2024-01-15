@@ -92,7 +92,7 @@ export default function Navbar({ page }: { page: PAGES }) {
 
           <div className="flex items-center gap-[30px] xl:hidden">
             <Link
-              className="bg-main text-white p-[10px] px-[20px] text-[14px] rounded-[100px]"
+              className="bg-main text-white p-[10px] px-[20px] text-[14px] rounded-[100px] hover:text-gray-400"
               href={"/kontakt"}
             >
               Snak med os

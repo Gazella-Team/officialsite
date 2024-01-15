@@ -23,13 +23,13 @@ export default function Index() {
             </p>
             <div className="flex items-center gap-[20px] text-white">
               <Link
-                className="border-[1px] border-white rounded-[50px] py-[10px] w-[170px] text-center"
+                className="border-[1px] border-white rounded-[50px] py-[10px] w-[170px] text-center hover:bg-white hover:text-main transition-all"
                 href={"/kontakt"}
               >
                 Snak med os
               </Link>
               <Link
-                className="border-[1px] border-white rounded-[50px] py-[10px] w-[170px] text-center"
+                className="border-[1px] border-white rounded-[50px] py-[10px] w-[170px] text-center hover:bg-white hover:text-main transition-all"
                 href={"/arbejde/cases"}
               >
                 Se vores arbejde
