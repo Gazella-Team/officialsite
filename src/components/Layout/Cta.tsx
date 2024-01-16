@@ -4,7 +4,7 @@ export default function Cta() {
   return (
     <section className="py-[100px] border-b-[1px]">
       <div className="w-[90%] mx-auto text-white">
-        <div className="text-center mx-auto">
+        <div className="mx-auto">
           <h1 className="text-[32px] font-[600] mb-[14px] text-main">
             Er du klar til at fremstå professionel online?
           </h1>

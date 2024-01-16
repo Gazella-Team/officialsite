@@ -1,64 +1,57 @@
-// FAQComponent.tsx
+import Link from "next/link";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "../components/Accordion";
 
-import React, { useState } from "react";
+const questions = [
+  {
+    question: "Is Centox suitable for non-gaming communities as well?",
+    answer:
+      "While Centox is tailored for gaming communities, its robust features and flexibility make it an excellent choice for any forum-based community seeking seamless Discord integration.",
+  },
+  {
+    question: "Do I need coding knowledge to set up my forum on Centox?",
+    answer:
+      "Not at all! Centox is designed to be user-friendly. With our drag-n-drop interface, even those without technical know-how can easily set up and customize their forums.",
+  },
+  {
+    question: "What if I want my forum to have its unique domain?",
+    answer:
+      "No problem. While you can choose a subdomain, Centox also allows you to connect your forum to your unique domain, making it appear as your standalone website. (require paid plan)",
+  },
+  {
+    question: "Is my data safe with Centox?",
+    answer:
+      "Absolutely. Every piece of information submitted through our forms, including passwords, is encrypted to ensure maximum security and privacy.",
+  },
+  {
+    question: "Can I assign roles or staff members to manage applications?",
+    answer:
+      "Yes, Centox comes with a built-in staff system. You can add members to your organization, allowing them to comment on and approve applications.",
+  },
+  {
+    question: "How often is Centox updated?",
+    answer:
+      "We believe in continuous improvement. Centox receives regular updates to introduce new features, enhance existing ones, and ensure overall platform stability.",
+  },
+];
 
-// Define the type for FAQ item
-type FAQItem = {
-  question: string;
-  answer: string;
-};
-
-const FAQ: React.FC = () => {
-  // Define the initial state for the index of the currently expanded item
-  const [expandedItemIndex, setExpandedItemIndex] = useState<number | null>(
-    null
-  );
-
-  // FAQ data - replace with your own questions and answers
-  const faqData: FAQItem[] = [
-    {
-      question: "What is React?",
-      answer: "React is a JavaScript library for building user interfaces.",
-    },
-    {
-      question: "How do I install React?",
-      answer:
-        'You can install React using npm or yarn. For example, "npm install react".',
-    },
-    // Add more questions and answers as needed
-  ];
-
-  // Function to toggle the expanded/collapsed status of an item
-  const toggleItem = (index: number) => {
-    setExpandedItemIndex((prevIndex) => (prevIndex === index ? null : index));
-  };
-
+export default function FAQ() {
   return (
-    <section className="py-[60px] border-b-[1px]">
-      <div className="w-[90%] mx-auto max-w-main bg-gray-50 border-[1px] border-b-[0px] rounded-[6px] p-[0px] px-0">
-        <ul className="faq-list">
-          {faqData.map((item, index) => (
-            <li
-              key={index}
-              className={`faq-item ${
-                expandedItemIndex === index ? "expanded" : "collapsed"
-              }`}
-            >
-              <div
-                className="border-b-[1px] rounded-b-[6px] p-[30px]"
-                onClick={() => toggleItem(index)}
-              >
-                {item.question}
-                {expandedItemIndex === index && (
-                  <div className="faq-answer">{item.answer}</div>
-                )}
-              </div>
-            </li>
+    <section className="py-[60px]">
+      <div className="w-[90%] mx-auto max-w-main">
+        <Accordion type="single" collapsible className="bg-white rounded-lg">
+          {questions.map((question, index) => (
+            <AccordionItem key={index} value={`item-${index}`} className="py-2">
+              <AccordionTrigger>{question.question}</AccordionTrigger>
+              <AccordionContent>{question.answer}</AccordionContent>
+            </AccordionItem>
           ))}
-        </ul>
+        </Accordion>
       </div>
     </section>
   );
-};
-
-export default FAQ;
+}
