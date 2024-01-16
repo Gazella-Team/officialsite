@@ -70,7 +70,7 @@ export default function Navbar({ page }: { page: PAGES }) {
   return (
     <>
       <nav className="py-[14px] fixed w-full bg-white shadow-md z-[10]">
-        <div className="w-[98%] mx-auto max-w-[1400px] flex items-center justify-between">
+        <div className="w-[98%] mx-auto max-w-[1400px] flex items-center justify-between xl:w-[90%]">
           <div className="flex items-center gap-[90px]">
             <Link href={"/"}>
               {" "}

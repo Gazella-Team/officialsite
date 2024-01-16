@@ -27,6 +27,7 @@ export default function Layout({
         <div className={`${className}`}>{children}</div>
       </div>
       <Reviews />
+      <Cta />
       <Footer />
     </div>
   );
