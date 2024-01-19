@@ -5,6 +5,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "../components/Accordion";
+import { Reveal } from "./Animations/Reveal";
 
 const questions = [
   {
@@ -45,10 +46,16 @@ export default function FAQ() {
       <div className="w-[90%] mx-auto max-w-main">
         <Accordion type="single" collapsible className="bg-white rounded-lg">
           {questions.map((question, index) => (
-            <AccordionItem key={index} value={`item-${index}`} className="py-2">
-              <AccordionTrigger>{question.question}</AccordionTrigger>
-              <AccordionContent>{question.answer}</AccordionContent>
-            </AccordionItem>
+            <Reveal key={index}>
+              <AccordionItem
+                key={index}
+                value={`item-${index}`}
+                className="py-2"
+              >
+                <AccordionTrigger>{question.question}</AccordionTrigger>
+                <AccordionContent>{question.answer}</AccordionContent>
+              </AccordionItem>
+            </Reveal>
           ))}
         </Accordion>
       </div>

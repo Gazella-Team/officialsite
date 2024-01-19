@@ -23,12 +23,17 @@ export default function Layout({
           strategy="lazyOnload"
         />
         <Meta />
-        <Navbar page={page} />
-        <div className={`${className}`}>{children}</div>
+
+        <div className={`${className}`}>
+          <Navbar page={page} />
+          <div className="pt-[90px]">
+            {children}
+            <Reviews />
+            <Cta />
+            <Footer />
+          </div>
+        </div>
       </div>
-      <Reviews />
-      <Cta />
-      <Footer />
     </div>
   );
 }

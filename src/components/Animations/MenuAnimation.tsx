@@ -3,9 +3,10 @@ import { motion, useInView, useAnimation, useIsPresent } from "framer-motion";
 
 interface Props {
   children: JSX.Element;
+  dlay: number;
 }
 
-export const Opc = ({ children }: Props) => {
+export const MenuAnimation = ({ children, dlay }: Props) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false });
   const mainControls = useAnimation();
@@ -16,15 +17,15 @@ export const Opc = ({ children }: Props) => {
     }
   }, [isInView]);
   return (
-    <div>
+    <div ref={ref}>
       <motion.div
         variants={{
-          hidden: { opacity: 0 },
-          visible: { opacity: 1 },
+          hidden: { opacity: 0, y: 20 },
+          visible: { opacity: 1, y: 0 },
         }}
         initial="hidden"
-        animate="visible"
-        transition={{ duration: 0.1, delay: 0 }}
+        animate={mainControls}
+        transition={{ duration: 0.2, delay: dlay }}
       >
         {children}
       </motion.div>
