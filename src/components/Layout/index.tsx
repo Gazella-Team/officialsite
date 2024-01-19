@@ -28,8 +28,7 @@ export default function Layout({
           <Navbar page={page} />
           <div className="pt-[90px]">
             {children}
-            <Reviews />
-            <Cta />
+
             <Footer />
           </div>
         </div>

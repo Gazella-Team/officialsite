@@ -11,6 +11,7 @@ import {
   LifeBuoy,
   Menu,
   X,
+  Dot,
 } from "lucide-react";
 
 export enum PAGES {
@@ -103,7 +104,7 @@ export default function Navbar({ page }: { page: PAGES }) {
                 >
                   Arbejde
                 </Link>
-              </MenuAnimation>
+              </MenuAnimation>{" "}
               <MenuAnimation dlay={0.1}>
                 <Link
                   className="text-[90px] leading-[130px] font-[600]"

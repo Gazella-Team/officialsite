@@ -12,7 +12,7 @@ const workData = [
     url: "https://centox.io/",
   },
   {
-    company: "Centox.io",
+    company: "COAD Agency",
     date: "01/01/2024",
     description:
       "Cross-platform solution for managing micro-investments and savings, compatible with SAMA fintech regulations including multi-factor authorization and KYC verification",
@@ -21,7 +21,7 @@ const workData = [
     url: "https://centox.io/",
   },
   {
-    company: "Centox.io",
+    company: "Organic Masterclass",
     date: "01/01/2024",
     description:
       "Cross-platform solution for managing micro-investments and savings, compatible with SAMA fintech regulations including multi-factor authorization and KYC verification",
