@@ -17,7 +17,7 @@ const Meta = ({
 }) => {
   return (
     <Head>
-      <meta name="theme-color" content={"#395a3f"} key="theme-color" />
+      <meta name="theme-color" content={"#051d40"} key="theme-color" />
 
       <meta
         name="viewport"
