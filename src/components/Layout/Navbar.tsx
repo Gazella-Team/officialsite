@@ -78,7 +78,7 @@ export default function Navbar({ page }: { page: PAGES }) {
 
   return (
     <>
-      <nav className="fixed w-full bg-white h-[90px] flex items-center">
+      <nav className="fixed w-full bg-white h-[90px] flex items-center z-[999]">
         <div className="w-[94%] mx-auto flex justify-between items-center">
           <Link href={"/"}>
             <img className="w-[100px]" src="/logosvg.svg"></img>
@@ -96,36 +96,24 @@ export default function Navbar({ page }: { page: PAGES }) {
       {menuClicked ? (
         <Opc>
           <div className="fixed bg-white left-0 right-0 bottom-0 top-[90px]">
-            <div className="flex items-center justify-center flex-col py-[40px]">
+            <div className="flex items-center justify-center flex-col py-[40px] text-[90px] leading-[130px] hero:text-[70px] hero:leading-[110px]">
               <MenuAnimation dlay={0}>
-                <Link
-                  className="text-[90px] leading-[130px] font-[600]"
-                  href={"/"}
-                >
+                <Link className="font-[600]" href={"/arbejde/cases"}>
                   Arbejde
                 </Link>
               </MenuAnimation>{" "}
               <MenuAnimation dlay={0.1}>
-                <Link
-                  className="text-[90px] leading-[130px] font-[600]"
-                  href={"/"}
-                >
+                <Link className="font-[600]" href={"/ydelser"}>
                   Ydelser
                 </Link>
               </MenuAnimation>{" "}
               <MenuAnimation dlay={0.2}>
-                <Link
-                  className="text-[90px] leading-[130px] font-[600]"
-                  href={"/"}
-                >
+                <Link className="font-[600]" href={"/om-os"}>
                   Om os
                 </Link>
               </MenuAnimation>{" "}
               <MenuAnimation dlay={0.3}>
-                <Link
-                  className="text-[90px] leading-[130px] font-[600]"
-                  href={"/"}
-                >
+                <Link className="font-[600]" href={"/kontakt"}>
                   Kontakt
                 </Link>
               </MenuAnimation>

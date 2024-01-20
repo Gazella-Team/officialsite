@@ -10,6 +10,8 @@ const workData = [
     imageUrl:
       "bg-[linear-gradient(rgba(5,29,64,0.10),rgba(5,29,64,1)),url(/flyout.jpg)]",
     url: "https://centox.io/",
+    secondImageUrl:
+      "bg-[linear-gradient(rgba(5,29,64,0.60),rgba(5,29,64,1)),url(/flyout.jpg)]",
   },
   {
     company: "COAD Agency",
@@ -50,6 +52,7 @@ export default function Work() {
             heading={v.company}
             background={v.imageUrl}
             key={index}
+            secondBackground={v.secondImageUrl}
           />
         ))}
       </div>
@@ -61,15 +64,17 @@ const WorkCard = ({
   background,
   heading,
   date,
+  secondBackground,
 }: {
   background: any;
   heading: any;
   date: any;
+  secondBackground: any;
 }) => {
   return (
     <Reveal>
       <div
-        className={`${background} bg-main pt-[300px] pb-[30px] rounded-[6px] bg-cover bg-center cursor-pointer`}
+        className={`${background} bg-main pt-[300px] pb-[30px] rounded-[8px] bg-cover bg-center cursor-pointer hover:opacity-[80%] transition-all`}
       >
         <div className="w-[86%] mx-auto">
           <p className="text-white">{date}</p>

@@ -54,12 +54,6 @@ export default function Footer() {
                     </Link>
                     <Link
                       className="hover:text-main transition-all"
-                      href={"/arbejde/interneprojekter"}
-                    >
-                      Interne Projekter
-                    </Link>
-                    <Link
-                      className="hover:text-main transition-all"
                       href={"/arbejde/priser"}
                     >
                       Priser
