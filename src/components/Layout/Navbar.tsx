@@ -79,7 +79,7 @@ export default function Navbar({ page }: { page: PAGES }) {
   return (
     <>
       <nav className="fixed w-full bg-white h-[90px] flex items-center z-[999]">
-        <div className="w-[94%] mx-auto flex justify-between items-center">
+        <div className="w-[94%] mx-auto max-w-main flex justify-between items-center">
           <Link href={"/"}>
             <img className="w-[100px]" src="/logosvg.svg"></img>
           </Link>
@@ -95,7 +95,7 @@ export default function Navbar({ page }: { page: PAGES }) {
       </nav>
       {menuClicked ? (
         <Opc>
-          <div className="fixed bg-white left-0 right-0 bottom-0 top-[90px]">
+          <div className="fixed bg-white left-0 right-0 bottom-0 top-[90px] z-[999]">
             <div className="flex items-center justify-center flex-col py-[40px] text-[90px] leading-[130px] hero:text-[70px] hero:leading-[110px]">
               <MenuAnimation dlay={0}>
                 <Link className="font-[600]" href={"/arbejde/cases"}>

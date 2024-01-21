@@ -10,8 +10,7 @@ const workData = [
     imageUrl:
       "bg-[linear-gradient(rgba(5,29,64,0.10),rgba(5,29,64,1)),url(/flyout.jpg)]",
     url: "https://centox.io/",
-    secondImageUrl:
-      "bg-[linear-gradient(rgba(5,29,64,0.60),rgba(5,29,64,1)),url(/flyout.jpg)]",
+    link: "/coad",
   },
   {
     company: "COAD Agency",
@@ -21,6 +20,7 @@ const workData = [
     imageUrl:
       "bg-[linear-gradient(rgba(5,29,64,0.10),rgba(5,29,64,1)),url(/flyout.jpg)]",
     url: "https://centox.io/",
+    link: "/coad",
   },
   {
     company: "Organic Masterclass",
@@ -30,6 +30,7 @@ const workData = [
     imageUrl:
       "bg-[linear-gradient(rgba(5,29,64,0.10),rgba(5,29,64,1)),url(/flyout.jpg)]",
     url: "https://centox.io/",
+    link: "/coad",
   },
   {
     company: "Centox.io",
@@ -39,6 +40,7 @@ const workData = [
     imageUrl:
       "bg-[linear-gradient(rgba(5,29,64,0.10),rgba(5,29,64,1)),url(/flyout.jpg)]",
     url: "https://centox.io/",
+    link: "/coad",
   },
 ];
 
@@ -49,10 +51,10 @@ export default function Work() {
         {workData.map((v, index) => (
           <WorkCard
             date={v.date}
+            link={v.link}
             heading={v.company}
             background={v.imageUrl}
             key={index}
-            secondBackground={v.secondImageUrl}
           />
         ))}
       </div>
@@ -64,15 +66,15 @@ const WorkCard = ({
   background,
   heading,
   date,
-  secondBackground,
+  link,
 }: {
   background: any;
   heading: any;
   date: any;
-  secondBackground: any;
+  link: any;
 }) => {
   return (
-    <Reveal>
+    <Link href={link}>
       <div
         className={`${background} bg-main pt-[300px] pb-[30px] rounded-[8px] bg-cover bg-center cursor-pointer hover:opacity-[80%] transition-all`}
       >
@@ -81,6 +83,6 @@ const WorkCard = ({
           <h1 className="text-white text-[30px]">{heading}</h1>
         </div>
       </div>
-    </Reveal>
+    </Link>
   );
 };

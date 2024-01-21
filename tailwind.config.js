@@ -62,6 +62,7 @@ module.exports = {
         cases: "50% 1fr",
         menu: "60% 1fr",
         case: "65% 1fr",
+        dynamic: "35% 1fr",
       },
     },
   },

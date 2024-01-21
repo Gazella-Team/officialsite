@@ -9,22 +9,23 @@ import { Reveal } from "./Animations/Reveal";
 
 const questions = [
   {
-    question: "Is Centox suitable for non-gaming communities as well?",
+    question:
+      "Hvem står for den fremtidige drift og optimering af min udviklede løsning?",
     answer:
       "While Centox is tailored for gaming communities, its robust features and flexibility make it an excellent choice for any forum-based community seeking seamless Discord integration.",
   },
   {
-    question: "Do I need coding knowledge to set up my forum on Centox?",
+    question: "Hvornår faktureres jeg for min udviklede løsning?",
     answer:
       "Not at all! Centox is designed to be user-friendly. With our drag-n-drop interface, even those without technical know-how can easily set up and customize their forums.",
   },
   {
-    question: "What if I want my forum to have its unique domain?",
+    question: "Hvordan regnes prisen på min løsning?",
     answer:
       "No problem. While you can choose a subdomain, Centox also allows you to connect your forum to your unique domain, making it appear as your standalone website. (require paid plan)",
   },
   {
-    question: "Is my data safe with Centox?",
+    question: "Har i en tilfredshedsgaranti?",
     answer:
       "Absolutely. Every piece of information submitted through our forms, including passwords, is encrypted to ensure maximum security and privacy.",
   },

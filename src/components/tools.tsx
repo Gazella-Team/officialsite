@@ -82,6 +82,7 @@ const ToolCard = (props: any) => {
             <img
               className="w-[40px] h-[40px] object-cover"
               src={props.Obj.image}
+              alt="image"
             ></img>
           </div>
           <div className="flex items-center">
