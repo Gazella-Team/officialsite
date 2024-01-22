@@ -11,6 +11,7 @@ import { Slider } from "@/components/ui/slider";
 import { ArrowRight, Check, Send } from "lucide-react";
 import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
+import Loading from "@/components/Animations/Loading";
 
 type EstimateSheetData = {
     type?: "APP" | "WEBSITE" | "WEBAPP" | "OTHER";
@@ -27,6 +28,8 @@ type EstimateSheetData = {
 export default function EstimateSheet({ children }: { children: React.ReactNode }) {
 
     const [step, setStep] = useState(1)
+    const [submitting, setSubmitting] = useState(false)
+    const [sent, setSent] = useState(false)
     const [data, setData] = useState<EstimateSheetData>({
         budget: [10000]
     })
@@ -46,12 +49,33 @@ export default function EstimateSheet({ children }: { children: React.ReactNode 
         )
     }
 
-    function submit(){
-        return console.log(data)
+    async function submit(){
+        if(submitting) return
+        setSubmitting(true)
+        let res = await fetch("/api/estimate", {
+            method: "POST",
+            body: JSON.stringify(data)
+        })
+        if(res.status != 200){
+            setSubmitting(false)
+            alert("Der skete en fejl, prøv igen senere.")
+            return
+        }
+
+        setSubmitting(false)
+        setSent(true)
     }
 
     return (
-        <Sheet>
+        <Sheet onOpenChange={(open) => {
+            if(open == false){
+                setStep(1)
+                setSent(false)
+                setData({
+                    budget: [10000]
+                })
+            }
+        }}>
             <SheetTrigger asChild>{children}</SheetTrigger>
             <SheetContent className="p-10 z-[100] w-[600px]">
                 <div className="flex flex-col gap-8 mt-8">
@@ -65,6 +89,7 @@ export default function EstimateSheet({ children }: { children: React.ReactNode 
                         </p>
                         <hr className="mt-4 border-gray-200" />
                     </div>
+                    { sent == false ? (
                     <div className="flex flex-col gap-6">
                         <div>
                             <h2 onClick={() => setStep(1)} className={cn("text-lg font-medium text-main", step != 1 && "opacity-50 font-medium cursor-pointer")}>Hvilken type produkt er der tale om?</h2>
@@ -181,6 +206,7 @@ export default function EstimateSheet({ children }: { children: React.ReactNode 
                                                 <Input 
                                                     className="flex-1"
                                                     placeholder="E-mail"
+                                                    type="email"
                                                     value={data.email}
                                                     onChange={(e) => setData({ ...data, email: e.target.value })}
                                                 />
@@ -188,9 +214,17 @@ export default function EstimateSheet({ children }: { children: React.ReactNode 
 
                                         </div>
                                         <div className="flex flex-row justify-end mt-4 md:mt-0">
-                                            <button onClick={submit} className="flex flex-row items-center gap-2 p-2 px-6 transition-all border-2 rounded-md border-main text-main hover:bg-main hover:text-white">
-                                                <p className="font-medium">Send forespørgsel</p>
-                                                <Send size={20} />
+                                            <button onClick={submit} className={cn("flex flex-row items-center justify-center gap-2 p-2 px-6 transition-all border-2 rounded-md border-main text-main hover:bg-main hover:text-white", submitting && "bg-main cursor-wait text-white")}>
+                                                {
+                                                    submitting ? (
+                                                        <Loading size={"xs"} color="#ffffff" />
+                                                    ) : (
+                                                        <>
+                                                            <p className="font-medium">Send forespørgsel</p>
+                                                            <Send size={20} />
+                                                        </>
+                                                    )
+                                                }
                                             </button>
                                         </div>
                                     </div>
@@ -198,6 +232,21 @@ export default function EstimateSheet({ children }: { children: React.ReactNode 
                             }
                         </div>
                     </div>
+                    ) : (
+                        <div>
+                            <div className="flex flex-col items-center justify-center gap-2">
+                                <div>
+                                    <div className="flex items-center justify-center w-16 h-16 mx-auto rounded-full bg-main">
+                                        <Check size={32} color="white" />
+                                    </div>
+                                </div>
+                                <h2 className="text-2xl font-semibold text-main">Tak for din forespørgsel!</h2>
+                                <p className="text-gray-500 text-mds">
+                                    Vi vil vende hurtigst muligt tilbage til dig med et estimat på dit projekt.
+                                </p>
+                            </div>
+                        </div>
+                    )}
                 </div>
             </SheetContent>
         </Sheet>
