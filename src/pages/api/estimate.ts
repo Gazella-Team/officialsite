@@ -2,13 +2,9 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 
 import { createTransport } from 'nodemailer';
 
-type ResponseData = {
-    message: string
-}
-
 export default function handler(
     req: NextApiRequest,
-    res: NextApiResponse<ResponseData>
+    res: NextApiResponse
 ) {
     if (req.method === 'POST') {
         const data = req.body;
@@ -42,9 +38,18 @@ Type: ${jsonData.type}
 Budget: ${jsonData.budget} kr.
 Beskrivelse: ${jsonData.description}
 `
-        });
+        }, (err, info) => {
 
-        return res.status(200).json({ message: 'Forespørgsel sendt' });
+            if (err) {
+                res.status(404).json({
+                    error: `Connection refused at ${err.message}`
+                });
+            } else {
+                res.status(200).json({
+                    success: `Message delivered to ${info.accepted}`
+                });
+            }
+        });
     }
 
     return res.status(404);
