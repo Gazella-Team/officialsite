@@ -2,7 +2,7 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 
 import { createTransport } from 'nodemailer';
 
-export default function handler(
+export default async function handler(
     req: NextApiRequest,
     res: NextApiResponse
 ) {
@@ -25,8 +25,7 @@ export default function handler(
             from: process.env.MAIL_USER,
             to: process.env.MAIL_USER,
             subject: 'Gazella: Ny forespørgsel',
-            text:
-                `
+            text: `
 En ny forespørgsel er kommet ind fra Estimeringssiden:
 
 Navn: ${jsonData.name}
