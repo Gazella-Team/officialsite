@@ -2,17 +2,6 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 
 import { createTransport } from 'nodemailer';
 
-const transporter = createTransport({
-    // @ts-ignore
-    host: process.env.MAIL_HOST,
-    port: process.env.MAIL_PORT,
-    //secure: process.env.MAIL_SECURE,
-    auth: {
-        user: process.env.MAIL_USER,
-        pass: process.env.MAIL_PASSWORD
-    }
-});
-
 type ResponseData = {
     message: string
 }
@@ -24,6 +13,17 @@ export default function handler(
     if (req.method === 'POST') {
         const data = req.body;
         const jsonData = JSON.parse(data);
+
+        const transporter = createTransport({
+            // @ts-ignore
+            host: process.env.MAIL_HOST,
+            port: process.env.MAIL_PORT,
+            secure: process.env.MAIL_SECURE,
+            auth: {
+                user: process.env.MAIL_USER,
+                pass: process.env.MAIL_PASSWORD
+            }
+        });
 
         transporter.sendMail({
             from: process.env.MAIL_USER,
