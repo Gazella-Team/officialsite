@@ -22,7 +22,7 @@ export default function Navbar() {
 
           <div className="flex items-center gap-[40px]">
             <EstimateSheet>
-              <div className="cursor-pointer select-none px-6 py-2.5 font-semibold text-center transition-all bg-white border-2 rounded-full border-main text-main hover:text-white hover:bg-main">
+              <div className="hidden md:flex cursor-pointer select-none px-6 py-2.5 font-semibold text-center transition-all bg-white border-2 rounded-full border-main text-main hover:text-white hover:bg-main">
                 Få et estimat på dit projekt
               </div>
             </EstimateSheet>
@@ -59,6 +59,13 @@ export default function Navbar() {
                 <Link className="font-[600]" href={"/kontakt"}>
                   Kontakt
                 </Link>
+              </MenuAnimation>
+              <MenuAnimation dlay={0.4}>
+                <EstimateSheet>
+                  <div className="mt-8 cursor-pointer select-none px-6 py-2.5 font-semibold text-center transition-all bg-white border-2 rounded-full border-main text-main hover:text-white hover:bg-main">
+                    <p className="text-4xl">Estimér pris</p>
+                  </div>
+                </EstimateSheet>
               </MenuAnimation>
             </div>
           </div>
