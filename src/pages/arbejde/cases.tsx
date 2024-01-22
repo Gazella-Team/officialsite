@@ -1,15 +1,12 @@
-import { Reveal } from "@/components/Animations/Reveal";
 import Layout from "@/components/Layout";
-import { PAGES } from "@/components/Layout/Navbar";
 import Hero from "@/components/Layout/hero";
 import Description from "@/components/description";
 import Work from "@/components/work";
 import { User2 } from "lucide-react";
-import Link from "next/link";
 
 export default function Cases() {
   return (
-    <Layout page={PAGES.CASES}>
+    <Layout>
       <Hero
         heading="Kunde Cases"
         section="Arbejde"

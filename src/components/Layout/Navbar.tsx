@@ -1,95 +1,38 @@
 import Link from "next/link";
 import { useState } from "react";
-import { Reveal } from "../Animations/Reveal";
 import { Opc } from "../Animations/Opc";
 import { MenuAnimation } from "../Animations/MenuAnimation";
 
 import {
-  ChevronUp,
-  ChevronDown,
-  Layers,
-  LifeBuoy,
   Menu,
   X,
-  Dot,
 } from "lucide-react";
+import EstimateSheet from "../Modals/EstimateSheet";
 
-export enum PAGES {
-  HOME,
-  EVENTS,
-  ABOUT,
-  PARTNER,
-  CONTACT,
-  SOLUTIONS,
-  TEAM,
-  CASES,
-}
-
-const pages = [
-  {
-    name: "Forside",
-    page: PAGES.HOME,
-    link: "/",
-  },
-  {
-    name: "Solutions",
-    page: PAGES.SOLUTIONS,
-    link: "/solutions",
-  },
-  {
-    name: "About",
-    page: PAGES.ABOUT,
-    link: "/about",
-  },
-  {
-    name: "Bliv partner",
-    page: PAGES.PARTNER,
-    link: "/partner",
-  },
-  {
-    name: "Kontakt",
-    page: PAGES.CONTACT,
-    link: "/kontakt",
-  },
-  {
-    name: "Team",
-    page: PAGES.TEAM,
-    link: "/team",
-  },
-  {
-    name: "Cases",
-    page: PAGES.CASES,
-    link: "/cases",
-  },
-  {
-    name: "WebApps",
-    page: PAGES.SOLUTIONS,
-    link: "/solutions/webapps",
-  },
-  {
-    name: "Websites",
-    page: PAGES.SOLUTIONS,
-    link: "/solutions/hjemmesider",
-  },
-];
-
-export default function Navbar({ page }: { page: PAGES }) {
+export default function Navbar() {
   const [menuClicked, setMenuClicked] = useState(false);
 
   return (
     <>
-      <nav className="fixed w-full bg-white h-[90px] flex items-center z-[999]">
+      <nav className="fixed w-full bg-white h-[90px] flex items-center z-[10]">
         <div className="w-[94%] mx-auto flex justify-between items-center">
           <Link href={"/"}>
             <img className="w-[100px]" src="/logosvg.svg"></img>
           </Link>
 
-          <div
-            onClick={() => setMenuClicked(!menuClicked)}
-            className="flex items-center gap-[8px] cursor-pointer"
-          >
-            <p className="font-[300]">Menu</p>
-            {menuClicked ? <X /> : <Menu />}
+          <div className="flex items-center gap-[40px]">
+            <EstimateSheet>
+              <div className="cursor-pointer select-none px-6 py-2.5 font-semibold text-center transition-all bg-white border-2 rounded-full border-main text-main hover:text-white hover:bg-main">
+                Få et estimat på dit projekt
+              </div>
+            </EstimateSheet>
+            <div
+              onClick={() => setMenuClicked(!menuClicked)}
+              className="flex items-center gap-[8px] cursor-pointer"
+            >
+              <p className="font-medium">Menu</p>
+              {menuClicked ? <X /> : <Menu />}
+            </div>
           </div>
         </div>
       </nav>

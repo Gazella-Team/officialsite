@@ -1,13 +1,12 @@
 import Layout from "@/components/Layout";
-import { PAGES } from "@/components/Layout/Navbar";
 import Hero from "@/components/Layout/hero";
 import Description from "@/components/description";
-import Members from "@/components/members";
 import { LifeBuoy } from "lucide-react";
 import FaqComponent from "@/components/faq";
+
 export default function Omos() {
   return (
-    <Layout page={PAGES.TEAM}>
+    <Layout>
       <Hero
         heading="Support"
         section="hjælp"

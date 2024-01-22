@@ -22,9 +22,9 @@ export default function ContactInfo() {
                 </h1>
               </Reveal>
               <Reveal>
-                <p className="text-gray-600 text-[18px]">
+                <a href="mailto:kontakt@gazellateam.com" className="text-gray-600 text-[18px]">
                   kontakt@gazellateam.com
-                </p>
+                </a>
               </Reveal>
             </div>
             <div>
@@ -35,9 +35,9 @@ export default function ContactInfo() {
               </Reveal>
 
               <Reveal>
-                <p className="text-gray-600 text-[18px]">
+                <a href="mailto:info@gazellateam.com" className="text-gray-600 text-[18px]">
                   info@gazellateam.com
-                </p>
+                </a>
               </Reveal>
             </div>
             <div>
@@ -48,7 +48,7 @@ export default function ContactInfo() {
               </Reveal>
 
               <Reveal>
-                <p className="text-gray-600 text-[18px]">job@gazellateam.com</p>
+                <a href="mailto:job@gazellateam.com" className="text-gray-600 text-[18px]">job@gazellateam.com</a>
               </Reveal>
             </div>
             <div>
@@ -59,7 +59,7 @@ export default function ContactInfo() {
               </Reveal>
 
               <Reveal>
-                <p className="text-gray-600 text-[18px]">+45 5069 5272</p>
+                <a href="tel:+4550695272" className="text-gray-600 text-[18px]">+45 5069 5272</a>
               </Reveal>
             </div>
           </div>

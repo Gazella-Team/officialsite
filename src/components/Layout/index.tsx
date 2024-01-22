@@ -1,21 +1,19 @@
 import Footer from "./Footer";
 import Cta from "./Cta";
 import Meta from "./Meta";
-import Navbar, { PAGES } from "./Navbar";
+import Navbar from "./Navbar";
 import Script from "next/script";
 import Reviews from "../reviews";
 
 export default function Layout({
-  page,
   className,
   children,
 }: {
-  page: PAGES;
   className?: string;
   children: React.ReactNode;
 }) {
   return (
-    <div className="min-h-screen flex flex-col justify-between">
+    <div className="flex flex-col justify-between min-h-screen">
       <div>
         <Script
           src="/js/script.js"
@@ -25,7 +23,7 @@ export default function Layout({
         <Meta />
 
         <div className={`${className}`}>
-          <Navbar page={page} />
+          <Navbar />
           <div className="pt-[90px]">
             {children}
 

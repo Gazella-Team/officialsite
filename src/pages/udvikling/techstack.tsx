@@ -1,5 +1,4 @@
 import Layout from "@/components/Layout";
-import { PAGES } from "@/components/Layout/Navbar";
 import Hero from "@/components/Layout/hero";
 import Description from "@/components/description";
 import Tools from "@/components/tools";
@@ -7,7 +6,7 @@ import { FileStack } from "lucide-react";
 
 export default function TechStack() {
   return (
-    <Layout page={PAGES.TEAM}>
+    <Layout>
       <Hero
         heading="Tech Stack"
         section="udvikling"

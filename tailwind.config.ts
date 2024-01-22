@@ -1,6 +1,6 @@
-/** @type {import('tailwindcss').Config} */
+import type { Config } from "tailwindcss"
 
-module.exports = {
+const config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -23,9 +23,6 @@ module.exports = {
       colors: {
         main: "#051d40",
       },
-      gridTemplateColumns: {
-        main: "40% 1fr",
-      },
       screens: {
         "2xl": { max: "1535px" },
         // => @media (max-width: 1535px) { ... }
@@ -39,6 +36,8 @@ module.exports = {
 
         mid: { max: "867px" },
         // => @media (max-width: 767px) { ... }
+
+        main: "40% 1fr",
 
         sm: { max: "639px" },
         // => @media (max-width: 639px) { ... }
@@ -63,7 +62,23 @@ module.exports = {
         menu: "60% 1fr",
         case: "65% 1fr",
       },
+      keyframes: {
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+      },
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
+      },
     },
   },
-  plugins: [],
-};
+  plugins: [require("tailwindcss-animate")],
+} satisfies Config
+
+export default config
