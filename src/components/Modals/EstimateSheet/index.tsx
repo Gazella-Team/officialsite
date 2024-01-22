@@ -110,7 +110,7 @@ export default function EstimateSheet({ children }: { children: React.ReactNode 
                                 step == 2 && (
                                     <div className="flex flex-col gap-2">
                                         <p className="mt-2 text-gray-500 text-mds">
-                                            Det er vigtigt at have et realistisk budget, da det hjælper os med at give et mere præcist estimat. Og angive hvilke funktioner der kan være med i projektet.
+                                            Det er vigtigt at have et realistisk budget, da det hjælper os med at give et mere præcist estimat.
                                         </p>
                                         <div className="flex flex-col gap-3 mt-4">
                                             <Slider
