@@ -3,6 +3,7 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 import { createTransport } from 'nodemailer';
 
 const transporter = createTransport({
+    // @ts-ignore
     host: process.env.MAIL_HOST,
     port: process.env.MAIL_PORT,
     //secure: process.env.MAIL_SECURE,
