@@ -41,11 +41,11 @@ Beskrivelse: ${jsonData.description}
 
             if (err) {
                 res.status(404).json({
-                    error: `Connection refused at ${err.message}`
+                    error: `Error occurred` //`Connection refused at ${err.message}`
                 });
             } else {
                 res.status(200).json({
-                    success: `Message delivered to ${info.accepted}`
+                    success: `Message delivered` // `Message delivered to ${info.accepted}`
                 });
             }
         });
