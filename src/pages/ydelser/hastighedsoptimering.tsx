@@ -1,12 +1,11 @@
 import Layout from "@/components/Layout";
-import { PAGES } from "@/components/Layout/Navbar";
 import Hero from "@/components/Layout/hero";
 import Description from "@/components/description";
 import Features from "@/components/features";
 import { GaugeCircle } from "lucide-react";
 export default function Hastighedsoptimering() {
   return (
-    <Layout page={PAGES.TEAM}>
+    <Layout>
       <Hero
         heading="Hastighed og optimering"
         section="Ydelser"

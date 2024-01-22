@@ -1,5 +1,4 @@
 import Layout from "@/components/Layout";
-import { PAGES } from "@/components/Layout/Navbar";
 import Hero from "@/components/Layout/hero";
 import Description from "@/components/description";
 import { Wallet } from "lucide-react";
@@ -7,7 +6,7 @@ import Pricing from "@/components/pricing";
 
 export default function InterneProjekter() {
   return (
-    <Layout page={PAGES.TEAM}>
+    <Layout>
       <Hero
         heading="Prissætning"
         section="arbejde"

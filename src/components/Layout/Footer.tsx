@@ -5,7 +5,6 @@ export default function Footer() {
   return (
     <>
       <footer className="py-[60px]">
-        <Reveal>
           <div className="w-[90%] mx-auto max-w-main">
             <div className="flex justify-between border-b-[1px] pb-[60px] mb-[20px] footer:flex-col footer: gap-[80px]">
               <div className="w-[16%] footer:w-full">
@@ -13,7 +12,7 @@ export default function Footer() {
                 <p className="mb-[20px] text-gray-600">
                   Vi udvikler brugbar software til virksomheder
                 </p>
-                <p className="font-[500]">+45 5069 5272</p>
+                <a href="tel:+4550695272" className="font-[500]">+45 5069 5272</a>
               </div>
               <div className="flex gap-[100px] items-top justify-center footer:grid footer:grid-cols-2">
                 <div>
@@ -22,19 +21,19 @@ export default function Footer() {
                   </h1>
                   <div className="flex flex-col gap-[12px] text-gray-600">
                     <Link
-                      className="hover:text-main transition-all"
+                      className="transition-all hover:text-main"
                       href={"/ydelser/webudvikling"}
                     >
                       Web Udvikling
                     </Link>
                     <Link
-                      className="hover:text-main transition-all"
+                      className="transition-all hover:text-main"
                       href={"/ydelser/uiux"}
                     >
                       UI/UX Design
                     </Link>
                     <Link
-                      className="hover:text-main transition-all"
+                      className="transition-all hover:text-main"
                       href={"/ydelser/hastighedsoptimering"}
                     >
                       Hastighedsoptimering
@@ -47,13 +46,13 @@ export default function Footer() {
                   </h1>
                   <div className="flex flex-col gap-[12px] text-gray-600">
                     <Link
-                      className="hover:text-main transition-all"
+                      className="transition-all hover:text-main"
                       href={"/arbejde/cases"}
                     >
                       Kunde Cases
                     </Link>
                     <Link
-                      className="hover:text-main transition-all"
+                      className="transition-all hover:text-main"
                       href={"/arbejde/priser"}
                     >
                       Priser
@@ -66,13 +65,13 @@ export default function Footer() {
                   </h1>
                   <div className="flex flex-col gap-[12px] text-gray-600">
                     <Link
-                      className="hover:text-main transition-all"
+                      className="transition-all hover:text-main"
                       href={"/udvikling/arbejdsprocesser"}
                     >
                       Arbejdsprocesser
                     </Link>
                     <Link
-                      className="hover:text-main transition-all"
+                      className="transition-all hover:text-main"
                       href={"/udvikling/techstack"}
                     >
                       Tech Stack
@@ -85,19 +84,19 @@ export default function Footer() {
                   </h1>
                   <div className="flex flex-col gap-[12px] text-gray-600">
                     <Link
-                      className="hover:text-main transition-all"
+                      className="transition-all hover:text-main"
                       href={"/om-os"}
                     >
                       Om Os
                     </Link>
                     <Link
-                      className="hover:text-main transition-all"
+                      className="transition-all hover:text-main"
                       href={"/kontakt"}
                     >
                       Kontakt
                     </Link>
                     <Link
-                      className="hover:text-main transition-all"
+                      className="transition-all hover:text-main"
                       href={"/support"}
                     >
                       Support
@@ -106,16 +105,15 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <div className="flex justify-between items-center">
+            <div className="flex items-center justify-between">
               <p className="text-gray-600">
                 &#169; {new Date().getFullYear()} Gazella Team
               </p>
-              <Link href={"https://www.linkedin.com/company/gazellateam/"}>
+              <Link href={"https://www.linkedin.com/company/gazellateam/"} target="_blank">
                 <img className="w-[24px]" src="/linkedin.png"></img>
               </Link>
             </div>
           </div>
-        </Reveal>
       </footer>
     </>
   );

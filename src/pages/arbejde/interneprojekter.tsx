@@ -1,5 +1,4 @@
 import Layout from "@/components/Layout";
-import { PAGES } from "@/components/Layout/Navbar";
 import Hero from "@/components/Layout/hero";
 import Description from "@/components/description";
 import Projects from "@/components/projects";
@@ -7,7 +6,7 @@ import { FolderGit2 } from "lucide-react";
 
 export default function InterneProjekter() {
   return (
-    <Layout page={PAGES.TEAM}>
+    <Layout>
       <Hero
         heading="Interne Projekter"
         section="arbejde"

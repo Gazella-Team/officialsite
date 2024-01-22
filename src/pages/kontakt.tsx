@@ -1,12 +1,11 @@
 import Layout from "@/components/Layout";
-import { PAGES } from "@/components/Layout/Navbar";
 import Hero from "@/components/Layout/hero";
 import Description from "@/components/description";
 import ContactInfo from "@/components/contactinfo";
 import { Send } from "lucide-react";
 export default function Team() {
   return (
-    <Layout page={PAGES.TEAM}>
+    <Layout>
       <Hero
         heading="Tal med os i dag"
         section="kontakt"

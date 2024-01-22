@@ -15,7 +15,7 @@ export default function Pricing() {
                 <h1 className="text-[80px] text-main leading-[60px] mb-[10px]">
                   279
                 </h1>
-                <p className="text-[18px] text-gray-600">/ DKK Pr. time</p>
+                <p className="mt-4 text-[18px] text-gray-600">/ DKK pr. time</p>
               </div>
             </div>
             <div>
@@ -26,7 +26,7 @@ export default function Pricing() {
                 <h1 className="text-[80px] text-main leading-[60px] mb-[10px]">
                   249
                 </h1>
-                <p className="text-[18px] text-gray-600">/ DKK Pr. time</p>
+                <p className="mt-4 text-[18px] text-gray-600">/ DKK pr. time</p>
               </div>
             </div>
 
@@ -38,7 +38,7 @@ export default function Pricing() {
                 <h1 className="text-[80px] text-main leading-[60px] mb-[10px]">
                   199
                 </h1>
-                <p className="text-[18px] text-gray-600">/ DKK Pr. time</p>
+                <p className="mt-4 text-[18px] text-gray-600">/ DKK pr. time</p>
               </div>
             </div>
           </div>

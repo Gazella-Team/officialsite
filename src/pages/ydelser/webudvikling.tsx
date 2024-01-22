@@ -1,12 +1,12 @@
 import Layout from "@/components/Layout";
-import { PAGES } from "@/components/Layout/Navbar";
 import Hero from "@/components/Layout/hero";
 import Description from "@/components/description";
 import Features from "@/components/features";
 import { Layers } from "lucide-react";
+
 export default function Webudvikling() {
   return (
-    <Layout page={PAGES.TEAM}>
+    <Layout>
       <Hero
         heading="Web Udvikling"
         section="Ydelser"

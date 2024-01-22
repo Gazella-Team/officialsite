@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://gazellateam.com
+
+# Sitemaps
+Sitemap: https://gazellateam.com/sitemap.xml
