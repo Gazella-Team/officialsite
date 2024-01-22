@@ -25,8 +25,6 @@ export default function handler(
         const data = req.body;
         const jsonData = JSON.parse(data);
 
-        console.log(jsonData);
-
         transporter.sendMail({
             from: process.env.MAIL_USER,
             to: process.env.MAIL_USER,
