@@ -8,7 +8,7 @@ const toolData = [
     image: "/react.png",
     headline: "React",
     description:
-      "We use React for efficient web app development, creating intricate user interfaces by reusing components to reduce redundancy and simplify maintenance. React’s virtual DOM ensures fast updates, delivering a seamless user experience. Its declarative syntax aids debugging and collaboration, and the extensive ecosystem and community support enable us to build feature-rich apps effectively.",
+      "Vi bruger React i relation til web-udvikling for at skabe hurtige, interaktive og strukturerede web-løsninger. Med React har vi mulighed for at genbruge komponenter og optimere hjemmesidens hastighed, således at udviklingsfasen bliver mere effektiv, og brugeroplevelsen så god som overhovedet muligt. React er det mest moderne/fremtidssikrede web-framework, hvilket din løsning afspejler sig i.",
   },
   {
     tag: "web-development",
