@@ -36,7 +36,7 @@ export default function Navbar() {
       {menuClicked ? (
         <Opc>
           <div className="fixed bg-white left-0 right-0 bottom-0 top-[90px] z-[999]">
-            <div className="flex items-center justify-center flex-col py-[40px] text-[90px] leading-[130px] hero:text-[70px] hero:leading-[110px]">
+            <div className="flex text-main items-center justify-center flex-col py-[40px] text-[90px] leading-[130px] hero:text-[70px] hero:leading-[110px]">
               <MenuAnimation dlay={0}>
                 <Link className="font-[600]" href={"/arbejde/cases"}>
                   Arbejde

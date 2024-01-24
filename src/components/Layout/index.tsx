@@ -23,6 +23,8 @@ export default function Layout({
         <Meta />
 
         <div className={`${className}`}>
+          <Meta />
+
           <Navbar />
           <div className="pt-[90px]">
             {children}

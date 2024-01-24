@@ -20,7 +20,7 @@ const workData = [
     imageUrl:
       "bg-[linear-gradient(rgba(5,29,64,0.10),rgba(5,29,64,1)),url(/flyout.jpg)]",
     url: "https://centox.io/",
-    link: "/coad",
+    link: "/arbejde/cases/coad",
   },
   {
     company: "Organic Masterclass",
