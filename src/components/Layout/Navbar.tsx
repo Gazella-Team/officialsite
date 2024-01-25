@@ -38,38 +38,22 @@ export default function Navbar() {
           <div className="fixed bg-white left-0 right-0 bottom-0 top-[90px] z-[999]">
             <div className="flex text-main items-center justify-center flex-col py-[40px] text-[90px] leading-[130px] hero:text-[70px] hero:leading-[110px]">
               <MenuAnimation dlay={0}>
-                <Link
-                  onClick={() => setMenuClicked(false)}
-                  className="font-[600]"
-                  href={"/arbejde/cases"}
-                >
+                <Link className="font-[600]" href={"/arbejde/cases"}>
                   Arbejde
                 </Link>
               </MenuAnimation>{" "}
               <MenuAnimation dlay={0.1}>
-                <Link
-                  onClick={() => setMenuClicked(false)}
-                  className="font-[600]"
-                  href={"/ydelser"}
-                >
+                <Link className="font-[600]" href={"/ydelser"}>
                   Ydelser
                 </Link>
               </MenuAnimation>{" "}
               <MenuAnimation dlay={0.2}>
-                <Link
-                  onClick={() => setMenuClicked(false)}
-                  className="font-[600]"
-                  href={"/om-os"}
-                >
+                <Link className="font-[600]" href={"/om-os"}>
                   Om os
                 </Link>
               </MenuAnimation>{" "}
               <MenuAnimation dlay={0.3}>
-                <Link
-                  onClick={() => setMenuClicked(false)}
-                  className="font-[600]"
-                  href={"/kontakt"}
-                >
+                <Link className="font-[600]" href={"/kontakt"}>
                   Kontakt
                 </Link>
               </MenuAnimation>
