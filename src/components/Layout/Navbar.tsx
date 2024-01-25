@@ -63,7 +63,7 @@ export default function Navbar() {
               </MenuAnimation>{" "}
               <MenuAnimation dlay={0.4}>
                 <EstimateSheet>
-                  <div className="w-full border-b-[1px] flex items-center gap-[100px] font-[600] py-[0px]">
+                  <div className="w-full border-b-[1px] flex items-center gap-[100px] font-[600] py-[0px] cursor-pointer">
                     <h1>05.</h1>
                     <h1>Estimér pris</h1>
                   </div>
