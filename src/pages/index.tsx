@@ -7,7 +7,7 @@ export default function Index() {
   return (
     <>
       <Navbar />
-      <section className="h-[100vh] flex flex-col pb-[100px] justify-end bg-[linear-gradient(rgba(5,29,64,0.10),rgba(5,29,64,0.9)),url(/flyout.jpg)] bg-center bg-cover">
+      <section className="h-[100vh] flex flex-col pb-[100px] justify-end bg-[linear-gradient(rgba(5,29,64,0.50),rgba(5,29,64,0.9)),url(/flyout.jpg)] bg-center bg-cover">
         <Reveal>
           <div className="w-[90%] mx-auto max-w-main text-white">
             <h1 className="text-[66px] w-[65%] leading-[76px] font-[600] mb-[30px] text-white hero:text-[55px] hero:leading-[65px] hero:w-full heroSm:text-[45px] heroSm:leading-[55px]">

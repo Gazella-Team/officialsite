@@ -51,7 +51,7 @@ export default function FAQ() {
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="py-2"
+                className={index === 0 ? "py-2 pt-0" : "py-2"}
               >
                 <AccordionTrigger>{question.question}</AccordionTrigger>
                 <AccordionContent>{question.answer}</AccordionContent>

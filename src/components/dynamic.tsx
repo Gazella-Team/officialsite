@@ -1,4 +1,6 @@
 import { Reveal } from "./Animations/Reveal";
+import { ExternalLink } from "lucide-react";
+import Link from "next/link";
 
 export default function Dynamic() {
   return (
@@ -17,9 +19,41 @@ export default function Dynamic() {
         </div>
       </section>
       <div className="w-[90%] mx-auto bg-white mt-[-140px] rounded-[6px] py-[50px] px-[50px] border-[1px] grid grid-cols-1 gap-[30px]">
+        <div className="grid grid-cols-4 gap-[20px]">
+          <Reveal>
+            <div className="bg-gray-100 rounded-[6px] p-[30px] border-[1px]">
+              <h1 className="font-[600] text-[20px] mb-[6px]">Klient</h1>
+              <p className="text-gray-600">Organic Masterclass</p>
+            </div>
+          </Reveal>
+          <Reveal>
+            <div className="bg-gray-100 rounded-[6px] p-[30px] border-[1px]">
+              <h1 className="font-[600] text-[20px] mb-[6px]">Ydelse</h1>
+              <p className="text-gray-600">Landingsside</p>
+            </div>
+          </Reveal>
+          <Reveal>
+            <div className="bg-gray-100 rounded-[6px] p-[30px] border-[1px]">
+              <h1 className="font-[600] text-[20px] mb-[6px]">Dato</h1>
+              <p className="text-gray-600">25/01/2024</p>
+            </div>
+          </Reveal>
+
+          <Link
+            target="_blank"
+            href={"https://site.organicmasterclass.com/"}
+            className="bg-main rounded-[6px] p-[30px] flex items-center justify-center cursor-pointer"
+          >
+            <h1 className="font-[600] text-[20px] mb-[6px] text-white flex items-center gap-[10px]">
+              <p>Se case</p>
+              <ExternalLink size={30} />
+            </h1>
+          </Link>
+        </div>
+
         <div>
           <Reveal>
-            <div className="bg-gray-100 rounded-[6px] p-[100px]">
+            <div className="bg-gray-100 rounded-[6px] p-[100px] border-[1px]">
               <Reveal>
                 <img className="w-[130px] mb-[40px]" src="/trust.png"></img>
               </Reveal>
