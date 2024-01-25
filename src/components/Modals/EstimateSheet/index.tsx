@@ -78,7 +78,7 @@ export default function EstimateSheet({ children }: { children: React.ReactNode 
             }
         }}>
             <SheetTrigger asChild>{children}</SheetTrigger>
-            <SheetContent className="p-10 z-[100] w-[600px]">
+            <SheetContent className="p-10 z-[100] w-[600px] overflow-y-scroll">
                 {
                     sent == false ? (
                 
