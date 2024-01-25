@@ -35,32 +35,37 @@ export default function Navbar() {
       </nav>
       {menuClicked ? (
         <Opc>
-          <div className="fixed bg-white left-0 right-0 bottom-0 top-[90px] z-[999]">
-            <div className="flex text-main items-center justify-center flex-col py-[40px] text-[90px] leading-[130px] hero:text-[70px] hero:leading-[110px]">
+          <div className="overflow-y-auto fixed bg-white left-0 right-0 bottom-0 top-[90px] z-[1]">
+            <div className="w-[90%] overflow-y-auto mx-auto flex text-main flex-col justify-between py-[50px] text-[80px] leading-[130px] hero:text-[70px] hero:leading-[110px]">
               <MenuAnimation dlay={0}>
-                <Link className="font-[600]" href={"/arbejde/cases"}>
-                  Arbejde
-                </Link>
+                <div className="w-full border-b-[1px] flex items-center gap-[100px] font-[600] py-[0px]">
+                  <h1>01.</h1>
+                  <Link href={"/arbejde/cases"}>Arbejde</Link>
+                </div>
               </MenuAnimation>{" "}
               <MenuAnimation dlay={0.1}>
-                <Link className="font-[600]" href={"/ydelser"}>
-                  Ydelser
-                </Link>
+                <div className="w-full border-b-[1px] flex items-center gap-[100px] font-[600] py-[0px]">
+                  <h1>02.</h1>
+                  <Link href={"/ydelser"}>Ydelser</Link>
+                </div>
               </MenuAnimation>{" "}
               <MenuAnimation dlay={0.2}>
-                <Link className="font-[600]" href={"/om-os"}>
-                  Om os
-                </Link>
+                <div className="w-full border-b-[1px] flex items-center gap-[100px] font-[600] py-[0px]">
+                  <h1>03.</h1>
+                  <Link href={"/om-os"}>Om os</Link>
+                </div>
               </MenuAnimation>{" "}
               <MenuAnimation dlay={0.3}>
-                <Link className="font-[600]" href={"/kontakt"}>
-                  Kontakt
-                </Link>
-              </MenuAnimation>
+                <div className="w-full border-b-[1px] flex items-center gap-[100px] font-[600] py-[0px]">
+                  <h1>04.</h1>
+                  <Link href={"/kontakt"}>Kontakt</Link>
+                </div>
+              </MenuAnimation>{" "}
               <MenuAnimation dlay={0.4}>
                 <EstimateSheet>
-                  <div className="mt-8 cursor-pointer select-none px-6 py-2.5 font-semibold text-center transition-all bg-white border-2 rounded-full border-main text-main hover:text-white hover:bg-main">
-                    <p className="text-4xl">Estimér pris</p>
+                  <div className="w-full border-b-[1px] flex items-center gap-[100px] font-[600] py-[0px]">
+                    <h1>05.</h1>
+                    <h1>Estimér pris</h1>
                   </div>
                 </EstimateSheet>
               </MenuAnimation>
