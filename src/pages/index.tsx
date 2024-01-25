@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Reveal } from "@/components/Animations/Reveal";
 import Navbar from "@/components/Layout/Navbar";
 import Footer from "@/components/Layout/Footer";
+import TechStackSlider from "@/components/techstackslider";
 
 export default function Index() {
   return (
@@ -35,6 +36,7 @@ export default function Index() {
           </div>
         </Reveal>
       </section>
+      <TechStackSlider />
       <Footer />
     </>
   );

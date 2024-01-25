@@ -17,7 +17,7 @@ const memberData = [
     secondImageUrl: "/simonmaribo.jpg",
   },
   {
-    name: "Asger Willumsen",
+    name: "Malte Pedersen",
     position: "SoMe Manager",
     imageUrl: "/emptymember.jpg",
     secondImageUrl: "/simonmaribo.jpg",
