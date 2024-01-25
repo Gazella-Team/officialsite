@@ -112,13 +112,13 @@ export default function Footer() {
                 <div className="flex flex-col gap-[12px] text-gray-600">
                   <Link
                     className="transition-all hover:text-main"
-                    href={"/om-os"}
+                    href={"/legal/privatlivspolitik"}
                   >
                     Privatlivspolitik
                   </Link>
                   <Link
                     className="transition-all hover:text-main"
-                    href={"/kontakt"}
+                    href={"/legal/cookies"}
                   >
                     Cookies
                   </Link>

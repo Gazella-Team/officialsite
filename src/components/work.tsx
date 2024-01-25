@@ -74,15 +74,17 @@ const WorkCard = ({
   link: any;
 }) => {
   return (
-    <Link href={link}>
-      <div
-        className={`${background} bg-main pt-[300px] pb-[30px] rounded-[8px] bg-cover bg-center cursor-pointer hover:opacity-[80%] transition-all`}
-      >
-        <div className="w-[86%] mx-auto">
-          <p className="text-white">{date}</p>
-          <h1 className="text-white text-[30px]">{heading}</h1>
+    <Reveal>
+      <Link href={link}>
+        <div
+          className={`${background} bg-main pt-[300px] pb-[30px] rounded-[8px] bg-cover bg-center cursor-pointer hover:opacity-[80%] transition-all`}
+        >
+          <div className="w-[86%] mx-auto">
+            <p className="text-white">{date}</p>
+            <h1 className="text-white text-[30px]">{heading}</h1>
+          </div>
         </div>
-      </div>
-    </Link>
+      </Link>
+    </Reveal>
   );
 };
