@@ -16,7 +16,7 @@ export default function Footer() {
                 +45 5069 5272
               </a>
             </div>
-            <div className="flex gap-[100px] items-top justify-center footer:grid footer:grid-cols-2">
+            <div className="flex gap-[70px] items-top justify-center footer:grid footer:grid-cols-2">
               <div>
                 <h1 className="text-[18px] font-[600] mb-[20px] text-main">
                   Ydelser
