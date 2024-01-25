@@ -53,7 +53,7 @@ export default async function handler(
                 });
             });
 
-        const transporter = createTransport({
+        /*const transporter = createTransport({
             // @ts-ignore
             host: process.env.MAIL_HOST,
             port: process.env.MAIL_PORT,
@@ -62,7 +62,7 @@ export default async function handler(
                 user: process.env.MAIL_USER,
                 pass: process.env.MAIL_PASSWORD
             }
-        });
+        });*/
 
         /*transporter.sendMail({
             from: process.env.MAIL_USER,
