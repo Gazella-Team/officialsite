@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Opc } from "../Animations/Opc";
 import { MenuAnimation } from "../Animations/MenuAnimation";
-
+import { ArrowUpRight } from "lucide-react";
 import { Menu, X } from "lucide-react";
 import EstimateSheet from "../Modals/EstimateSheet";
 
@@ -11,16 +11,20 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="fixed w-full bg-white h-[90px] flex items-center z-[10]">
-        <div className="w-[94%] mx-auto flex justify-between items-center">
+      <div className="bg-main text-white h-[45px] fixed w-full">
+        <Link href={"/blog"}>Blog</Link>
+      </div>
+      <nav className="fixed w-full bg-white h-[90px] top-[45px] flex items-center z-[10]">
+        <div className="w-[90%] mx-auto flex justify-between items-center">
           <Link href={"/"}>
             <img className="w-[100px]" src="/logosvg.svg"></img>
           </Link>
 
           <div className="flex items-center gap-[40px]">
             <EstimateSheet>
-              <div className="hidden md:flex cursor-pointer select-none px-6 py-2.5 font-semibold text-center transition-all bg-white border-2 rounded-full border-main text-main hover:text-white hover:bg-main">
-                Få et estimat på dit projekt
+              <div className="hidden md:flex cursor-pointer select-none px-6 py-2 font-medium flex items-center gap-[6px] text-center transition-all bg-white border-[1px] rounded-full text-main hover:text-white hover:bg-main">
+                <p className="font-light">Få et estimat på dit projekt</p>
+                <ArrowUpRight size={20} />
               </div>
             </EstimateSheet>
             <div
@@ -28,7 +32,7 @@ export default function Navbar() {
               className="flex items-center gap-[8px] cursor-pointer"
             >
               <p className="font-light">Menu</p>
-              {menuClicked ? <X /> : <Menu />}
+              {menuClicked ? <X size={20} /> : <Menu size={20} />}
             </div>
           </div>
         </div>

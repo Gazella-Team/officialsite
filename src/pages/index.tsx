@@ -3,6 +3,7 @@ import { Reveal } from "@/components/Animations/Reveal";
 import Navbar from "@/components/Layout/Navbar";
 import Footer from "@/components/Layout/Footer";
 import TechStackSlider from "@/components/techstackslider";
+import Cta from "@/components/Layout/Cta";
 
 export default function Index() {
   return (
@@ -14,7 +15,7 @@ export default function Index() {
             <h1 className="text-[66px] w-[65%] leading-[76px] font-[600] mb-[30px] text-white hero:text-[55px] hero:leading-[65px] hero:w-full heroSm:text-[45px] heroSm:leading-[55px]">
               Skrædersyede web-løsninger der skaber værdi
             </h1>
-            <p className="text-[20px] w-[56%] mb-[40px] font-[500] text-white hero:text-[18px] hero:w-full">
+            <p className="text-[20px] w-[56%] mb-[40px] font-[300] text-white hero:text-[18px] hero:w-full">
               Vi specialiserer os i at udvikle kreative, funktionelle og unikke
               web-løsninger, som skaber værdi, til projekter og virksomheder af
               alle størrelser
@@ -37,6 +38,7 @@ export default function Index() {
         </Reveal>
       </section>
       <TechStackSlider />
+      <Cta />
       <Footer />
     </>
   );
