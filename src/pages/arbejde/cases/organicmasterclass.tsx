@@ -67,12 +67,12 @@ export default function OrganicMasterclass() {
                       fantastiske service og den imponerende hjemmeside, de har
                       skabt for vores vores virksomhed. Hele processen fra start
                       til slut var en glæde. Teamet hos Gazella Team viste en
-                      enestående professionalisme, og de forstod virkelig at gribe
-                      vores vision og omsætte den til en visuelt tiltalende og
-                      funktionel hjemmeside. Hver detalje blev håndteret med omhu,
-                      de svarede hurtigt på alle vores løbende forslag til
-                      ændringer og leverede til slut et produkt der overgik alle
-                      vores forventninger. "
+                      enestående professionalisme, og de forstod virkelig at
+                      gribe vores vision og omsætte den til en visuelt
+                      tiltalende og funktionel hjemmeside. Hver detalje blev
+                      håndteret med omhu, de svarede hurtigt på alle vores
+                      løbende forslag til ændringer og leverede til slut et
+                      produkt der overgik alle vores forventninger. "
                     </h1>
                   </Reveal>
                 </div>
@@ -87,7 +87,7 @@ export default function OrganicMasterclass() {
                   <Reveal>
                     <div>
                       <h1 className="text-[20px] font-[600] text-main">
-                        Lasse Osmann
+                        Sebastian Madsen
                       </h1>
                       <p className="text-gray-600">
                         Medstifter, Organic Masterclass

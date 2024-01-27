@@ -4,10 +4,12 @@ import Navbar from "@/components/Layout/Navbar";
 import Footer from "@/components/Layout/Footer";
 import TechStackSlider from "@/components/techstackslider";
 import Cta from "@/components/Layout/Cta";
+import Meta from "@/components/Layout/Meta";
 
 export default function Index() {
   return (
     <>
+      <Meta />
       <Navbar />
       <section className="h-[100vh] flex flex-col pb-[100px] justify-end bg-[linear-gradient(rgba(5,29,64,0.50),rgba(5,29,64,0.9)),url(/flyout.jpg)] bg-center bg-cover">
         <Reveal>
