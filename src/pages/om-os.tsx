@@ -3,9 +3,14 @@ import Hero from "@/components/Layout/hero";
 import Description from "@/components/description";
 import Members from "@/components/members";
 import { Building2 } from "lucide-react";
+import Meta from "@/components/Layout/Meta";
 export default function Omos() {
   return (
     <Layout>
+      <Meta
+        title="Hvem er Gazella Team? Læs mere om virksomheden her"
+        description="Gazella Team udgør et hold af ambitiøse, nytænkende og storsmilende programmøre og designere, som hver dag brænder for at skabe unikke digitale produkter. "
+      />
       <Hero
         heading="Hvem er vi"
         section="om os"

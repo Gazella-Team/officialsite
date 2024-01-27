@@ -4,9 +4,15 @@ import Description from "@/components/description";
 import ContactInfo from "@/components/contactinfo";
 import Reviews from "@/components/reviews";
 import { Star } from "lucide-react";
+import Meta from "@/components/Layout/Meta";
+
 export default function Anmeldelser() {
   return (
     <Layout>
+      <Meta
+        title="Anmeldelser - Hør hvad vores kunder synes om vores arbejde"
+        description="Vi arbejder hele tiden på at skrive nye artikler, hvor vores team deler ud af tips & tricks i forhold til hvordan du laver din hjemmeside."
+      />
       <Hero
         heading="Anmeldelser"
         section="kunder"

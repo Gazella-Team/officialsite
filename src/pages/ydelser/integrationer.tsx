@@ -2,20 +2,20 @@ import Layout from "@/components/Layout";
 import Hero from "@/components/Layout/hero";
 import Description from "@/components/description";
 import Features from "@/components/features";
-import { GaugeCircle } from "lucide-react";
-export default function Hastighedsoptimering() {
+import { Workflow } from "lucide-react";
+export default function Integrationer() {
   return (
     <Layout>
       <Hero
-        heading="Hastighed og optimering"
+        heading="Integrationer"
         section="Ydelser"
-        icon={<GaugeCircle color="#ffffff" size={70} />}
+        icon={<Workflow color="#ffffff" size={70} />}
       />
-      <Description description="Din hjemmesides hastighed har stor betydning for brugeroplevelsen samt dine samlede konverteringer. Ved hvert web-projekt, sørger vi for, at løsningen er optimeret efter de nyeste teknologier, såldes at hastigheden og hermed brugeroplevelsen gøres så god som muligt." />
+      <Description description="Et godt design og en god brugeroplevelse har markant betydning for, hvor professionel dine besøgende opfatter dig. Hos os lægger vi vægt i, at hvert projekt fremhæves af en unik brugerflade, som gør det så let for den besøgende at navigere rundt i som muligt." />
       <Features
         Obj={[
           {
-            heading: "Backend Integration",
+            heading: "Hosting",
             description:
               "We bring together public and commercial healthcare organizations, offering a 360-degree industry approach to solving",
           },

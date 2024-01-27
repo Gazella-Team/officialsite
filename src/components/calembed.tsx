@@ -1,8 +1,8 @@
 import Cal, { getCalApi } from "@calcom/embed-react";
 import { useEffect } from "react";
-export default function MyApp() {
+export default function Calembed() {
   return (
-    <div className="w-[90%] mx-auto">
+    <div className="w-[90%] mx-auto py-[60px]">
       <Cal
         calLink="lasseosmann/45-minutters-uforpligtende-snak-om-dit-projekt"
         style={{

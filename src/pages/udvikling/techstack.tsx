@@ -3,10 +3,15 @@ import Hero from "@/components/Layout/hero";
 import Description from "@/components/description";
 import Tools from "@/components/tools";
 import { FileStack } from "lucide-react";
+import Meta from "@/components/Layout/Meta";
 
 export default function TechStack() {
   return (
     <Layout>
+      <Meta
+        title="Tech stack - Se hvilke software vi anvender"
+        description="Få et indblik i hvilke værktøjer samt eksterne software vi hver dag bruger til at udvikle de bedst mulige løsninger for vores kunder."
+      />
       <Hero
         heading="Tech stack"
         section="udvikling"

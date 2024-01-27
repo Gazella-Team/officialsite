@@ -2,10 +2,15 @@ import { Reveal } from "@/components/Animations/Reveal";
 import Layout from "@/components/Layout";
 import Hero from "@/components/Layout/hero";
 import { Cookie } from "lucide-react";
+import Meta from "@/components/Layout/Meta";
 
 export default function Cookies() {
   return (
     <Layout>
+      <Meta
+        title="Cookiepolitik - Gazella Team"
+        description="Vi arbejder hele tiden på at skrive nye artikler, hvor vores team deler ud af tips & tricks i forhold til hvordan du laver din hjemmeside."
+      />
       <Hero
         icon={<Cookie color="#ffffff" size={70} />}
         section="legal"

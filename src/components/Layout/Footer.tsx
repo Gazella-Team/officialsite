@@ -12,7 +12,7 @@ export default function Footer() {
               <p className="mb-[20px] text-gray-600">
                 Vi udvikler brugbar software til virksomheder
               </p>
-              <a href="tel:+4550695272" className="font-[500]">
+              <a href="tel:+4550695272" className="font-[500] text-main">
                 +45 5069 5272
               </a>
             </div>
@@ -30,15 +30,21 @@ export default function Footer() {
                   </Link>
                   <Link
                     className="transition-all hover:text-main"
-                    href={"/ydelser/uiux"}
+                    href={"/ydelser/saas"}
                   >
-                    UI/UX Design
+                    SaaS
                   </Link>
                   <Link
                     className="transition-all hover:text-main"
-                    href={"/ydelser/hastighedsoptimering"}
+                    href={"/ydelser/integrationer"}
                   >
-                    Hastighedsoptimering
+                    Integrationer
+                  </Link>
+                  <Link
+                    className="transition-all hover:text-main"
+                    href={"/ydelser/automatisering"}
+                  >
+                    Automatisering
                   </Link>
                 </div>
               </div>
