@@ -14,17 +14,18 @@ export default function Navbar() {
     <>
       <div className="bg-main flex items-center text-white h-[45px] fixed w-full z-[10]">
         <div className="w-[96%] mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-[30px] font-light">
-            <Link className="flex items-center gap-[12px]" href={"mail"}>
-              <Mail size={18} />
+          <div className="flex items-center gap-[30px] font-light text-[14px]">
+            <Link className="flex items-center gap-[6px]" href={"mail"}>
+              <Mail size={16} />
               hey@gazellateam.com
             </Link>
-            <Link className="flex items-center gap-[12px]" href={"mail"}>
-              <Phone size={18} />
+            <Link className="flex items-center gap-[6px]" href={"mail"}>
+              <Phone size={16} />
               +45 5069 5272
             </Link>
           </div>
-          <div className="flex items-center gap-[20px] font-light">
+          <div className="flex items-center gap-[20px] font-light text-[14px]">
+            <Link href={"/hvorfor-os"}>Hvorfor vælge os</Link>
             <Link href={"/anmeldelser"}>Anmeldelser</Link>
             <Link href={"/blog"}>Blog</Link>
             <Link href={"/legal/cookies"}>Cookies</Link>
