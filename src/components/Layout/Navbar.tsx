@@ -5,17 +5,34 @@ import { MenuAnimation } from "../Animations/MenuAnimation";
 import { ArrowUpRight } from "lucide-react";
 import { Menu, X } from "lucide-react";
 import EstimateSheet from "../Modals/EstimateSheet";
+import { Phone, Mail } from "lucide-react";
 
 export default function Navbar() {
   const [menuClicked, setMenuClicked] = useState(false);
 
   return (
     <>
-      <div className="bg-main text-white h-[45px] fixed w-full">
-        <Link href={"/blog"}>Blog</Link>
+      <div className="bg-main flex items-center text-white h-[45px] fixed w-full z-[10]">
+        <div className="w-[96%] mx-auto flex items-center justify-between">
+          <div className="flex items-center gap-[30px] font-light">
+            <Link className="flex items-center gap-[12px]" href={"mail"}>
+              <Mail size={18} />
+              hey@gazellateam.com
+            </Link>
+            <Link className="flex items-center gap-[12px]" href={"mail"}>
+              <Phone size={18} />
+              +45 5069 5272
+            </Link>
+          </div>
+          <div className="flex items-center gap-[20px] font-light">
+            <Link href={"/anmeldelser"}>Anmeldelser</Link>
+            <Link href={"/blog"}>Blog</Link>
+            <Link href={"/legal/cookies"}>Cookies</Link>
+          </div>
+        </div>
       </div>
       <nav className="fixed w-full bg-white h-[90px] top-[45px] flex items-center z-[10]">
-        <div className="w-[90%] mx-auto flex justify-between items-center">
+        <div className="w-[94%] mx-auto flex justify-between items-center">
           <Link href={"/"}>
             <img className="w-[100px]" src="/logosvg.svg"></img>
           </Link>

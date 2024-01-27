@@ -3,22 +3,12 @@ import { Reveal } from "./Animations/Reveal";
 
 const workData = [
   {
-    company: "Centox.io",
-    date: "01/01/2024",
-    description:
-      "Cross-platform solution for managing micro-investments and savings, compatible with SAMA fintech regulations including multi-factor authorization and KYC verification",
-    imageUrl:
-      "bg-[linear-gradient(rgba(5,29,64,0.10),rgba(5,29,64,1)),url(/flyout.jpg)]",
-    url: "https://centox.io/",
-    link: "/coad",
-  },
-  {
     company: "COAD Agency",
     date: "01/01/2024",
     description:
       "Cross-platform solution for managing micro-investments and savings, compatible with SAMA fintech regulations including multi-factor authorization and KYC verification",
     imageUrl:
-      "bg-[linear-gradient(rgba(5,29,64,0.10),rgba(5,29,64,1)),url(/flyout.jpg)]",
+      "bg-[linear-gradient(rgba(5,29,64,0.10),rgba(5,29,64,1)),url(/cases/coad/coad.jpg)]",
     url: "https://centox.io/",
     link: "/arbejde/cases/coad",
   },
@@ -28,19 +18,9 @@ const workData = [
     description:
       "Cross-platform solution for managing micro-investments and savings, compatible with SAMA fintech regulations including multi-factor authorization and KYC verification",
     imageUrl:
-      "bg-[linear-gradient(rgba(5,29,64,0.10),rgba(5,29,64,1)),url(/flyout.jpg)]",
+      "bg-[linear-gradient(rgba(5,29,64,0.10),rgba(5,29,64,1)),url(/cases/organicmasterclass/organicmasterclass.jpg)]",
     url: "https://centox.io/",
     link: "/arbejde/cases/organicmasterclass",
-  },
-  {
-    company: "Centox.io",
-    date: "01/01/2024",
-    description:
-      "Cross-platform solution for managing micro-investments and savings, compatible with SAMA fintech regulations including multi-factor authorization and KYC verification",
-    imageUrl:
-      "bg-[linear-gradient(rgba(5,29,64,0.10),rgba(5,29,64,1)),url(/flyout.jpg)]",
-    url: "https://centox.io/",
-    link: "/coad",
   },
 ];
 
