@@ -16,7 +16,7 @@ export default function BlogPosts() {
     <section className="py-[60px] w-full border-b-[1px]">
       <div className="w-[90%] mx-auto max-w-main grid grid-cols-2 gap-[30px]">
         {blogPostsData.map((v) => (
-          <BlogPostCard Obj={v} />
+          <BlogPostCard key={v} Obj={v} />
         ))}
       </div>
     </section>
