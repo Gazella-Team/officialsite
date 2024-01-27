@@ -6,55 +6,62 @@ import { ArrowUpRight } from "lucide-react";
 import { Menu, X } from "lucide-react";
 import EstimateSheet from "../Modals/EstimateSheet";
 import { Phone, Mail } from "lucide-react";
+import { Reveal } from "../Animations/Reveal";
 
 export default function Navbar() {
   const [menuClicked, setMenuClicked] = useState(false);
 
   return (
     <>
-      <div className="bg-main flex items-center text-white h-[45px] fixed w-full z-[10]">
-        <div className="w-[96%] mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-[30px] font-light text-[14px]">
-            <Link className="flex items-center gap-[6px]" href={"mail"}>
-              <Mail size={16} />
-              hey@gazellateam.com
-            </Link>
-            <Link className="flex items-center gap-[6px]" href={"mail"}>
-              <Phone size={16} />
-              +45 5069 5272
-            </Link>
-          </div>
-          <div className="flex items-center gap-[20px] font-light text-[14px]">
-            <Link href={"/hvorfor-os"}>Hvorfor vælge os</Link>
-            <Link href={"/anmeldelser"}>Anmeldelser</Link>
-            <Link href={"/blog"}>Blog</Link>
-            <Link href={"/legal/cookies"}>Cookies</Link>
-          </div>
-        </div>
-      </div>
-      <nav className="fixed w-full bg-white h-[90px] top-[45px] flex items-center z-[10]">
-        <div className="w-[94%] mx-auto flex justify-between items-center">
-          <Link href={"/"}>
-            <img className="w-[100px]" src="/logosvg.svg"></img>
-          </Link>
-
-          <div className="flex items-center gap-[40px]">
-            <EstimateSheet>
-              <div className="hidden md:flex cursor-pointer select-none px-6 py-2 font-medium flex items-center gap-[6px] text-center transition-all bg-white border-[1px] rounded-full text-main hover:text-white hover:bg-main">
-                <p className="font-light">Få et estimat på dit projekt</p>
-                <ArrowUpRight size={20} />
-              </div>
-            </EstimateSheet>
-            <div
-              onClick={() => setMenuClicked(!menuClicked)}
-              className="flex items-center gap-[8px] cursor-pointer"
-            >
-              <p className="font-light">Menu</p>
-              {menuClicked ? <X size={20} /> : <Menu size={20} />}
+      <Reveal>
+        <div className="bg-main flex items-center text-white h-[45px] fixed w-full z-[10]">
+          <div className="w-[96%] mx-auto flex items-center justify-between">
+            <div className="flex items-center gap-[30px] font-light text-[14px]">
+              <Link className="flex items-center gap-[6px]" href={"mail"}>
+                <Mail size={16} />
+                hey@gazellateam.com
+              </Link>
+              <Link className="flex items-center gap-[6px]" href={"mail"}>
+                <Phone size={16} />
+                +45 5069 5272
+              </Link>
+            </div>
+            <div className="flex items-center gap-[20px] font-light text-[14px]">
+              <Link href={"/hvorfor-os"}>Hvorfor vælge os</Link>
+              <Link href={"/anmeldelser"}>Anmeldelser</Link>
+              <Link href={"/blog"}>Blog</Link>
+              <Link href={"/legal/cookies"}>Cookies</Link>
             </div>
           </div>
         </div>
-      </nav>
+      </Reveal>
+
+      <Reveal>
+        <nav className="fixed w-full bg-white h-[90px] top-[45px] flex items-center z-[10]">
+          <div className="w-[94%] mx-auto flex justify-between items-center">
+            <Link href={"/"}>
+              <img className="w-[100px]" src="/logosvg.svg"></img>
+            </Link>
+
+            <div className="flex items-center gap-[40px]">
+              <EstimateSheet>
+                <div className="hidden md:flex cursor-pointer select-none px-6 py-2 font-medium flex items-center gap-[6px] text-center transition-all bg-white border-[1px] rounded-full text-main hover:text-white hover:bg-main">
+                  <p className="font-light">Få et estimat på dit projekt</p>
+                  <ArrowUpRight size={20} />
+                </div>
+              </EstimateSheet>
+              <div
+                onClick={() => setMenuClicked(!menuClicked)}
+                className="flex items-center gap-[8px] cursor-pointer"
+              >
+                <p className="font-light">Menu</p>
+                {menuClicked ? <X size={20} /> : <Menu size={20} />}
+              </div>
+            </div>
+          </div>
+        </nav>
+      </Reveal>
+
       {menuClicked ? (
         <Opc>
           <div className="overflow-y-auto fixed bg-white left-0 right-0 bottom-0 top-[90px] z-[1]">
