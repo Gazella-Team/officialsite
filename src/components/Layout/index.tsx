@@ -1,9 +1,8 @@
 import Footer from "./Footer";
-import Cta from "./Cta";
 import Meta from "./Meta";
 import Navbar from "./Navbar";
 import Script from "next/script";
-import Reviews from "../reviews";
+import Cta from "./Cta";
 
 export default function Layout({
   className,
@@ -28,7 +27,7 @@ export default function Layout({
           <Navbar />
           <div className="pt-[135px]">
             {children}
-
+            <Cta />
             <Footer />
           </div>
         </div>

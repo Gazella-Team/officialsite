@@ -4,7 +4,7 @@ import { Reveal } from "../Animations/Reveal";
 export default function Footer() {
   return (
     <>
-      <footer className="py-[60px]">
+      <footer className="py-[60px] border-t-[1px]">
         <div className="w-[90%] mx-auto max-w-main">
           <div className="flex justify-between border-b-[1px] pb-[60px] mb-[20px] footer:flex-col footer: gap-[80px]">
             <div className="w-[16%] footer:w-full">

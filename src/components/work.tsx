@@ -26,7 +26,7 @@ const workData = [
 
 export default function Work() {
   return (
-    <section className="py-[60px] border-b-[1px]">
+    <section className="py-[60px]">
       <div className="w-[90%] z-[1] mx-auto grid grid-cols-2 gap-x-[40px] gap-y-[40px] max-w-main small:grid-cols-1">
         {workData.map((v, index) => (
           <WorkCard

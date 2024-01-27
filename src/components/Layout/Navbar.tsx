@@ -28,6 +28,7 @@ export default function Navbar() {
             </div>
             <div className="flex items-center gap-[20px] font-light text-[14px]">
               <Link href={"/hvorfor-os"}>Hvorfor vælge os</Link>
+              <Link href={"/udvikling/techstack"}>Tech stack</Link>
               <Link href={"/anmeldelser"}>Anmeldelser</Link>
               <Link href={"/blog"}>Blog</Link>
               <Link href={"/legal/cookies"}>Cookies</Link>

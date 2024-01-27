@@ -25,7 +25,7 @@ const reviewData = [
 
 export default function Reviews() {
   return (
-    <section className="py-[60px] w-full border-b-[1px]">
+    <section className="py-[60px] w-full">
       <div className="w-[90%] mx-auto max-w-main grid grid-cols-2 gap-[30px]">
         {reviewData.map((v, index) => (
           <ReviewCard key={index} object={v} />

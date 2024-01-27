@@ -1,6 +1,13 @@
 import Link from "next/link";
 import { Reveal } from "./Animations/Reveal";
-import { UserCheck, Clock } from "lucide-react";
+import {
+  UserCheck,
+  CalendarCheck,
+  ArrowLeftRight,
+  History,
+  Zap,
+  HeartHandshake,
+} from "lucide-react";
 
 const whyData = [
   {
@@ -10,32 +17,32 @@ const whyData = [
       "Vi bruger React i relation til web-udvikling for at skabe hurtige, interaktive og strukturerede web-løsninger. Med React har vi mulighed for at genbruge komponenter og optimere hjemmesidens hastighed, således at udviklingsfasen bliver mere effektiv.",
   },
   {
-    icon: <Clock size={30} />,
+    icon: <CalendarCheck size={30} />,
     headline: "+10 års erfaring",
     description:
       "Vi bruger React i relation til web-udvikling for at skabe hurtige, interaktive og strukturerede web-løsninger. Med React har vi mulighed for at genbruge komponenter og optimere hjemmesidens hastighed, således at udviklingsfasen bliver mere effektiv.",
   },
   {
-    icon: <UserCheck size={30} />,
-    headline: "En fast samarbejdspartner",
+    icon: <HeartHandshake size={30} />,
+    headline: "Dine behov i fokus",
     description:
       "Vi bruger React i relation til web-udvikling for at skabe hurtige, interaktive og strukturerede web-løsninger. Med React har vi mulighed for at genbruge komponenter og optimere hjemmesidens hastighed, således at udviklingsfasen bliver mere effektiv.",
   },
   {
-    icon: <Clock size={30} />,
-    headline: "+10 års erfaring",
+    icon: <Zap size={30} />,
+    headline: "Hurtig levering",
     description:
       "Vi bruger React i relation til web-udvikling for at skabe hurtige, interaktive og strukturerede web-løsninger. Med React har vi mulighed for at genbruge komponenter og optimere hjemmesidens hastighed, således at udviklingsfasen bliver mere effektiv.",
   },
   {
-    icon: <UserCheck size={30} />,
-    headline: "En fast samarbejdspartner",
+    icon: <ArrowLeftRight size={30} />,
+    headline: "En skarp process",
     description:
       "Vi bruger React i relation til web-udvikling for at skabe hurtige, interaktive og strukturerede web-løsninger. Med React har vi mulighed for at genbruge komponenter og optimere hjemmesidens hastighed, således at udviklingsfasen bliver mere effektiv.",
   },
   {
-    icon: <Clock size={30} />,
-    headline: "+10 års erfaring",
+    icon: <History size={30} />,
+    headline: "Support alle ugens dage",
     description:
       "Vi bruger React i relation til web-udvikling for at skabe hurtige, interaktive og strukturerede web-løsninger. Med React har vi mulighed for at genbruge komponenter og optimere hjemmesidens hastighed, således at udviklingsfasen bliver mere effektiv.",
   },
@@ -43,7 +50,7 @@ const whyData = [
 
 export default function Why() {
   return (
-    <section className="py-[60px] w-full border-b-[1px]">
+    <section className="py-[60px] w-full">
       <div className="w-[90%] mx-auto max-w-main z-[1] grid grid-cols-2 gap-[30px] lg:grid-cols-1">
         {whyData.map((v) => (
           <WhyCard Obj={v} key={v} />

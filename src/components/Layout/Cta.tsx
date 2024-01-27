@@ -2,18 +2,41 @@ import { CheckCircle2 } from "lucide-react";
 import Link from "next/link";
 export default function Cta() {
   return (
-    <section className="border-b-[1px] grid grid-cols-2">
-      <div className="w-[90%] ml-auto max-w-main py-[100px]">
-        <h1 className="font-[600] leading-[60px] text-[50px] text-main w-[90%] mb-[30px]">
+    <section className="py-[100px] bg-main text-white">
+      <div className="w-[90%] mx-auto max-w-main">
+        <h1 className="text-[40px] font-[600] mb-[20px]">
           Lad os tage en snak om dit kommende projekt
         </h1>
-        <p className="text-[20px] w-[80%] mb-[40px] font-[300] text-gray-600 hero:text-[18px] hero:w-full">
-          Vi specialiserer os i at udvikle kreative, funktionelle og unikke
-          web-løsninger, som skaber værdi.
+        <p className="text-[20px] text-gray-200 w-[90%] font-light mb-[40px]">
+          Få et indblik i hvilke værktøjer samt eksterne software vi hver dag
+          bruger til at udvikle de bedst mulige løsninger for vores kunder. Hos
+          Gazella Team holder vi os konstant opdateret på de seneste
+          teknologier, således vi altid sikrer top-kvalitet.
         </p>
-      </div>
-      <div className="max-w-main">
-        <img className="h-[600px] object-cover" src="/flyout.jpg"></img>
+        <div className="grid grid-cols-2 w-[38%] gap-[30px] mb-[60px]">
+          <div className="flex items-center gap-[10px]">
+            <CheckCircle2 size={30} />
+            <p className="text-[20px]">100% uforpligtende</p>
+          </div>
+          <div className="flex items-center gap-[10px]">
+            <CheckCircle2 size={30} />
+            <p className="text-[20px]">Gratis rådgivning</p>
+          </div>
+        </div>
+        <div className="flex items-center justify-end gap-[20px]">
+          <Link
+            className="border-[1px] font-light border-white rounded-[50px] p-[10px] px-[30px] text-center hover:bg-white hover:text-main transition-all"
+            href={"/kontakt"}
+          >
+            Snak med os
+          </Link>
+          <Link
+            className="border-[1px] font-light border-white rounded-[50px] p-[10px] px-[30px] text-center hover:bg-white hover:text-main transition-all"
+            href={"/kontakt"}
+          >
+            Se vores arbejde
+          </Link>
+        </div>
       </div>
     </section>
   );

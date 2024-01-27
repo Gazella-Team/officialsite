@@ -32,7 +32,7 @@ const memberData = [
 
 export default function Members() {
   return (
-    <section className="py-[60px] border-b-[1px]">
+    <section className="py-[60px]">
       <div className="w-[90%] mx-auto max-w-main">
         <div className="grid grid-cols-4 gap-x-[30px] gap-y-[50px] members:grid-cols-3 membersSm:grid-cols-2 membersSmallest:grid-cols-1">
           {memberData.map((v) => (

@@ -8,7 +8,7 @@ export default function TechStack() {
   return (
     <Layout>
       <Hero
-        heading="Tech Stack"
+        heading="Tech stack"
         section="udvikling"
         icon={<FileStack color="#ffffff" size={70} />}
       />

@@ -15,7 +15,7 @@ export default function Index() {
         <Reveal>
           <div className="w-[90%] mx-auto max-w-main text-white">
             <h1 className="text-[66px] w-[65%] leading-[76px] font-[600] mb-[30px] text-white hero:text-[55px] hero:leading-[65px] hero:w-full heroSm:text-[45px] heroSm:leading-[55px]">
-              Skrædersyede web-løsninger der skaber værdi
+              Et moderne all-in-one software bureau
             </h1>
             <p className="text-[20px] w-[56%] mb-[40px] font-[300] text-white hero:text-[18px] hero:w-full">
               Vi specialiserer os i at udvikle kreative, funktionelle og unikke
@@ -24,13 +24,13 @@ export default function Index() {
             </p>
             <div className="flex items-center gap-[20px] text-white">
               <Link
-                className="border-[1px] font-[600] border-white rounded-[50px] py-[10px] w-[170px] text-center hover:bg-white hover:text-main transition-all"
+                className="border-[1px] font-light border-white rounded-[50px] py-[10px] w-[170px] text-center hover:bg-white hover:text-main transition-all"
                 href={"/kontakt"}
               >
                 Snak med os
               </Link>
               <Link
-                className="border-[1px] font-[600] border-white rounded-[50px] py-[10px] w-[170px] text-center hover:bg-white hover:text-main transition-all"
+                className="border-[1px] font-light border-white rounded-[50px] py-[10px] w-[170px] text-center hover:bg-white hover:text-main transition-all"
                 href={"/arbejde/cases"}
               >
                 Se vores arbejde

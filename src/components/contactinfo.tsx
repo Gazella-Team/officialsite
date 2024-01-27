@@ -2,7 +2,7 @@ import { Reveal } from "./Animations/Reveal";
 
 export default function ContactInfo() {
   return (
-    <section className="py-[60px] border-b-[1px]">
+    <section className="py-[60px]">
       <Reveal>
         <div className="w-[90%] mx-auto max-w-main grid grid-cols-contact mid:grid-cols-1">
           <div className="mid:mb-[60px]">
@@ -22,33 +22,44 @@ export default function ContactInfo() {
                 </h1>
               </Reveal>
               <Reveal>
-                <a href="mailto:kontakt@gazellateam.com" className="text-gray-600 text-[18px]">
-                  kontakt@gazellateam.com
+                <a
+                  href="mailto:kontakt@gazellateam.com"
+                  className="text-gray-600 text-[18px]"
+                >
+                  hey@gazellateam.com
                 </a>
               </Reveal>
             </div>
             <div>
               <Reveal>
                 <h1 className="font-[600] text-[22px] mb-[10px] text-main">
-                  Generelt
+                  Support
                 </h1>
               </Reveal>
 
               <Reveal>
-                <a href="mailto:info@gazellateam.com" className="text-gray-600 text-[18px]">
-                  info@gazellateam.com
+                <a
+                  href="mailto:info@gazellateam.com"
+                  className="text-gray-600 text-[18px]"
+                >
+                  support@gazellateam.com
                 </a>
               </Reveal>
             </div>
             <div>
               <Reveal>
                 <h1 className="font-[600] text-[22px] mb-[10px] text-main">
-                  Ansættelse
+                  Lokation
                 </h1>
               </Reveal>
 
               <Reveal>
-                <a href="mailto:job@gazellateam.com" className="text-gray-600 text-[18px]">job@gazellateam.com</a>
+                <a
+                  href="mailto:job@gazellateam.com"
+                  className="text-gray-600 text-[18px]"
+                >
+                  Islands Brygge 38F <br></br>2300 København S
+                </a>
               </Reveal>
             </div>
             <div>
@@ -59,7 +70,9 @@ export default function ContactInfo() {
               </Reveal>
 
               <Reveal>
-                <a href="tel:+4550695272" className="text-gray-600 text-[18px]">+45 5069 5272</a>
+                <a href="tel:+4550695272" className="text-gray-600 text-[18px]">
+                  +45 5069 5272
+                </a>
               </Reveal>
             </div>
           </div>

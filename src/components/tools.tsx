@@ -63,7 +63,7 @@ const toolData = [
 
 export default function Tools() {
   return (
-    <section className="py-[60px] w-full border-b-[1px]">
+    <section className="py-[60px] w-full">
       <div className="w-[90%] mx-auto max-w-main z-[1] grid grid-cols-2 gap-[30px] lg:grid-cols-1">
         {toolData.map((v) => (
           <ToolCard Obj={v} key={v} />
