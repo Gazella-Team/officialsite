@@ -13,68 +13,54 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="bg-main flex items-center text-white h-[45px] fixed w-full z-[10]">
+      <div className="bg-main flex items-center text-white h-[45px] fixed w-full z-[10] membersSm:hidden">
         <div className="w-[96%] mx-auto flex items-center justify-between">
           <div className="flex items-center gap-[30px] font-light text-[14px]">
-            <Reveal>
-              <Link className="flex items-center gap-[6px]" href={"mail"}>
-                <Mail size={16} />
-                hey@gazellateam.com
-              </Link>
-            </Reveal>
-            <Reveal>
-              <Link className="flex items-center gap-[6px]" href={"mail"}>
-                <Phone size={16} />
-                +45 5069 5272
-              </Link>
-            </Reveal>
+            <Link className="flex items-center gap-[6px]" href={"mail"}>
+              <Mail size={16} />
+              hey@gazellateam.com
+            </Link>
+
+            <Link className="flex items-center gap-[6px]" href={"mail"}>
+              <Phone size={16} />
+              +45 5069 5272
+            </Link>
           </div>
           <div className="flex items-center gap-[20px] font-light text-[14px]">
-            <Reveal>
-              <Link href={"/hvorfor-os"}>Hvorfor Gazella Team</Link>
-            </Reveal>
-            <Reveal>
-              <Link href={"/udvikling/techstack"}>Tech stack</Link>
-            </Reveal>
-            <Reveal>
-              <Link href={"/anmeldelser"}>Anmeldelser</Link>
-            </Reveal>
-            <Reveal>
-              <Link href={"/blog"}>Blog</Link>
-            </Reveal>
-            <Reveal>
-              <Link href={"/legal"}>Juridisk</Link>
-            </Reveal>
+            <Link href={"/hvorfor-os"}>Hvorfor Gazella Team</Link>
+
+            <Link href={"/udvikling/techstack"}>Tech stack</Link>
+
+            <Link href={"/anmeldelser"}>Anmeldelser</Link>
+
+            <Link href={"/blog"}>Blog</Link>
+
+            <Link href={"/legal"}>Juridisk</Link>
           </div>
         </div>
       </div>
 
-      <nav className="fixed w-full bg-white h-[90px] top-[45px] flex items-center z-[10]">
+      <nav className="fixed w-full bg-white h-[90px] top-[45px] flex items-center z-[10] membersSm:top-0">
         <div className="w-[94%] mx-auto flex justify-between items-center">
-          <Reveal>
-            <Link href={"/"}>
-              <img className="w-[100px]" src="/logosvg.svg"></img>
-            </Link>
-          </Reveal>
+          <Link href={"/"}>
+            <img className="w-[100px]" src="/logosvg.svg"></img>
+          </Link>
 
           <div className="flex items-center gap-[40px]">
-            <Reveal>
-              <EstimateSheet>
-                <div className="hidden md:flex cursor-pointer select-none px-6 py-2 font-medium flex items-center gap-[6px] text-center transition-all bg-white border-[1px] rounded-full text-main hover:text-white hover:bg-main">
-                  <p className="font-light">Få et estimat på dit projekt</p>
-                  <ArrowUpRight size={20} />
-                </div>
-              </EstimateSheet>
-            </Reveal>
-            <Reveal>
-              <div
-                onClick={() => setMenuClicked(!menuClicked)}
-                className="flex items-center gap-[8px] cursor-pointer"
-              >
-                <p className="font-light">Menu</p>
-                {menuClicked ? <X size={20} /> : <Menu size={20} />}
+            <EstimateSheet>
+              <div className="hidden md:flex cursor-pointer select-none px-6 py-2 font-medium flex items-center gap-[6px] text-center transition-all bg-white border-[1px] rounded-full text-main hover:text-white hover:bg-main">
+                <p className="font-light">Få et estimat på dit projekt</p>
+                <ArrowUpRight size={20} />
               </div>
-            </Reveal>
+            </EstimateSheet>
+
+            <div
+              onClick={() => setMenuClicked(!menuClicked)}
+              className="flex items-center gap-[8px] cursor-pointer"
+            >
+              <p className="font-light">Menu</p>
+              {menuClicked ? <X size={20} /> : <Menu size={20} />}
+            </div>
           </div>
         </div>
       </nav>
@@ -83,16 +69,16 @@ export default function Navbar() {
         <Opc>
           <div className="overflow-y-auto fixed bg-white left-0 right-0 bottom-0 top-[90px] z-[1]">
             <div className="w-[90%] overflow-y-auto mx-auto flex text-main flex-col justify-between py-[50px] text-[70px] leading-[130px] hero:text-[70px] hero:leading-[110px]">
-              <MenuAnimation dlay={0}>
-                <div className="w-full border-b-[1px] flex items-center gap-[100px] font-[600] leading-[120px]">
+              <MenuAnimation dlay={0.0}>
+                <div className="w-full border-b-[1px] flex items-center gap-[100px] font-[600] py-[0px] leading-[120px]">
                   <h1>01.</h1>
-                  <Link href={"/arbejde/cases"}>Arbejde</Link>
+                  <Link href={"/ydelser"}>Ydelser</Link>
                 </div>
               </MenuAnimation>{" "}
               <MenuAnimation dlay={0.1}>
-                <div className="w-full border-b-[1px] flex items-center gap-[100px] font-[600] py-[0px] leading-[120px]">
+                <div className="w-full border-b-[1px] flex items-center gap-[100px] font-[600] leading-[120px]">
                   <h1>02.</h1>
-                  <Link href={"/ydelser"}>Ydelser</Link>
+                  <Link href={"/arbejde"}>Arbejde</Link>
                 </div>
               </MenuAnimation>{" "}
               <MenuAnimation dlay={0.2}>

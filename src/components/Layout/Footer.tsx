@@ -113,7 +113,7 @@ export default function Footer() {
               </div>
               <div>
                 <h1 className="text-[18px] font-[600] mb-[20px] text-main">
-                  Legal
+                  Juridisk
                 </h1>
                 <div className="flex flex-col gap-[12px] text-gray-600">
                   <Link
@@ -136,12 +136,19 @@ export default function Footer() {
             <p className="text-gray-600">
               &#169; {new Date().getFullYear()} Gazella Team
             </p>
-            <Link
-              href={"https://www.linkedin.com/company/gazellateam/"}
-              target="_blank"
-            >
-              <img className="w-[24px]" src="/linkedin.png"></img>
-            </Link>
+            <div className="flex items-center gap-[40px] text-gray-600">
+              <div className="flex items-center gap-[30px]">
+                <Link href={"/hvorfor-os"}>Hvorfor Gazella Team</Link>
+                <Link href={"/blog"}>Blog</Link>
+                <Link href={"/anmeldelser"}>Anmeldelser</Link>
+              </div>
+              <Link
+                href={"https://www.linkedin.com/company/gazellateam/"}
+                target="_blank"
+              >
+                <img className="w-[24px]" src="/linkedin.png"></img>
+              </Link>
+            </div>
           </div>
         </div>
       </footer>

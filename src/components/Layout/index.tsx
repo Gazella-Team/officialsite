@@ -25,7 +25,7 @@ export default function Layout({
           <Meta />
 
           <Navbar />
-          <div className="pt-[135px]">
+          <div className="pt-[135px] members:pt-[90px]">
             {children}
             <Cta />
             <Footer />

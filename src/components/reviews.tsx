@@ -37,7 +37,7 @@ export default function Reviews() {
 
 const ReviewCard = ({ object }: { object: any }) => {
   return (
-    <div className="bg-white border-[1px] p-[30px] rounded-[6px] text-main">
+    <div className="bg-gray-50 border-[1px] p-[30px] rounded-[6px] text-main">
       <img className="w-[120px] mb-[20px]" src={object.image}></img>
       <h1 className="text-[26px] font-[600] mb-[10px]">{object.heading}</h1>
       <p className="mb-[40px] text-[18px] text-gray-600">

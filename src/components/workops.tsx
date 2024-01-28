@@ -9,11 +9,6 @@ const workOpsData = [
     link: "/arbejde/cases",
   },
   {
-    icon: <FolderGit2 size={40} />,
-    headline: "Interne Projekter",
-    link: "/arbejde/interneprojekter",
-  },
-  {
     icon: <Wallet size={40} />,
     headline: "Prissætning",
     link: "/arbejde/priser",
@@ -22,14 +17,14 @@ const workOpsData = [
 
 export default function WorkOps() {
   return (
-    <section className="py-[60px] w-full border-b-[1px]">
+    <section className="py-[60px] w-full">
       <Reveal>
         <div className="mt-[76px] w-[90%] mx-auto max-w-main py-[60px]">
           <h1 className="text-[40px]">Udforsk vores arbejde</h1>
         </div>
       </Reveal>
 
-      <div className="w-[90%] mx-auto max-w-main z-[1] grid grid-cols-3 gap-[30px] navigation:grid-cols-1">
+      <div className="w-[90%] mx-auto max-w-main z-[1] grid grid-cols-2 gap-[30px] navigation:grid-cols-1">
         {workOpsData.map((v) => (
           <WorkOpsCard Obj={v} key={v} />
         ))}

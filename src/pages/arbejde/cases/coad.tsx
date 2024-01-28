@@ -20,7 +20,7 @@ export default function Coad() {
             </Reveal>
           </div>
         </section>
-        <div className="w-[90%] mx-auto bg-white mt-[-140px] rounded-[6px] py-[50px] px-[50px] border-[1px] grid grid-cols-1 gap-[30px]">
+        <div className="w-[90%] mx-auto bg-white mt-[-140px] mb-[60px] rounded-[6px] py-[50px] px-[50px] border-[1px] grid grid-cols-1 gap-[30px]">
           <div className="grid grid-cols-4 gap-[20px]">
             <Reveal>
               <div className="bg-gray-100 rounded-[6px] p-[30px] border-[1px]">
