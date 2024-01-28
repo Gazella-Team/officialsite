@@ -17,10 +17,12 @@ const udviklingData = [
 
 export default function Udviklingside() {
   return (
-    <section className="py-[60px] w-full border-b-[1px]">
+    <section className="py-[60px] w-full">
       <Reveal>
         <div className="mt-[76px] w-[90%] mx-auto max-w-main py-[60px]">
-          <h1 className="text-[40px]">Se hvordan vi arbejder bedst muligt</h1>
+          <h1 className="text-[40px] text-main font-[500] leading-[50px]">
+            Se hvordan vi arbejder bedst muligt
+          </h1>
         </div>
       </Reveal>
 

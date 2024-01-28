@@ -20,7 +20,9 @@ export default function WorkOps() {
     <section className="py-[60px] w-full">
       <Reveal>
         <div className="mt-[76px] w-[90%] mx-auto max-w-main py-[60px]">
-          <h1 className="text-[40px]">Udforsk vores arbejde</h1>
+          <h1 className="text-[40px] text-main font-[500] leading-[50px]">
+            Udforsk vores arbejde
+          </h1>
         </div>
       </Reveal>
 
