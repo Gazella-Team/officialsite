@@ -26,7 +26,7 @@ export default function Footer() {
                     className="transition-all hover:text-main"
                     href={"/ydelser/webudvikling"}
                   >
-                    Web Udvikling
+                    Web udvikling
                   </Link>
                   <Link
                     className="transition-all hover:text-main"
@@ -57,7 +57,7 @@ export default function Footer() {
                     className="transition-all hover:text-main"
                     href={"/arbejde/cases"}
                   >
-                    Kunde Cases
+                    Kunde cases
                   </Link>
                   <Link
                     className="transition-all hover:text-main"
@@ -82,7 +82,7 @@ export default function Footer() {
                     className="transition-all hover:text-main"
                     href={"/udvikling/techstack"}
                   >
-                    Tech Stack
+                    Tech stack
                   </Link>
                 </div>
               </div>
@@ -95,7 +95,7 @@ export default function Footer() {
                     className="transition-all hover:text-main"
                     href={"/om-os"}
                   >
-                    Om Os
+                    Om os
                   </Link>
                   <Link
                     className="transition-all hover:text-main"

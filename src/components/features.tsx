@@ -18,10 +18,12 @@ const FeatureCard = (props: any) => {
   return (
     <Reveal>
       <div className="bg-gray-50 p-[30px] border-[1px] rounded-[8px]">
-        <h2 className="text-[24px] font-[600] mb-[14px]">
+        <h2 className="text-[24px] font-[500] mb-[14px]">
           {props.Obj.heading}
         </h2>
-        <p className="text-[18px] text-gray-600">{props.Obj.description}</p>
+        <p className="text-[18px] font-[300] text-gray-600">
+          {props.Obj.description}
+        </p>
       </div>
     </Reveal>
   );

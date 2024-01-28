@@ -6,7 +6,7 @@ export default function Dynamic() {
   return (
     <>
       <section className="bg-[linear-gradient(rgba(5,29,64,0.80),rgba(5,29,64,1)),url(/cases/organicmasterclass/organicmasterclass.jpg)] bg-center bg-cover py-[180px] pt-[260px]">
-        <div className="w-[90%] mx-auto max-w-main">
+        <div className="w-[90%] mx-auto max-w-main text-main">
           <Reveal>
             <p className="text-white mb-[14px] uppercase">/ CASE</p>
           </Reveal>
@@ -22,7 +22,9 @@ export default function Dynamic() {
         <div className="grid grid-cols-4 gap-[20px]">
           <Reveal>
             <div className="bg-gray-100 rounded-[6px] p-[30px] border-[1px]">
-              <h1 className="font-[600] text-[20px] mb-[6px]">Klient</h1>
+              <h1 className="font-[600] text-[20px] mb-[6px] text-main">
+                Klient
+              </h1>
               <p className="text-gray-600">Organic Masterclass</p>
             </div>
           </Reveal>

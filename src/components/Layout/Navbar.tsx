@@ -31,7 +31,7 @@ export default function Navbar() {
           </div>
           <div className="flex items-center gap-[20px] font-light text-[14px]">
             <Reveal>
-              <Link href={"/hvorfor-os"}>Hvorfor vælge os</Link>
+              <Link href={"/hvorfor-os"}>Hvorfor Gazella Team</Link>
             </Reveal>
             <Reveal>
               <Link href={"/udvikling/techstack"}>Tech stack</Link>
@@ -43,7 +43,7 @@ export default function Navbar() {
               <Link href={"/blog"}>Blog</Link>
             </Reveal>
             <Reveal>
-              <Link href={"/legal/cookies"}>Cookies</Link>
+              <Link href={"/legal"}>Juridisk</Link>
             </Reveal>
           </div>
         </div>
