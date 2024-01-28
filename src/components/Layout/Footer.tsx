@@ -132,7 +132,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between membersSm:flex-col membersSm:justify-start membersSm:items-start membersSm:gap-[40px]">
             <p className="text-gray-600">
               &#169; {new Date().getFullYear()} Gazella Team
             </p>

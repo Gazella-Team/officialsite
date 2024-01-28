@@ -7,6 +7,8 @@ import {
   History,
   Zap,
   HeartHandshake,
+  ShieldCheck,
+  Cpu,
 } from "lucide-react";
 
 const whyData = [
@@ -18,7 +20,19 @@ const whyData = [
   },
   {
     icon: <CalendarCheck size={30} />,
-    headline: "+10 års erfaring",
+    headline: "+10 års kombineret erfaring",
+    description:
+      "Vi bruger React i relation til web-udvikling for at skabe hurtige, interaktive og strukturerede web-løsninger. Med React har vi mulighed for at genbruge komponenter og optimere hjemmesidens hastighed, således at udviklingsfasen bliver mere effektiv.",
+  },
+  {
+    icon: <ShieldCheck size={30} />,
+    headline: "Tilfredshedsgaranti",
+    description:
+      "Vi bruger React i relation til web-udvikling for at skabe hurtige, interaktive og strukturerede web-løsninger. Med React har vi mulighed for at genbruge komponenter og optimere hjemmesidens hastighed, således at udviklingsfasen bliver mere effektiv.",
+  },
+  {
+    icon: <Cpu size={30} />,
+    headline: "Altid seneste teknologi",
     description:
       "Vi bruger React i relation til web-udvikling for at skabe hurtige, interaktive og strukturerede web-løsninger. Med React har vi mulighed for at genbruge komponenter og optimere hjemmesidens hastighed, således at udviklingsfasen bliver mere effektiv.",
   },

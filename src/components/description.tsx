@@ -1,4 +1,6 @@
 import { Reveal } from "./Animations/Reveal";
+import EstimateSheet from "./Modals/EstimateSheet";
+import { ArrowUpRight } from "lucide-react";
 
 export default function Description(props: any) {
   return (
