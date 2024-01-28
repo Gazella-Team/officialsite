@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Reveal } from "./Animations/Reveal";
-import { Layers, AppWindow, PaintBucket, GaugeCircle } from "lucide-react";
+import { DatabaseBackup, Layers, Workflow, Laptop } from "lucide-react";
 
 const serviceData = [
   {
@@ -9,27 +9,32 @@ const serviceData = [
     link: "/ydelser/webudvikling",
   },
   {
-    icon: <PaintBucket size={40} />,
-    headline: "UI/UX Design",
-    link: "/ydelser/uiux",
+    icon: <Laptop size={40} />,
+    headline: "SaaS",
+    link: "/ydelser/saas",
   },
   {
-    icon: <GaugeCircle size={40} />,
-    headline: "Hastighedsoptimering",
-    link: "/ydelser/hastighedsoptimering",
+    icon: <Workflow size={40} />,
+    headline: "API integrationer",
+    link: "/ydelser/integrationer",
+  },
+  {
+    icon: <DatabaseBackup size={40} />,
+    headline: "Automatisering",
+    link: "/ydelser/automatisering",
   },
 ];
 
 export default function Services() {
   return (
-    <section className="py-[60px] w-full border-b-[1px]">
+    <section className="py-[60px] w-full">
       <Reveal>
         <div className="mt-[76px] w-[90%] mx-auto max-w-main py-[60px]">
           <h1 className="text-[40px]">Hvad kan vi hjælpe dig med?</h1>
         </div>
       </Reveal>
 
-      <div className="w-[90%] mx-auto max-w-main z-[1] grid grid-cols-3 gap-[30px] navigation:grid-cols-1">
+      <div className="w-[90%] mx-auto max-w-main z-[1] grid grid-cols-2 gap-[30px] navigation:grid-cols-1">
         {serviceData.map((v) => (
           <ServiceCard Obj={v} key={v} />
         ))}

@@ -3,7 +3,7 @@ import Hero from "@/components/Layout/hero";
 import Description from "@/components/description";
 import Features from "@/components/features";
 import { Laptop } from "lucide-react";
-export default function Uiux() {
+export default function Saas() {
   return (
     <Layout>
       <Hero

@@ -2,7 +2,7 @@ import { CheckCircle2 } from "lucide-react";
 import Link from "next/link";
 export default function Cta() {
   return (
-    <section className="py-[100px] bg-main text-white">
+    <section className="py-[100px] bg-[linear-gradient(rgba(5,29,64,0.9),rgba(5,29,64,0.9)),url(/flyout02.jpg)] bg-center bg-cover text-white">
       <div className="w-[90%] mx-auto max-w-main">
         <h1 className="text-[40px] font-[600] mb-[20px]">
           Lad os tage en snak om dit kommende projekt
