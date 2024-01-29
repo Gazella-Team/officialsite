@@ -8,7 +8,7 @@ export default function Arbejdsprocesser() {
   return (
     <Layout>
       <Hero
-        heading="Arbejdsprocesser"
+        heading="Processer"
         section="udvikling"
         icon={<ArrowLeftRight color="#ffffff" size={70} />}
       />

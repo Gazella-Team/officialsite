@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 const config = {
   content: [
@@ -50,8 +50,8 @@ const config = {
         contactSm: { max: "670px" },
         members: { max: "1069px" },
         membersSm: { max: "860px" },
+        phoneSm: { max: "550px" },
         membersSmallest: { max: "530px" },
-
         blogGrid2: { min: "735px" },
         blogGrid3: { min: "1100px" },
       },
@@ -83,6 +83,6 @@ const config = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+} satisfies Config;
 
-export default config
+export default config;

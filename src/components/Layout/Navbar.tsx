@@ -31,17 +31,13 @@ export default function Navbar() {
 
             <Link href={"/udvikling/techstack"}>Tech stack</Link>
 
-            <Link href={"/anmeldelser"}>Anmeldelser</Link>
-
             <Link href={"/blog"}>Blog</Link>
-
-            <Link href={"/legal"}>Juridisk</Link>
           </div>
         </div>
       </div>
 
       <nav className="fixed w-full bg-white h-[90px] top-[45px] flex items-center z-[10] membersSm:top-0">
-        <div className="w-[96%] mx-auto max-w-[1400px] flex justify-between items-center">
+        <div className="w-[96%] mx-auto max-w-[1400px] flex justify-between items-center phoneSm:w-[90%]">
           <Link href={"/"}>
             <img className="w-[100px]" src="/logosvg.svg"></img>
           </Link>
@@ -68,40 +64,40 @@ export default function Navbar() {
       {menuClicked ? (
         <Opc>
           <div className="overflow-y-auto fixed bg-white left-0 right-0 bottom-0 top-[90px] z-[5]">
-            <div className="w-[90%] max-w-[1400px] overflow-y-auto mx-auto flex text-main flex-col justify-between py-[50px] text-[70px] leading-[130px] hero:text-[70px] hero:leading-[110px] membersSm:text-[50px]">
+            <div className="w-[90%] max-w-[1400px] overflow-y-auto mx-auto flex text-main flex-col justify-between py-[50px] text-[70px] leading-[130px] hero:text-[70px] hero:leading-[110px] membersSm:text-[50px] phoneSm:text-[30px] phoneSm:leading-[70px]">
               <MenuAnimation dlay={0.0}>
-                <div className="w-full border-b-[1px] flex items-center gap-[100px] font-[600] py-[0px] leading-[120px] membersSm:leading-[100px]">
+                <div className="w-full border-b-[1px] flex items-center gap-[100px] font-[600] py-[0px] leading-[120px] membersSm:leading-[100px] phoneSm:leading-[70px]">
                   <h1>01.</h1>
                   <Link href={"/ydelser"}>Ydelser</Link>
                 </div>
               </MenuAnimation>{" "}
               <MenuAnimation dlay={0.1}>
-                <div className="w-full border-b-[1px] flex items-center gap-[100px] font-[600] leading-[120px] membersSm:leading-[100px]">
+                <div className="w-full border-b-[1px] flex items-center gap-[100px] font-[600] leading-[120px] membersSm:leading-[100px] phoneSm:leading-[70px]">
                   <h1>02.</h1>
                   <Link href={"/arbejde"}>Arbejde</Link>
                 </div>
               </MenuAnimation>{" "}
               <MenuAnimation dlay={0.1}>
-                <div className="w-full border-b-[1px] flex items-center gap-[100px] font-[600] leading-[120px] membersSm:leading-[100px]">
+                <div className="w-full border-b-[1px] flex items-center gap-[100px] font-[600] leading-[120px] membersSm:leading-[100px] phoneSm:leading-[70px]">
                   <h1>03.</h1>
                   <Link href={"/udvikling"}>Udvikling</Link>
                 </div>
               </MenuAnimation>{" "}
               <MenuAnimation dlay={0.2}>
-                <div className="w-full border-b-[1px] flex items-center gap-[100px] font-[600] py-[0px] leading-[120px] membersSm:leading-[100px]">
+                <div className="w-full border-b-[1px] flex items-center gap-[100px] font-[600] py-[0px] leading-[120px] membersSm:leading-[100px] phoneSm:leading-[70px]">
                   <h1>04.</h1>
                   <Link href={"/om-os"}>Om os</Link>
                 </div>
               </MenuAnimation>{" "}
               <MenuAnimation dlay={0.3}>
-                <div className="w-full border-b-[1px] flex items-center gap-[100px] font-[600] py-[0px] leading-[120px] membersSm:leading-[100px]">
+                <div className="w-full border-b-[1px] flex items-center gap-[100px] font-[600] py-[0px] leading-[120px] membersSm:leading-[100px] phoneSm:leading-[70px]">
                   <h1>05.</h1>
                   <Link href={"/kontakt"}>Kontakt</Link>
                 </div>
               </MenuAnimation>{" "}
               <MenuAnimation dlay={0.4}>
                 <EstimateSheet>
-                  <div className="w-full border-b-[1px] flex items-center gap-[100px] font-[600] py-[0px] cursor-pointer membersSm:leading-[100px]">
+                  <div className="w-full border-b-[1px] flex items-center gap-[100px] font-[600] py-[0px] cursor-pointer membersSm:leading-[100px] phoneSm:leading-[70px]">
                     <h1>06.</h1>
                     <h1>Estimér pris</h1>
                   </div>

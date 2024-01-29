@@ -16,7 +16,7 @@ export default function Hero({
           <p className="text-white mb-[14px] uppercase">/ {section}</p>
           <div className="flex items-center gap-[20px]">
             <div className="mid:hidden">{icon}</div>
-            <h1 className="text-[80px] font-[500] w-[80%] leading-[80px] text-white mid:text-[50px] mid:leading-[60px] lg:text-[60px] lg:leading-[70px]">
+            <h1 className="text-[80px] font-[500] w-[80%] leading-[80px] text-white  lg:text-[60px] lg:leading-[70px]">
               {heading}
             </h1>
           </div>

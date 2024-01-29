@@ -140,7 +140,6 @@ export default function Footer() {
               <div className="flex items-center gap-[30px]">
                 <Link href={"/hvorfor-os"}>Hvorfor Gazella Team</Link>
                 <Link href={"/blog"}>Blog</Link>
-                <Link href={"/anmeldelser"}>Anmeldelser</Link>
               </div>
               <Link
                 href={"https://www.linkedin.com/company/gazellateam/"}
