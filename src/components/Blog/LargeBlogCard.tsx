@@ -16,9 +16,6 @@ export default function LargeBlogCard({ date, title, summary, author, authorTitl
     return (
         <Link href={href || "/blog"} passHref>
             <style jsx>{`
-                article:hover{
-                    background-color: #e4eefd;
-                }
                 .image-overlay{
                     background: linear-gradient(180deg, rgba(255,255,255,0) 50%, rgba(0,0,0,0.5) 75%);
                     width: 100%;
@@ -29,19 +26,19 @@ export default function LargeBlogCard({ date, title, summary, author, authorTitl
                     z-index: 1;
                 }
             `}</style>
-            <article className="flex flex-col md:flex-row gap-4 md:gap-8 items-center hover:p-4 rounded-lg transition-all">
-                <div className="flex-1 relative">
-                    <img alt="Blog" className="w-full h-auto object-cover rounded-lg" src={image}/>
+            <article className="flex flex-col md:flex-row gap-4 md:gap-8 md:items-center group rounded-lg transition-all">
+                <div className="flex-1 relative overflow-hidden rounded-lg">
+                    <img alt="Blog" className="w-full h-auto object-cover rounded-lg group-hover:scale-105 transition-all" src={image}/>
                     <div className="z-[2] absolute bottom-0 right-0 p-4">
                         <p className="text-main font-medium text-xs bg-white py-1 px-2 rounded-md">6 min. læsning</p>
                     </div>
                     <div className="image-overlay"/>
                 </div>
-                <div className="flex-1">
+                <div className="flex flex-col flex-1 gap-2">
                     <p className="text-sm text-gray-500">{date}</p>
                     <h2 className="text-xl font-semibold text-main">{title}</h2>
-                    <p className="pt-4 pb-4 text-gray-700">{summary}</p>
-                    <div className="flex flex-row">
+                    <p className="hidden md:inline pt-4 pb-4 text-gray-700 text-sm lg:text-base">{summary}</p>
+                    <div className="hidden md:flex flex-row">
                         <div className="flex items-center gap-2 text-main font-medium hover:underline">
                             <p>Læs mere</p>
                             <ArrowRight size={20} />

@@ -16,9 +16,6 @@ export default function SmallBlogCard({ date, title, summary, author, authorTitl
     return (
         <Link href={href || "/blog"} passHref>
             <style jsx>{`
-                article:hover{
-                    background-color: #e4eefd;
-                }
                 .image-overlay{
                     background: linear-gradient(180deg, rgba(255,255,255,0) 50%, rgba(0,0,0,0.5) 75%);
                     width: 100%;
@@ -30,10 +27,10 @@ export default function SmallBlogCard({ date, title, summary, author, authorTitl
                 }
             `}</style>
             <article 
-                className={`active:scale-95 flex flex-col gap-4 items-center group hover:p-4 rounded-lg cursor-pointer transition-all`}
+                className={`active:scale-95 flex flex-col gap-4 group rounded-lg cursor-pointer transition-all`}
             >
-                <div className="flex-1 relative">
-                    <img alt="Blog" className="w-full h-auto object-cover rounded-lg" src={image}/>
+                <div className="flex-1 relative overflow-hidden rounded-lg">
+                    <img alt="Blog" className="w-full h-auto object-cover rounded-lg group-hover:scale-105 transition-all" src={image}/>
                     <div className="z-[2] absolute bottom-0 right-0 p-4">
                         <p className="text-main font-medium text-xs bg-white py-1 px-2 rounded-md">6 min. læsning</p>
                     </div>

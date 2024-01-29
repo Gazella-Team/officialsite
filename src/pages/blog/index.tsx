@@ -41,7 +41,7 @@ export default function BlogList() {
           image="/cases/organicmasterclass/organicmasterclass.jpg"
           href="/blog/soadan-maler-du-effekten-af-brand-awareness-kampagner"
         />
-        <div className="grid grid-cols-1 blogGrid2:grid-cols-2 blogGrid3:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 blogGrid2:grid-cols-2 blogGrid3:grid-cols-3 gap-x-6 gap-y-10">
           <SmallBlogCard
             date="February 14, 2023"
             title="Sådan måler du effekten af brand awareness kampagner"
