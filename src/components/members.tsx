@@ -56,8 +56,8 @@ const MemberCard = (props: any) => {
           src={isHovered ? props.Obj.secondImageUrl : props.Obj.imageUrl}
         ></img>
 
-        <h1 className="text-[20px] font-[500]">{props.Obj.name}</h1>
-        <p className="text-gray-700">{props.Obj.position}</p>
+        <h1 className="text-[20px] font-[500] text-main">{props.Obj.name}</h1>
+        <p className="text-gray-600 font-light">{props.Obj.position}</p>
       </div>
     </Reveal>
   );
