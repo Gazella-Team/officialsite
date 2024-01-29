@@ -1,8 +1,13 @@
 import SmallBlogCard from "@/components/Blog/SmallBlogCard";
 import Layout from "@/components/Layout";
 import Meta from "@/components/Layout/Meta";
+import { motion, useScroll } from "framer-motion";
+import { useEffect, useState } from "react";
 
 export default function BlogItem(){
+
+    const { scrollYProgress } = useScroll();
+    
     return (
         <Layout>
             <Meta
@@ -11,7 +16,12 @@ export default function BlogItem(){
             >
                 <link rel="canonical" href="https://gazellateam.com/blog/soadan-maler-du-effekten-af-brand-awareness-kampagner" />
             </Meta>
-            <div className="bg-white">
+            <style jsx>{`
+                .active {
+                    color: #062c63;
+                }
+            `}</style>
+            <div className="bg-white relative">
                 <div className="pb-32 pt-24 bg-gradient-to-r from-[#062c63] via-main to-[#062c63] flex flex-col justify-center">
                     <div className="w-[90%] mx-auto max-w-2xl">
                         <div className="flex flex-col justify-center text-center items-center h-full gap-4">
@@ -23,9 +33,10 @@ export default function BlogItem(){
                         </div>
                     </div>
                 </div>
-                <div className="w-[95%] py-8 pt-16 mx-auto max-w-main overflow-hidden flex flex-col md:flex-row gap-8">
+                <motion.div className="h-[10px] bg-main origin-left sticky top-[8.4rem] membersSm:top-[5.4rem] z-[2]" style={{ scaleX: scrollYProgress }} />  
+                <div className="w-[95%] py-8 pt-16 mx-auto max-w-main flex flex-col md:flex-row gap-8 md:gap-16">
                     <aside className="relative flex-shrink">
-                        <div className="sticky top-2 flex flex-col gap-4">
+                        <div className="sticky top-48 flex flex-col gap-4">
                             <div className="flex flex-col gap-1">
                                 <p className="text-lg font-medium text-main">Indholdsfortegnelse</p>
                                 <ul className="text-base text-gray-600">
@@ -50,10 +61,168 @@ export default function BlogItem(){
                         </div>
                     </aside>
                     <article className="relative md:flex-1 w-full mx-auto max-w-none">
-                        Wjhatu
+                        <h2 id="hvad-er-brand-awareness" className="text-3xl font-medium text-main">Hvad er brand awareness?</h2>
+                        <p className="text-base text-gray-600">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis tincidunt
+                            ultricies, sapien nisl faucibus orci, sed ultrices quam velit quis orci. Nulla facilisi.
+                            Donec ac magna sit amet elit cursus aliquet. In hac habitasse platea dictumst. Sed
+                            scelerisque, leo eget commodo aliquet, tortor massa ultricies enim, nec ultricies velit
+                            libero quis ante. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            ultricies enim, nec ultricies velit libero quis ante.
+                            <br/><br/>
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                        </p>
+                        <h2 id="hvordan-maler-du-effekten-af-brand-awareness" className="text-3xl font-medium text-main">Hvordan måler du effekten af brand awareness?</h2>
+                        <p className="text-base text-gray-600">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis tincidunt
+                            ultricies, sapien nisl faucibus orci, sed ultrices quam velit quis orci. Nulla facilisi.
+                            Donec ac magna sit amet elit cursus aliquet. In hac habitasse platea dictumst. Sed
+                            scelerisque, leo eget commodo aliquet, tortor massa ultricies enim, nec ultricies velit
+                            libero quis ante. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            ultricies enim, nec ultricies velit libero quis ante.
+                            <br/><br/>
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                        </p>
+                        <h2 id="konklusion" className="text-3xl font-medium text-main">Konklussion?</h2>
+                        <p className="text-base text-gray-600">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis tincidunt
+                            ultricies, sapien nisl faucibus orci, sed ultrices quam velit quis orci. Nulla facilisi.
+                            Donec ac magna sit amet elit cursus aliquet. In hac habitasse platea dictumst. Sed
+                            scelerisque, leo eget commodo aliquet, tortor massa ultricies enim, nec ultricies velit
+                            libero quis ante. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            ultricies enim, nec ultricies velit libero quis ante.
+                            <br/><br/>
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                            Etiam euismod, nisl quis tincidunt ultricies, sapien nisl faucibus orci, sed ultrices quam
+                            velit quis orci. Nulla facilisi. Donec ac magna sit amet elit cursus aliquet. In hac
+                            habitasse platea dictumst. Sed scelerisque, leo eget commodo aliquet, tortor massa
+                        </p>
                     </article>
                 </div>
-                <div className="w-[95%] py-8 mb-16 mx-auto max-w-main flex flex-col gap-2">
+                <div className="w-[95%] py-8 mb-16 mx-auto max-w-main flex flex-col gap-6">
                     <p className="text-2xl font-medium text-main">Lignende artikler</p>
                     <div className="grid grid-cols-1 blogGrid2:grid-cols-2 blogGrid3:grid-cols-3 gap-x-6 gap-y-10">
                         <SmallBlogCard
