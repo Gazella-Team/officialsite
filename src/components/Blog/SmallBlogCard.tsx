@@ -1,7 +1,6 @@
-import { ArrowRight, ArrowRightToLine } from "lucide-react";
 import Link from "next/link";
 
-type LargeBlogCard = {
+type SmallBlogCard = {
     date: string;
     title: string;
     summary: string;
@@ -12,7 +11,8 @@ type LargeBlogCard = {
     href?: string;
 }
 
-export default function LargeBlogCard({ date, title, summary, author, authorTitle, authorImage, image, href }: LargeBlogCard){
+export default function SmallBlogCard({ date, title, summary, author, authorTitle, authorImage, image, href }: SmallBlogCard){
+
     return (
         <Link href={href || "/blog"} passHref>
             <style jsx>{`
@@ -29,7 +29,9 @@ export default function LargeBlogCard({ date, title, summary, author, authorTitl
                     z-index: 1;
                 }
             `}</style>
-            <article className="flex flex-col md:flex-row gap-4 md:gap-8 items-center p-4 rounded-lg transition-all">
+            <article 
+                className={`active:scale-95 flex flex-col gap-4 items-center group p-4 rounded-lg cursor-pointer transition-all`}
+            >
                 <div className="flex-1 relative">
                     <img alt="Blog" className="w-full h-auto object-cover rounded-lg" src={image}/>
                     <div className="z-[2] absolute bottom-0 right-0 p-4">
@@ -40,13 +42,6 @@ export default function LargeBlogCard({ date, title, summary, author, authorTitl
                 <div className="flex-1">
                     <p className="text-sm text-gray-500">{date}</p>
                     <h2 className="text-xl font-semibold text-main">{title}</h2>
-                    <p className="pt-4 pb-4 text-gray-700">{summary}</p>
-                    <div className="flex flex-row">
-                        <div className="flex items-center gap-2 text-main font-medium hover:underline">
-                            <p>Læs mere</p>
-                            <ArrowRight size={20} />
-                        </div>
-                    </div>
                 </div>
             </article>
         </Link>

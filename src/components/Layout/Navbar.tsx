@@ -67,7 +67,7 @@ export default function Navbar() {
 
       {menuClicked ? (
         <Opc>
-          <div className="overflow-y-auto fixed bg-white left-0 right-0 bottom-0 top-[90px] z-[1]">
+          <div className="overflow-y-auto fixed bg-white left-0 right-0 bottom-0 top-[90px] z-[5]">
             <div className="w-[90%] max-w-[1400px] overflow-y-auto mx-auto flex text-main flex-col justify-between py-[50px] text-[70px] leading-[130px] hero:text-[70px] hero:leading-[110px] membersSm:text-[50px]">
               <MenuAnimation dlay={0.0}>
                 <div className="w-full border-b-[1px] flex items-center gap-[100px] font-[600] py-[0px] leading-[120px] membersSm:leading-[100px]">

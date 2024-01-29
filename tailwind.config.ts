@@ -51,6 +51,9 @@ const config = {
         members: { max: "1069px" },
         membersSm: { max: "860px" },
         membersSmallest: { max: "530px" },
+
+        blogGrid2: { min: "735px" },
+        blogGrid3: { min: "1100px" },
       },
       maxWidth: {
         main: "1300px",

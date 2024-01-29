@@ -7,6 +7,7 @@ import Link from "next/link";
 import Hero from "@/components/Layout/hero";
 import Description from "@/components/description";
 import { BookCopy } from "lucide-react";
+import SmallBlogCard from "@/components/Blog/SmallBlogCard";
 
 export default function BlogList() {
   return (
@@ -40,26 +41,68 @@ export default function BlogList() {
           image="/cases/organicmasterclass/organicmasterclass.jpg"
           href="/blog/soadan-maler-du-effekten-af-brand-awareness-kampagner"
         />
-        <LargeBlogCard
-          date="February 14, 2023"
-          title="Sådan måler du effekten af brand awareness kampagner"
-          summary="Har du problemer med at måle effekten af dine brand awareness influencer kampagner? I dette indlæg gennemgår jeg 4 metoder hvorpå du kan måle effekten af din brand awareness, uden at skulle frem med den helt store pengepung."
-          author="Mathias Kokfelt"
-          authorTitle="Marketing Manager"
-          authorImage="/simonmaribo.jpg"
-          image="/cases/organicmasterclass/organicmasterclass.jpg"
-          href="/blog/soadan-maler-du-effekten-af-brand-awareness-kampagner"
-        />
-        <LargeBlogCard
-          date="February 14, 2023"
-          title="Sådan måler du effekten af brand awareness kampagner"
-          summary="Har du problemer med at måle effekten af dine brand awareness influencer kampagner? I dette indlæg gennemgår jeg 4 metoder hvorpå du kan måle effekten af din brand awareness, uden at skulle frem med den helt store pengepung."
-          author="Mathias Kokfelt"
-          authorTitle="Marketing Manager"
-          authorImage="/simonmaribo.jpg"
-          image="/cases/organicmasterclass/organicmasterclass.jpg"
-          href="/blog/soadan-maler-du-effekten-af-brand-awareness-kampagner"
-        />
+        <div className="grid grid-cols-1 blogGrid2:grid-cols-2 blogGrid3:grid-cols-3 gap-4">
+          <SmallBlogCard
+            date="February 14, 2023"
+            title="Sådan måler du effekten af brand awareness kampagner"
+            summary="Har du problemer med at måle effekten af dine brand awareness influencer kampagner? I dette indlæg gennemgår jeg 4 metoder hvorpå du kan måle effekten af din brand awareness, uden at skulle frem med den helt store pengepung."
+            author="Mathias Kokfelt"
+            authorTitle="Marketing Manager"
+            authorImage="/simonmaribo.jpg"
+            image="/cases/organicmasterclass/organicmasterclass.jpg"
+            href="/blog/soadan-maler-du-effekten-af-brand-awareness-kampagner"
+          />
+          <SmallBlogCard
+            date="February 14, 2023"
+            title="Sådan måler du effekten af brand awareness kampagner"
+            summary="Har du problemer med at måle effekten af dine brand awareness influencer kampagner? I dette indlæg gennemgår jeg 4 metoder hvorpå du kan måle effekten af din brand awareness, uden at skulle frem med den helt store pengepung."
+            author="Mathias Kokfelt"
+            authorTitle="Marketing Manager"
+            authorImage="/simonmaribo.jpg"
+            image="/cases/organicmasterclass/organicmasterclass.jpg"
+            href="/blog/soadan-maler-du-effekten-af-brand-awareness-kampagner"
+          />
+          <SmallBlogCard
+            date="February 14, 2023"
+            title="Sådan måler du effekten af brand awareness kampagner"
+            summary="Har du problemer med at måle effekten af dine brand awareness influencer kampagner? I dette indlæg gennemgår jeg 4 metoder hvorpå du kan måle effekten af din brand awareness, uden at skulle frem med den helt store pengepung."
+            author="Mathias Kokfelt"
+            authorTitle="Marketing Manager"
+            authorImage="/simonmaribo.jpg"
+            image="/cases/organicmasterclass/organicmasterclass.jpg"
+            href="/blog/soadan-maler-du-effekten-af-brand-awareness-kampagner"
+          />
+          <SmallBlogCard
+            date="February 14, 2023"
+            title="Sådan måler du effekten af brand awareness kampagner"
+            summary="Har du problemer med at måle effekten af dine brand awareness influencer kampagner? I dette indlæg gennemgår jeg 4 metoder hvorpå du kan måle effekten af din brand awareness, uden at skulle frem med den helt store pengepung."
+            author="Mathias Kokfelt"
+            authorTitle="Marketing Manager"
+            authorImage="/simonmaribo.jpg"
+            image="/cases/organicmasterclass/organicmasterclass.jpg"
+            href="/blog/soadan-maler-du-effekten-af-brand-awareness-kampagner"
+          />
+          <SmallBlogCard
+            date="February 14, 2023"
+            title="Sådan måler du effekten af brand awareness kampagner"
+            summary="Har du problemer med at måle effekten af dine brand awareness influencer kampagner? I dette indlæg gennemgår jeg 4 metoder hvorpå du kan måle effekten af din brand awareness, uden at skulle frem med den helt store pengepung."
+            author="Mathias Kokfelt"
+            authorTitle="Marketing Manager"
+            authorImage="/simonmaribo.jpg"
+            image="/cases/organicmasterclass/organicmasterclass.jpg"
+            href="/blog/soadan-maler-du-effekten-af-brand-awareness-kampagner"
+          />
+          <SmallBlogCard
+            date="February 14, 2023"
+            title="Sådan måler du effekten af brand awareness kampagner"
+            summary="Har du problemer med at måle effekten af dine brand awareness influencer kampagner? I dette indlæg gennemgår jeg 4 metoder hvorpå du kan måle effekten af din brand awareness, uden at skulle frem med den helt store pengepung."
+            author="Mathias Kokfelt"
+            authorTitle="Marketing Manager"
+            authorImage="/simonmaribo.jpg"
+            image="/cases/organicmasterclass/organicmasterclass.jpg"
+            href="/blog/soadan-maler-du-effekten-af-brand-awareness-kampagner"
+          />
+        </div>
       </div>
     </Layout>
   );
