@@ -29,7 +29,7 @@ export default function LargeBlogCard({ date, title, summary, author, authorTitl
                     z-index: 1;
                 }
             `}</style>
-            <article className="flex flex-col md:flex-row gap-4 md:gap-8 items-center p-4 rounded-lg transition-all">
+            <article className="flex flex-col md:flex-row gap-4 md:gap-8 items-center hover:p-4 rounded-lg transition-all">
                 <div className="flex-1 relative">
                     <img alt="Blog" className="w-full h-auto object-cover rounded-lg" src={image}/>
                     <div className="z-[2] absolute bottom-0 right-0 p-4">

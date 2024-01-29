@@ -30,7 +30,7 @@ export default function SmallBlogCard({ date, title, summary, author, authorTitl
                 }
             `}</style>
             <article 
-                className={`active:scale-95 flex flex-col gap-4 items-center group p-4 rounded-lg cursor-pointer transition-all`}
+                className={`active:scale-95 flex flex-col gap-4 items-center group hover:p-4 rounded-lg cursor-pointer transition-all`}
             >
                 <div className="flex-1 relative">
                     <img alt="Blog" className="w-full h-auto object-cover rounded-lg" src={image}/>
