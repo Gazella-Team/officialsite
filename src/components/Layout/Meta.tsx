@@ -7,6 +7,7 @@ const Meta = ({
   icon = "/favicon.ico",
   banner = "/seo/banner.png",
   url = "https://gazellateam.com",
+  children,
 }: {
   title?: string;
   keywords?: string;
@@ -14,6 +15,7 @@ const Meta = ({
   icon?: string;
   banner?: string;
   url?: string;
+  children?: React.ReactNode;
 }) => {
   return (
     <Head>
@@ -62,6 +64,7 @@ const Meta = ({
         key="twitter:description"
       />
       <meta property="twitter:image" content={banner} key="twitter:banner" />
+      {children}
     </Head>
   );
 };
