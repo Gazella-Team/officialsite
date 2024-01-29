@@ -41,7 +41,7 @@ export default function Navbar() {
       </div>
 
       <nav className="fixed w-full bg-white h-[90px] top-[45px] flex items-center z-[10] membersSm:top-0">
-        <div className="w-[94%] mx-auto max-w-[1400px] flex justify-between items-center">
+        <div className="w-[96%] mx-auto max-w-[1400px] flex justify-between items-center">
           <Link href={"/"}>
             <img className="w-[100px]" src="/logosvg.svg"></img>
           </Link>

@@ -1,6 +1,14 @@
 import { Reveal } from "../Animations/Reveal";
 
-export default function Hero({ section, icon, heading }: { section: string, icon: React.ReactNode, heading: string}) {
+export default function Hero({
+  section,
+  icon,
+  heading,
+}: {
+  section: string;
+  icon: React.ReactNode;
+  heading: string;
+}) {
   return (
     <section className="bg-[linear-gradient(rgba(5,29,64,0.30),rgba(5,29,64,1)),url(/flyout.jpg)] bg-center bg-cover pt-[300px] pb-[70px]">
       <Reveal>
