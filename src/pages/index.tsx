@@ -17,10 +17,15 @@ export default function Index() {
           <Reveal>
             <div className="w-[90%] mx-auto max-w-main">
               <p className="text-white mb-[14px] uppercase">/ gazella team</p>
-              <div className="flex items-center gap-[20px]">
-                <h1 className="text-[80px] font-[500] w-[80%] leading-[80px] text-white  lg:text-[60px] lg:leading-[70px]">
+              <div className="text-white">
+                <h1 className="text-[80px] font-[500] w-[80%] leading-[80px] text-white mb-[30px] lg:text-[60px] lg:leading-[70px]">
                   Et moderne software bureau med fokus på ny teknologi
                 </h1>
+                <p className="text-[20px] w-[60%]">
+                  Gazella Team udgør et hold af ambitiøse, nytænkende og
+                  storsmilende programmøre og designere, som hver dag brænder
+                  for at skabe unikke digitale produkter.
+                </p>
               </div>
             </div>
           </Reveal>
