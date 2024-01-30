@@ -21,7 +21,7 @@ export default function Index() {
                 <h1 className="text-[80px] font-[500] w-[80%] leading-[80px] text-white mb-[30px] lg:text-[60px] lg:leading-[70px]">
                   Et moderne software bureau med fokus på ny teknologi
                 </h1>
-                <p className="text-[20px] w-[60%]">
+                <p className="text-[20px] w-[60%] font-light">
                   Gazella Team udgør et hold af ambitiøse, nytænkende og
                   storsmilende programmøre og designere, som hver dag brænder
                   for at skabe unikke digitale produkter.
