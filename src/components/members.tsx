@@ -23,7 +23,7 @@ const memberData = [
     secondImageUrl: "/simonmaribo.jpg",
   },
   {
-    name: "Mik Lønborg",
+    name: "Default Name",
     position: "Marketing og PR",
     imageUrl: "/emptymember.jpg",
     secondImageUrl: "/simonmaribo.jpg",
