@@ -13,30 +13,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="bg-main flex items-center text-white h-[45px] fixed w-full z-[10] membersSm:hidden">
-        <div className="w-[96%] max-w-[1400px] mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-[30px] font-light text-[14px]">
-            <Link className="flex items-center gap-[6px]" href={"mail"}>
-              <Mail size={16} />
-              hey@gazellateam.com
-            </Link>
-
-            <Link className="flex items-center gap-[6px]" href={"mail"}>
-              <Phone size={16} />
-              +45 5069 5272
-            </Link>
-          </div>
-          <div className="flex items-center gap-[20px] font-light text-[14px]">
-            <Link href={"/hvorfor-os"}>Hvorfor Gazella Team</Link>
-
-            <Link href={"/udvikling/techstack"}>Tech stack</Link>
-
-            <Link href={"/blog"}>Blog</Link>
-          </div>
-        </div>
-      </div>
-
-      <nav className="fixed w-full bg-white h-[90px] top-[45px] flex items-center z-[10] membersSm:top-0">
+      <nav className="fixed w-full bg-white h-[90px] flex items-center z-[10] membersSm:top-0">
         <div className="w-[96%] mx-auto max-w-[1400px] flex justify-between items-center phoneSm:w-[90%]">
           <Link href={"/"}>
             <img className="w-[100px]" src="/logosvg.svg"></img>
