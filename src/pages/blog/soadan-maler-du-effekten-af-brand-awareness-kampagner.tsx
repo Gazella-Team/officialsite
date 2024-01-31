@@ -33,7 +33,7 @@ export default function BlogItem(){
                         </div>
                     </div>
                 </div>
-                <motion.div className="h-[10px] bg-main origin-left sticky top-0 z-[2]" style={{ scaleX: scrollYProgress }} />  
+                <motion.div className="h-[10px] bg-main origin-left sticky top-0 z-[80]" style={{ scaleX: scrollYProgress }} />  
                 <div className="w-[95%] py-8 pt-16 mx-auto max-w-main flex flex-col md:flex-row gap-8 md:gap-16">
                     <aside className="relative flex-shrink">
                         <div className="sticky top-48 flex flex-col gap-4">
