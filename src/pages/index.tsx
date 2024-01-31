@@ -13,7 +13,7 @@ export default function Index() {
     <>
       <Meta />
       <Layout>
-        <section className="bg-[linear-gradient(rgba(5,29,64,0.30),rgba(5,29,64,1)),url(/flyout.jpg)] bg-center bg-cover pt-[350px] pb-[70px]">
+        <section className="bg-[linear-gradient(rgba(5,29,64,0.30),rgba(5,29,64,1)),url(/flyout.jpg)] bg-center bg-cover pt-[350px] pb-[70px] h-[90vh]">
           <Reveal>
             <div className="w-[90%] mx-auto max-w-main">
               <p className="text-white mb-[14px] uppercase">/ gazella team</p>
