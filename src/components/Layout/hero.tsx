@@ -10,7 +10,7 @@ export default function Hero({
   heading: string;
 }) {
   return (
-    <section className="bg-[linear-gradient(rgba(5,29,64,0.30),rgba(5,29,64,1)),url(/flyout.jpg)] bg-center bg-cover pt-[300px] pb-[70px] w-[96%] mx-auto max-w-[1500px] rounded-[14px]">
+    <section className="bg-[linear-gradient(rgba(5,29,64,0.30),rgba(5,29,64,1)),url(/flyout.jpg)] bg-center bg-cover pt-[400px] pb-[70px] w-[96%] mx-auto max-w-[1500px] rounded-[14px]">
       <Reveal>
         <div className="w-[90%] mx-auto max-w-main">
           <p className="text-white mb-[14px] uppercase">/ {section}</p>
