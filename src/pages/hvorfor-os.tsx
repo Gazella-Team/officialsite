@@ -7,6 +7,7 @@ export default function HvorforOs() {
   return (
     <Layout>
       <Hero
+      background="bg-[linear-gradient(rgba(5,29,64,0.30),rgba(5,29,64,1)),url(/herobg/webdev.jpg)] bg-top bg-cover"
         heading="Hvorfor os"
         section="virksomheden"
         icon={<Heart color="#ffffff" size={70} />}

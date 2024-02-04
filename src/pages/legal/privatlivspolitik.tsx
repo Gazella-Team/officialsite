@@ -12,6 +12,7 @@ export default function Privatlivspolitik() {
         description="Vi arbejder hele tiden på at skrive nye artikler, hvor vores team deler ud af tips & tricks i forhold til hvordan du laver din hjemmeside."
       />
       <Hero
+      background="bg-[linear-gradient(rgba(5,29,64,0.30),rgba(5,29,64,1)),url(/herobg/webdev.jpg)] bg-top bg-cover"
         icon={<BookLock color="#ffffff" size={70} />}
         section="legal"
         heading="Privatlivspolitik"
