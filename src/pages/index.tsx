@@ -13,7 +13,7 @@ export default function Index() {
     <>
       <Meta />
       <Layout>
-        <Hero icon={null} section="gazella team" heading="Software" />
+        <Hero icon={null} section="gazella team" heading="De bedste" />
       </Layout>
     </>
   );
