@@ -12,6 +12,7 @@ export default function Omos() {
         description="Gazella Team udgør et hold af ambitiøse, nytænkende og storsmilende programmøre og designere, som hver dag brænder for at skabe unikke digitale produkter. "
       />
       <Hero
+      background="bg-[linear-gradient(rgba(5,29,64,0.30),rgba(5,29,64,1)),url(/flyout.jpg)] bg-top bg-cover"
         heading="Hvem er vi"
         section="om os"
         icon={<Building2 color="#ffffff" size={70} />}

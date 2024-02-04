@@ -18,18 +18,25 @@ export default function Navbar() {
           <Link href={"/"}>
             <img className="w-[90px]" src="/logosvg.svg"></img>
           </Link>
-
+          <div className="flex items-center gap-[40px] font-light">
+            <div className="flex items-center justify-end gap-[30px] lg:hidden">
+              <Link href={"/ydelser"}>Ydelser</Link>
+              <Link href={"/arbejde/cases"}>Arbejde</Link>
+              <Link href={"/om-os"}>Om os</Link>
+              <Link href={"/blog"}>Blog</Link>
+              <Link href={"/kontakt"}>Kontakt</Link>
+            </div>
           <div className="flex items-center gap-[40px] font-medium">
             <EstimateSheet>
-              <div className="hidden md:flex cursor-pointer select-none px-6 py-2 font-medium flex items-center gap-[6px] text-center transition-all bg-white border-[1px] rounded-full text-main hover:text-white hover:bg-main">
+              <div className="hidden md:flex cursor-pointer select-none px-6 py-2 font-medium items-center gap-[6px] text-center transition-all bg-white border-[1px] rounded-[8px] text-main hover:text-white hover:bg-main">
                 <p className="font-light">Få et estimat på dit projekt</p>
                 <ArrowUpRight size={20} />
               </div>
             </EstimateSheet>
-
-            <div
+          </div>
+          <div
               onClick={() => setMenuClicked(!menuClicked)}
-              className="flex items-center gap-[8px] cursor-pointer"
+              className="hidden lg:flex items-center gap-[8px] cursor-pointer"
             >
               <p className="font-light">Menu</p>
               {menuClicked ? <X size={20} /> : <Menu size={20} />}

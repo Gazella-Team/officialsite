@@ -2,7 +2,7 @@ import { Reveal } from "./Animations/Reveal";
 
 export default function Features(props: any) {
   return (
-    <section className="py-[60px] border-b-[1px]">
+    <section className="py-[60px]">
       <div className="w-[90%] mx-auto grid grid-cols-features max-w-main xl:grid-cols-1">
         <div className="grid grid-cols-3 gap-[30px] gap-y-[30px] mid:grid-cols-1">
           {props.Obj.map((v: any, index: any) => (

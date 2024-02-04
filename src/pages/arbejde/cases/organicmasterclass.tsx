@@ -20,24 +20,24 @@ export default function OrganicMasterclass() {
             </Reveal>
           </div>
         </section>
-        <div className="w-[90%] mx-auto bg-white mt-[-140px] rounded-[6px] py-[50px] px-[50px] mb-[60px] border-[1px] grid grid-cols-1 gap-[30px]">
-          <div className="grid grid-cols-4 gap-[20px]">
+        <div className="w-[90%] max-w-main mx-auto bg-white mt-[-140px] rounded-[6px] py-[50px] px-[50px] mb-[60px] border-[1px] grid grid-cols-1 gap-[30px]">
+          <div className="grid grid-cols-4 gap-[20px] caseDisplayOne:grid-cols-2">
             <Reveal>
               <div className="bg-gray-100 rounded-[6px] p-[30px] border-[1px]">
-                <h1 className="font-[600] text-[20px] mb-[6px]">Klient</h1>
-                <p className="text-gray-600">Organic Masterclass</p>
+                <h1 className="font-[600] text-[20px] mb-[6px] text-main">Klient</h1>
+                <p className="text-gray-600 font-light">Organic Masterclass</p>
               </div>
             </Reveal>
             <Reveal>
               <div className="bg-gray-100 rounded-[6px] p-[30px] border-[1px]">
-                <h1 className="font-[600] text-[20px] mb-[6px]">Ydelse</h1>
-                <p className="text-gray-600">Landingsside</p>
+                <h1 className="font-[600] text-[20px] mb-[6px] text-main">Ydelse</h1>
+                <p className="text-gray-600 font-light">Landingsside</p>
               </div>
             </Reveal>
             <Reveal>
               <div className="bg-gray-100 rounded-[6px] p-[30px] border-[1px]">
-                <h1 className="font-[600] text-[20px] mb-[6px]">Dato</h1>
-                <p className="text-gray-600">25/01/2024</p>
+                <h1 className="font-[600] text-[20px] mb-[6px] text-main">Dato</h1>
+                <p className="text-gray-600 font-light">25/01/2024</p>
               </div>
             </Reveal>
 
@@ -61,7 +61,7 @@ export default function OrganicMasterclass() {
                 </Reveal>
                 <div className="flex flex-col items-center justify-center">
                   <Reveal>
-                    <h1 className="italic text-[20px] font-[300] text-gray-700 mb-[50px]">
+                    <h1 className="italic text-[20px] font-light text-gray-700 mb-[50px]">
                       " Vi hos Organic Masterclass har haft fornøjelsen af at
                       samarbejde med Gazella Team, og vi kan kun takke for den
                       fantastiske service og den imponerende hjemmeside, de har
@@ -89,7 +89,7 @@ export default function OrganicMasterclass() {
                       <h1 className="text-[20px] font-[600] text-main">
                         Sebastian Madsen
                       </h1>
-                      <p className="text-gray-600">
+                      <p className="text-gray-600 font-light">
                         Medstifter, Organic Masterclass
                       </p>
                     </div>

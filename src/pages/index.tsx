@@ -13,7 +13,19 @@ export default function Index() {
     <>
       <Meta />
       <Layout>
-        <Hero icon={null} section="gazella team" heading="De bedste" />
+      <section className="bg-[linear-gradient(rgba(5,29,64,0.30),rgba(5,29,64,1)),url(/flyout.jpg)] bg-top bg-cover pt-[400px] pb-[70px] w-[96%] mx-auto max-w-[1500px] rounded-[14px]">
+      <Reveal>
+        <div className="w-[90%] mx-auto max-w-main">
+          <p className="text-white mb-[14px] uppercase">/ Gazella Team</p>
+          <div className="flex items-center gap-[20px]">
+          
+            <h1 className="text-[80px] font-[500] w-[80%] leading-[80px] text-white  lg:text-[60px] lg:leading-[70px]">
+              Et moderne software bureau med fokus på ny teknologi
+            </h1>
+          </div>
+        </div>
+      </Reveal>
+    </section>
       </Layout>
     </>
   );

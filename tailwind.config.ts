@@ -54,6 +54,7 @@ const config = {
         membersSmallest: { max: "530px" },
         blogGrid2: { min: "735px" },
         blogGrid3: { min: "1100px" },
+        caseDisplayOne: {max: "1169px"}
       },
       maxWidth: {
         main: "1300px",

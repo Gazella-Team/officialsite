@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="flex justify-between border-b-[1px] pb-[60px] mb-[20px] footer:flex-col footer: gap-[80px]">
             <div className="w-[16%] footer:w-full">
               <img className="w-[100px] mb-[20px]" src="/logosvg.svg"></img>
-              <p className="mb-[20px] text-gray-600">
+              <p className="mb-[20px] text-gray-600 font-light">
                 Vi udvikler brugbar software til virksomheder
               </p>
               <a href="tel:+4550695272" className="font-[500] text-main">
@@ -21,7 +21,7 @@ export default function Footer() {
                 <h1 className="text-[18px] font-[600] mb-[20px] text-main">
                   Ydelser
                 </h1>
-                <div className="flex flex-col gap-[12px] text-gray-600">
+                <div className="flex flex-col gap-[12px] text-gray-600 font-light">
                   <Link
                     className="transition-all hover:text-main"
                     href={"/ydelser/webudvikling"}
@@ -52,7 +52,7 @@ export default function Footer() {
                 <h1 className="text-[18px] font-[600] mb-[20px] text-main">
                   Arbejde
                 </h1>
-                <div className="flex flex-col gap-[12px] text-gray-600">
+                <div className="flex flex-col gap-[12px] text-gray-600 font-light">
                   <Link
                     className="transition-all hover:text-main"
                     href={"/arbejde/cases"}
@@ -68,10 +68,10 @@ export default function Footer() {
                 </div>
               </div>
               <div>
-                <h1 className="text-[18px] font-[600] mb-[20px] text-main">
+                <h1 className="text-[18px] font-[600] mb-[20px] text-main ">
                   Udvikling
                 </h1>
-                <div className="flex flex-col gap-[12px] text-gray-600">
+                <div className="flex flex-col gap-[12px] text-gray-600 font-light">
                   <Link
                     className="transition-all hover:text-main"
                     href={"/udvikling/arbejdsprocesser"}
@@ -90,7 +90,7 @@ export default function Footer() {
                 <h1 className="text-[18px] font-[600] mb-[20px] text-main">
                   Virsomheden
                 </h1>
-                <div className="flex flex-col gap-[12px] text-gray-600">
+                <div className="flex flex-col gap-[12px] text-gray-600 font-light">
                   <Link
                     className="transition-all hover:text-main"
                     href={"/om-os"}
@@ -115,7 +115,7 @@ export default function Footer() {
                 <h1 className="text-[18px] font-[600] mb-[20px] text-main">
                   Juridisk
                 </h1>
-                <div className="flex flex-col gap-[12px] text-gray-600">
+                <div className="flex flex-col gap-[12px] text-gray-600 font-light">
                   <Link
                     className="transition-all hover:text-main"
                     href={"/legal/privatlivspolitik"}
@@ -137,8 +137,8 @@ export default function Footer() {
               &#169; {new Date().getFullYear()} Gazella Team
             </p>
             <div className="flex items-center gap-[40px] text-gray-600">
-              <div className="flex items-center gap-[30px]">
-                <Link href={"/hvorfor-os"}>Hvorfor Gazella Team</Link>
+              <div className="flex items-center gap-[30px] font-light">
+                <Link target="_blank" href={"https://dk.trustpilot.com/review/gazellateam.com"}>Anmeldelser</Link>
                 <Link href={"/blog"}>Blog</Link>
               </div>
               <Link
