@@ -5,7 +5,7 @@ import { DatabaseBackup, Layers, Workflow, Laptop } from "lucide-react";
 const serviceData = [
   {
     icon: <Layers size={40} />,
-    headline: "Web Udvikling",
+    headline: "Web udvikling",
     link: "/ydelser/webudvikling",
   },
   {

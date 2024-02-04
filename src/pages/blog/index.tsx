@@ -17,15 +17,16 @@ export default function BlogList() {
         description="Vi arbejder hele tiden på at skrive nye artikler, hvor vores team deler ud af tips & tricks i forhold til hvordan du laver din hjemmeside."
       />
       <Hero
+      background="bg-[linear-gradient(rgba(5,29,64,0.30),rgba(5,29,64,1)),url(/herobg/blog.jpg)] bg-center bg-cover"
         heading="Blog"
         section="læring"
         icon={<BookCopy color="#ffffff" size={70} />}
       />
-      <Description description="Har du et projekt i tankerne, som kræver enten en webapp, hjemmeside eller et unikt design? Vi tilbyder dig en gratis samtale, hvor du kan stille dine ønsker og krav til netop den software-løsning du drømmer om. Vi vil undervejs komme med rådgivning og sparing." />
+      <Description description="At opsætte og drifte sin egen software kan være en svær opgave. Læs mere og nyttige tips og tricks til, hvordan du gør din virksomheds interne softwarestyring så gnidningsfri som muligt." />
       <div className="w-[90%] mx-auto max-w-main py-[60px] flex flex-col gap-10">
         <div className="max-w-lg flex flex-col gap-2">
-          <h1 className="text-main text-4xl font-semibold">Seneste artikler</h1>
-          <p className="text-gray-600">
+          <h1 className="text-main text-4xl font-[600]">Seneste artikler</h1>
+          <p className="text-gray-600 font-light">
             Vi arbejder hele tiden på at skrive nye artikler, hvor vores team
             deler ud af tips & tricks i forhold til hvordan du laver din
             hjemmeside.

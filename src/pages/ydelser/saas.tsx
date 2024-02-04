@@ -7,6 +7,7 @@ export default function Saas() {
   return (
     <Layout>
       <Hero
+      background="bg-[linear-gradient(rgba(5,29,64,0.30),rgba(5,29,64,1)),url(/herobg/saas.jpg)] bg-center bg-cover"
         heading="SaaS"
         section="Ydelser"
         icon={<Laptop color="#ffffff" size={70} />}
