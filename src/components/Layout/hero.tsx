@@ -12,13 +12,13 @@ export default function Hero({
   background: string,
 }) {
   return (
-    <section className={`${background} pt-[400px] pb-[70px] w-[96%] mx-auto max-w-[1500px] rounded-[14px]`}>
+    <section className={`${background} pt-[400px] pb-[70px] w-[100%] mx-auto`}>
       <Reveal>
-        <div className="w-[90%] mx-auto max-w-main">
+        <div className="w-[92%] mx-auto">
           <p className="text-white mb-[14px] uppercase">/ {section}</p>
           <div className="flex items-center gap-[20px]">
             <div className="mid:hidden">{icon}</div>
-            <h1 className="text-[80px] font-[500] w-[80%] leading-[80px] text-white  lg:text-[60px] lg:leading-[70px]">
+            <h1 className="text-[80px] font-[600] w-[80%] leading-[80px] text-white  lg:text-[60px] lg:leading-[70px]">
               {heading}
             </h1>
           </div>

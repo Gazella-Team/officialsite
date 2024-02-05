@@ -27,7 +27,7 @@ export default function Layout({
           <Navbar />
           <div className="pt-[90px]">
             {children}
-
+            <Cta />
             <Footer />
           </div>
         </div>

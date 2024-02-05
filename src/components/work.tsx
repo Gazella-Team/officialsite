@@ -37,7 +37,7 @@ const workData = [
 export default function Work() {
   return (
     <section className="py-[60px]">
-      <div className="w-[90%] z-[1] mx-auto grid grid-cols-3 gap-x-[30px] gap-y-[30px] max-w-main small:grid-cols-1">
+      <div className="w-[92%] z-[1] mx-auto grid grid-cols-3 gap-x-[30px] gap-y-[30px]  small:grid-cols-1">
         {workData.map((v, index) => (
           <WorkCard
             date={v.date}
@@ -67,7 +67,7 @@ const WorkCard = ({
     <Reveal>
       <Link href={link}>
         <div
-          className={`${background} bg-main pt-[430px] pb-[30px] rounded-[8px] bg-cover bg-center cursor-pointer hover:opacity-[80%] transition-all`}
+          className={`${background} bg-main pt-[430px] pb-[30px] rounded-[14px] bg-cover bg-center cursor-pointer hover:opacity-[80%] transition-all`}
         >
           <div className="w-[86%] mx-auto">
             <p className="text-white">{date}</p>

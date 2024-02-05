@@ -4,8 +4,8 @@ import { Reveal } from "../Animations/Reveal";
 export default function Footer() {
   return (
     <>
-      <footer className="py-[60px] border-t-[1px]">
-        <div className="w-[90%] mx-auto max-w-main">
+      <footer className="py-[60px]">
+        <div className="w-[91%] mx-auto">
           <div className="flex justify-between border-b-[1px] pb-[60px] mb-[20px] footer:flex-col footer: gap-[80px]">
             <div className="w-[16%] footer:w-full">
               <img className="w-[100px] mb-[20px]" src="/logosvg.svg"></img>
@@ -30,22 +30,17 @@ export default function Footer() {
                   </Link>
                   <Link
                     className="transition-all hover:text-main"
+                    href={"/ydelser/app"}
+                  >
+                    App udvikling
+                  </Link>
+                  <Link
+                    className="transition-all hover:text-main"
                     href={"/ydelser/saas"}
                   >
                     SaaS
                   </Link>
-                  <Link
-                    className="transition-all hover:text-main"
-                    href={"/ydelser/integrationer"}
-                  >
-                    Integrationer
-                  </Link>
-                  <Link
-                    className="transition-all hover:text-main"
-                    href={"/ydelser/automatisering"}
-                  >
-                    Automatisering
-                  </Link>
+
                 </div>
               </div>
               <div>
