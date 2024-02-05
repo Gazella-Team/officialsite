@@ -18,7 +18,7 @@ const memberData = [
   },
   {
     name: "Mik Lønborg",
-    position: "Marketing og PR",
+    position: "Head of outbound",
     imageUrl: "/team/miklonborg.jpg",
     secondImageUrl: "/team/miklonborg.jpg",
   },

@@ -13,7 +13,7 @@ export default function Cta() {
       return "en app"
     }
     else if (currentPath === "/ydelser/saas") {
-      return "et Saas projekt"
+      return "et SaaS projekt"
     }
     else if (currentPath === "/ydelser/webudvikling") {
       return "en hjemmeside"

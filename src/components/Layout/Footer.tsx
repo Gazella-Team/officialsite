@@ -21,7 +21,7 @@ export default function Footer() {
                 <h1 className="text-[18px] font-[600] mb-[20px] text-main">
                   Ydelser
                 </h1>
-                <div className="flex flex-col gap-[12px] text-gray-600 font-light">
+                <div className="flex flex-col gap-[12px] text-gray-600 font-[400]">
                   <Link
                     className="transition-all hover:text-main"
                     href={"/ydelser/webudvikling"}
@@ -47,7 +47,7 @@ export default function Footer() {
                 <h1 className="text-[18px] font-[600] mb-[20px] text-main">
                   Arbejde
                 </h1>
-                <div className="flex flex-col gap-[12px] text-gray-600 font-light">
+                <div className="flex flex-col gap-[12px] text-gray-600 font-[400]">
                   <Link
                     className="transition-all hover:text-main"
                     href={"/arbejde/cases"}
@@ -63,10 +63,10 @@ export default function Footer() {
                 </div>
               </div>
               <div>
-                <h1 className="text-[18px] font-[600] mb-[20px] text-main ">
+                <h1 className="text-[18px] font-[600] mb-[20px] text-main">
                   Udvikling
                 </h1>
-                <div className="flex flex-col gap-[12px] text-gray-600 font-light">
+                <div className="flex flex-col gap-[12px] text-gray-600 font-[400]">
                   <Link
                     className="transition-all hover:text-main"
                     href={"/udvikling/arbejdsprocesser"}
@@ -85,12 +85,12 @@ export default function Footer() {
                 <h1 className="text-[18px] font-[600] mb-[20px] text-main">
                   Virsomheden
                 </h1>
-                <div className="flex flex-col gap-[12px] text-gray-600 font-light">
+                <div className="flex flex-col gap-[12px] text-gray-600 font-[400]">
                   <Link
                     className="transition-all hover:text-main"
-                    href={"/om-os"}
+                    href={"/team"}
                   >
-                    Om os
+                    Teamet
                   </Link>
                   <Link
                     className="transition-all hover:text-main"
@@ -110,7 +110,7 @@ export default function Footer() {
                 <h1 className="text-[18px] font-[600] mb-[20px] text-main">
                   Juridisk
                 </h1>
-                <div className="flex flex-col gap-[12px] text-gray-600 font-light">
+                <div className="flex flex-col gap-[12px] text-gray-600 font-[400]">
                   <Link
                     className="transition-all hover:text-main"
                     href={"/legal/privatlivspolitik"}

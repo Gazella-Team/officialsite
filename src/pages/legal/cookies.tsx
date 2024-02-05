@@ -18,14 +18,14 @@ export default function Cookies() {
         heading="Cookies"
       />
       <section className="py-[10px] bg-gray-50 border-y-[1px]">
-        <div className="w-[90%] mx-auto max-w-main">
+        <div className="w-[92%] mx-auto max-w-main">
           <Reveal>
             <p className="text-gray-600">Senest opdateret d. 25.1.2024</p>
           </Reveal>
         </div>
       </section>
       <section className="py-[60px] text-main">
-        <div className="w-[90%] mx-auto max-w-main">
+        <div className="w-[92%] mx-auto max-w-main">
           <h1 className="text-[30px] font-[600] mb-[30px]">
             Derfor bruger vi cookies
           </h1>

@@ -22,7 +22,7 @@ export default function Navbar() {
             <div className="flex items-center justify-end gap-[30px] lg:hidden">
               <Link href={"/ydelser"}>Ydelser</Link>
               <Link href={"/arbejde/cases"}>Arbejde</Link>
-              <Link href={"/om-os"}>Om os</Link>
+              <Link href={"/team"}>Teamet</Link>
               <Link href={"/blog"}>Blog</Link>
               <Link href={"/kontakt"}>Kontakt</Link>
             </div>

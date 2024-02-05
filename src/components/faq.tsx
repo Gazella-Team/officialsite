@@ -44,7 +44,7 @@ const questions = [
 export default function FAQ() {
   return (
     <section className="py-[60px]">
-      <div className="w-[90%] mx-auto max-w-main">
+      <div className="w-[92%] mx-auto">
         <Accordion type="single" collapsible className="bg-white rounded-lg">
           {questions.map((question, index) => (
             <Reveal key={index}>

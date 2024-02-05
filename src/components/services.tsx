@@ -29,12 +29,12 @@ export default function Services() {
   return (
     <section className="py-[60px] w-full">
       <Reveal>
-        <div className="mt-[76px] w-[90%] mx-auto max-w-main py-[60px]">
+        <div className="mt-[76px] w-[92%] mx-auto py-[60px]">
           <h1 className="text-[40px]">Hvad kan vi hjælpe dig med?</h1>
         </div>
       </Reveal>
 
-      <div className="w-[90%] mx-auto max-w-main z-[1] grid grid-cols-2 gap-[30px] navigation:grid-cols-1">
+      <div className="w-[92%] mx-auto z-[1] grid grid-cols-2 gap-[30px] navigation:grid-cols-1">
         {serviceData.map((v) => (
           <ServiceCard Obj={v} key={v} />
         ))}
