@@ -12,7 +12,7 @@ export default function Team() {
         description="Vi specialiserer os inden for web udviklingsprojekter fra A-Z. Med vores web udviklingsservice står vi til rådighed uanset om dit projekt kræver en funktionsfyldt web app eller bare et professionelt online visitkort."
       />
       <Hero
-      background="bg-[linear-gradient(rgba(5,29,64,0.30),rgba(5,29,64,1)),url(/flyout.jpg)] bg-top bg-cover"
+      background="bg-[linear-gradient(rgba(5,29,64,0.70),rgba(5,29,64,1)),url(/flyout.jpg)] bg-top bg-cover"
         heading="Teamet"
         section="om os"
         icon={<Users color="#ffffff" size={80} />}

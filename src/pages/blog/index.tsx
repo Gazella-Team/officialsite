@@ -17,7 +17,7 @@ export default function BlogList() {
         description="Vi arbejder hele tiden på at skrive nye artikler, hvor vores team deler ud af tips & tricks i forhold til hvordan du laver din hjemmeside."
       />
       <Hero
-      background="bg-[linear-gradient(rgba(5,29,64,0.30),rgba(5,29,64,1)),url(/herobg/blog.jpg)] bg-center bg-cover"
+      background="bg-[linear-gradient(rgba(5,29,64,0.70),rgba(5,29,64,1)),url(/herobg/blog.jpg)] bg-center bg-cover"
         heading="Blog"
         section="læring"
         icon={<BookCopy color="#ffffff" size={70} />}

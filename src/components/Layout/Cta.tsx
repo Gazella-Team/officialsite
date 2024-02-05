@@ -26,7 +26,7 @@ export default function Cta() {
     <section className="bg-main py-[100px] w-[92%] mx-auto max-w-[1500px] rounded-[14px] text-white">
       <div className="w-[92%] mx-auto max-w-main">
         <h1 className="text-[40px] font-[600] mb-[20px]">
-          Har du en idé til {IdentifySection()}?
+          Har du en idé til <span className="text-second">{IdentifySection()}?</span>
         </h1>
         <p className="text-[20px] text-gray-200 w-[95%] font-[400] mb-[40px]">
           Få et indblik i hvilke værktøjer samt eksterne software vi hver dag
