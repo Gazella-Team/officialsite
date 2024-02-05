@@ -70,8 +70,8 @@ const WorkCard = ({
           className={`${background} bg-main pt-[430px] pb-[30px] rounded-[14px] bg-cover bg-center cursor-pointer hover:opacity-[80%] transition-all`}
         >
           <div className="w-[86%] mx-auto">
-            <p className="text-white">{date}</p>
-            <h1 className="text-white text-[30px]">{heading}</h1>
+            <p className="text-white font-[400]">{date}</p>
+            <h1 className="text-white text-[30px] font-[500]">{heading}</h1>
           </div>
         </div>
       </Link>

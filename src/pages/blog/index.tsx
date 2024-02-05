@@ -26,7 +26,7 @@ export default function BlogList() {
       <div className="w-[92%] mx-auto py-[60px] flex flex-col gap-10">
         <div className="max-w-lg flex flex-col gap-2">
           <h1 className="text-main text-4xl font-[600]">Seneste artikler</h1>
-          <p className="text-gray-600 font-light">
+          <p className="text-gray-600 font-[400]">
             Vi arbejder hele tiden på at skrive nye artikler, hvor vores team
             deler ud af tips & tricks i forhold til hvordan du laver din
             hjemmeside.

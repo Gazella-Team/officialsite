@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <>
       <footer className="py-[60px]">
-        <div className="w-[91%] mx-auto">
+        <div className="w-[92%] mx-auto">
           <div className="flex justify-between border-b-[1px] pb-[60px] mb-[20px] footer:flex-col footer: gap-[80px]">
             <div className="w-[16%] footer:w-full">
               <img className="w-[100px] mb-[20px]" src="/logosvg.svg"></img>
@@ -30,7 +30,7 @@ export default function Footer() {
                   </Link>
                   <Link
                     className="transition-all hover:text-main"
-                    href={"/ydelser/app"}
+                    href={"/ydelser/appudvikling"}
                   >
                     App udvikling
                   </Link>
@@ -132,7 +132,7 @@ export default function Footer() {
               &#169; {new Date().getFullYear()} Gazella Team
             </p>
             <div className="flex items-center gap-[40px] text-gray-600">
-              <div className="flex items-center gap-[30px] font-light">
+              <div className="flex items-center gap-[30px] font-[400]">
                 <Link target="_blank" href={"https://dk.trustpilot.com/review/gazellateam.com"}>Anmeldelser</Link>
                 <Link href={"/blog"}>Blog</Link>
               </div>

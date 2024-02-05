@@ -50,7 +50,7 @@ export default function BlogItem(){
                                 <p className="text-lg font-medium text-main">Forfattere</p>
                                 <div className="flex items-center gap-4">
                                     <div>
-                                        <img alt={"Simon Maribo"} className="w-10 h-10 object-cover rounded-full border border-gray-300" src={"/simonmaribo.jpg"}/>
+                                        <img alt={"Simon Maribo"} className="w-10 h-10 object-cover rounded-full border border-gray-300" src={"/team/simonmaribo.jpg"}/>
                                     </div>
                                     <div>
                                         <p className="text-main font-medium">Simon Maribo</p>
@@ -231,7 +231,7 @@ export default function BlogItem(){
                             summary="Har du problemer med at måle effekten af dine brand awareness influencer kampagner? I dette indlæg gennemgår jeg 4 metoder hvorpå du kan måle effekten af din brand awareness, uden at skulle frem med den helt store pengepung."
                             author="Mathias Kokfelt"
                             authorTitle="Marketing Manager"
-                            authorImage="/simonmaribo.jpg"
+                            authorImage="/team/simonmaribo.jpg"
                             image="/cases/organicmasterclass/organicmasterclass.jpg"
                             href="/blog/soadan-maler-du-effekten-af-brand-awareness-kampagner"
                         />
@@ -241,7 +241,7 @@ export default function BlogItem(){
                             summary="Har du problemer med at måle effekten af dine brand awareness influencer kampagner? I dette indlæg gennemgår jeg 4 metoder hvorpå du kan måle effekten af din brand awareness, uden at skulle frem med den helt store pengepung."
                             author="Mathias Kokfelt"
                             authorTitle="Marketing Manager"
-                            authorImage="/simonmaribo.jpg"
+                            authorImage="/team/simonmaribo.jpg"
                             image="/cases/organicmasterclass/organicmasterclass.jpg"
                             href="/blog/soadan-maler-du-effekten-af-brand-awareness-kampagner"
                         />
@@ -251,7 +251,7 @@ export default function BlogItem(){
                             summary="Har du problemer med at måle effekten af dine brand awareness influencer kampagner? I dette indlæg gennemgår jeg 4 metoder hvorpå du kan måle effekten af din brand awareness, uden at skulle frem med den helt store pengepung."
                             author="Mathias Kokfelt"
                             authorTitle="Marketing Manager"
-                            authorImage="/simonmaribo.jpg"
+                            authorImage="/team/simonmaribo.jpg"
                             image="/cases/organicmasterclass/organicmasterclass.jpg"
                             href="/blog/soadan-maler-du-effekten-af-brand-awareness-kampagner"
                         />

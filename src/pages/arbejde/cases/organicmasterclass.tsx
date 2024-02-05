@@ -8,7 +8,7 @@ export default function OrganicMasterclass() {
     <Layout>
       <>
         <section className="bg-[linear-gradient(rgba(5,29,64,0.80),rgba(5,29,64,1)),url(/cases/organicmasterclass/organicmasterclass.jpg)] bg-center bg-cover py-[180px] pt-[260px]">
-          <div className="w-[90%] mx-auto max-w-main">
+          <div className="w-[92%] mx-auto max-w-main">
             <Reveal>
               <p className="text-white mb-[14px] uppercase">/ CASE</p>
             </Reveal>
@@ -20,24 +20,24 @@ export default function OrganicMasterclass() {
             </Reveal>
           </div>
         </section>
-        <div className="w-[90%] max-w-main mx-auto bg-white mt-[-140px] rounded-[6px] py-[50px] px-[50px] mb-[60px] border-[1px] grid grid-cols-1 gap-[30px]">
+        <div className="w-[92%] max-w-main mx-auto bg-white mt-[-140px] rounded-[6px] py-[50px] px-[50px] mb-[60px] border-[1px] grid grid-cols-1 gap-[30px]">
           <div className="grid grid-cols-4 gap-[20px] caseDisplayOne:grid-cols-2">
             <Reveal>
               <div className="bg-gray-100 rounded-[6px] p-[30px] border-[1px]">
                 <h1 className="font-[600] text-[20px] mb-[6px] text-main">Klient</h1>
-                <p className="text-gray-600 font-light">Organic Masterclass</p>
+                <p className="text-gray-600 font-[400]">Organic Masterclass</p>
               </div>
             </Reveal>
             <Reveal>
               <div className="bg-gray-100 rounded-[6px] p-[30px] border-[1px]">
                 <h1 className="font-[600] text-[20px] mb-[6px] text-main">Ydelse</h1>
-                <p className="text-gray-600 font-light">Landingsside</p>
+                <p className="text-gray-600 font-[400]">Landingsside</p>
               </div>
             </Reveal>
             <Reveal>
               <div className="bg-gray-100 rounded-[6px] p-[30px] border-[1px]">
                 <h1 className="font-[600] text-[20px] mb-[6px] text-main">Dato</h1>
-                <p className="text-gray-600 font-light">25/01/2024</p>
+                <p className="text-gray-600 font-[400]">25/01/2024</p>
               </div>
             </Reveal>
 
@@ -61,7 +61,7 @@ export default function OrganicMasterclass() {
                 </Reveal>
                 <div className="flex flex-col items-center justify-center">
                   <Reveal>
-                    <h1 className="italic text-[20px] font-light text-gray-700 mb-[50px]">
+                    <h1 className="italic text-[20px] font-[400] text-gray-700 mb-[50px]">
                       " Vi hos Organic Masterclass har haft fornøjelsen af at
                       samarbejde med Gazella Team, og vi kan kun takke for den
                       fantastiske service og den imponerende hjemmeside, de har
@@ -89,7 +89,7 @@ export default function OrganicMasterclass() {
                       <h1 className="text-[20px] font-[600] text-main">
                         Sebastian Madsen
                       </h1>
-                      <p className="text-gray-600 font-light">
+                      <p className="text-gray-600 font-[400]">
                         Medstifter, Organic Masterclass
                       </p>
                     </div>
