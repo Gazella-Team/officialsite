@@ -52,7 +52,7 @@ const MemberCard = (props: any) => {
         <img
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
-          className="aspect-w-1 aspect-h-1 object-cover object-top mb-[20px] transition-all rounded-[14px]"
+          className="aspect-w-1 aspect-h-1 object-cover object-top mb-[20px] transition-all"
           src={isHovered ? props.Obj.secondImageUrl : props.Obj.imageUrl}
         ></img>
 

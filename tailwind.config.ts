@@ -22,7 +22,7 @@ const config = {
       },
       colors: {
         main: "#051d40",
-        second:"#33c2ff"
+        second:"#fcf3eb"
       },
       screens: {
         "2xl": { max: "1535px" },

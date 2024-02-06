@@ -13,13 +13,13 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="fixed w-full bg-white h-[90px] flex items-center z-[10] membersSm:top-0">
-        <div className="w-[96%] mx-auto max-w-[1500px] flex justify-between items-center phoneSm:w-[90%]">
+      <nav className="fixed w-full bg-white h-[75px] flex items-center z-[10] membersSm:top-0">
+        <div className="w-[92%] mx-auto max-w-[1500px] flex justify-between items-center phoneSm:w-[90%]">
           <Link href={"/"}>
             <img className="w-[90px]" src="/logosvg.svg"></img>
           </Link>
           <div className="flex items-center gap-[40px] font-[400]">
-            <div className="flex items-center justify-end gap-[30px] lg:hidden">
+            <div className="flex items-center justify-end gap-[30px] text-[16px] lg:hidden">
               <Link href={"/ydelser"}>Ydelser</Link>
               <Link href={"/arbejde/cases"}>Arbejde</Link>
               <Link href={"/team"}>Teamet</Link>

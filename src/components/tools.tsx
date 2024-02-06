@@ -91,7 +91,7 @@ const ToolCard = (props: any) => {
           </div>
         </div>
 
-        <h1 className="text-[24px] font-[500] mb-[20px]">
+        <h1 className="text-[24px] font-[500] text-main mb-[20px]">
           {props.Obj.headline}
         </h1>
         <p className="text-[18px] font-[300] text-gray-600">

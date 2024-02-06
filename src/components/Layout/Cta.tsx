@@ -23,7 +23,8 @@ export default function Cta() {
     }
   }
   return (
-    <section className="bg-main py-[100px] w-[92%] mx-auto max-w-[1500px] rounded-[14px] text-white">
+    <div className="bg-second">
+          <section className="bg-main py-[100px] w-[92%] mx-auto max-w-[1500px] rounded-[14px] text-white">
       <div className="w-[92%] mx-auto max-w-main">
         <h1 className="text-[40px] font-[600] mb-[20px]">
           Har du en idé til <span className="text-second">{IdentifySection()}?</span>
@@ -45,5 +46,7 @@ export default function Cta() {
 
       </div>
     </section>
+    </div>
+
   );
 }

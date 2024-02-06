@@ -20,7 +20,7 @@ export default function BlogList() {
       background="bg-[linear-gradient(rgba(5,29,64,0.70),rgba(5,29,64,1)),url(/herobg/blog.jpg)] bg-center bg-cover"
         heading="Blog"
         section="læring"
-        icon={<BookCopy color="#ffffff" size={70} />}
+        icon={<BookCopy fontWeight={100} color="#ffffff" size={70} />}
       />
       <Description description="At opsætte og drifte sin egen software kan være en svær opgave. Læs mere og nyttige tips og tricks til, hvordan du gør din virksomheds interne softwarestyring så gnidningsfri som muligt." />
       <div className="w-[92%] mx-auto py-[60px] flex flex-col gap-10">
