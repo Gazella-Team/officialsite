@@ -20,10 +20,6 @@ export default function Index() {
       <section className="bg-[linear-gradient(rgba(5,29,64,0.9),rgba(5,29,64,1)),url(/herobg/i.jpg)] bg-center bg-cover py-[170px] w-[100%] mx-auto max-w-none mb-[100px]">
       <Reveal>
         <div className="w-[92%] mx-auto max-w-main">
-          <div className="bg-white inline-block px-[30px] py-[8px] rounded-[8px] mb-[50px]">
-            <p>trust</p>
-          </div>
-      
           <div className="flex flex-col justify-center gap-[20px] mb-[50px]">
           
             <h1 className="text-[70px] font-[300] mb-[8px] w-[80%] leading-[70px] text-white  lg:text-[60px] lg:leading-[70px]">

@@ -67,7 +67,7 @@ const WorkCard = ({
     <Reveal>
       <Link href={link}>
         <div
-          className={`${background} bg-main pt-[500px] pb-[30px] bg-cover bg-center cursor-pointer hover:opacity-[80%] transition-all rounded-[14px]`}
+          className={`${background} bg-main pt-[500px] pb-[30px] bg-cover bg-center cursor-pointer hover:opacity-[80%] transition-all`}
         >
           <div className="w-[86%] mx-auto">
             <p className="text-white font-[400]">{date}</p>
