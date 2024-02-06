@@ -3,12 +3,12 @@ import { Reveal } from "./Animations/Reveal";
 
 const workData = [
   {
-    company: "COAD Agency",
+    company: "COAD",
     date: "01/01/2024",
     description:
       "Cross-platform solution for managing micro-investments and savings, compatible with SAMA fintech regulations including multi-factor authorization and KYC verification",
     imageUrl:
-      "bg-[linear-gradient(rgba(5,29,64,0.10),rgba(5,29,64,1)),url(/cases/coad/coad.jpg)]",
+      "bg-[linear-gradient(rgba(5,29,64,0.0),rgba(5,29,64,2)),url(/cases/coad/coad.jpg)]",
     url: "https://centox.io/",
     link: "/arbejde/cases/coad",
   },
@@ -18,17 +18,17 @@ const workData = [
     description:
       "Cross-platform solution for managing micro-investments and savings, compatible with SAMA fintech regulations including multi-factor authorization and KYC verification",
     imageUrl:
-      "bg-[linear-gradient(rgba(5,29,64,0.10),rgba(5,29,64,1)),url(/cases/organicmasterclass/organicmasterclass.jpg)]",
+      "bg-[linear-gradient(rgba(5,29,64,0.0),rgba(5,29,64,1)),url(/cases/organicmasterclass/organicmasterclass.jpg)]",
     url: "https://centox.io/",
     link: "/arbejde/cases/organicmasterclass",
   },
   {
-    company: "Organic Masterclass",
+    company: "Centox",
     date: "01/01/2024",
     description:
       "Cross-platform solution for managing micro-investments and savings, compatible with SAMA fintech regulations including multi-factor authorization and KYC verification",
     imageUrl:
-      "bg-[linear-gradient(rgba(5,29,64,0.10),rgba(5,29,64,1)),url(/cases/organicmasterclass/organicmasterclass.jpg)]",
+      "bg-[linear-gradient(rgba(5,29,64,0.0),rgba(5,29,64,1)),url(/cases/organicmasterclass/organicmasterclass.jpg)]",
     url: "https://centox.io/",
     link: "/arbejde/cases/organicmasterclass",
   },
@@ -36,8 +36,8 @@ const workData = [
 
 export default function Work() {
   return (
-    <section className="py-[60px]">
-      <div className="w-[92%] z-[1] mx-auto grid grid-cols-3 gap-x-[30px] gap-y-[30px]  small:grid-cols-1">
+    <section className="py-[100px]">
+      <div className="w-[92%] max-w-main z-[1] mx-auto grid grid-cols-3 gap-x-[20px] gap-y-[30px]  small:grid-cols-1">
         {workData.map((v, index) => (
           <WorkCard
             date={v.date}
@@ -67,11 +67,11 @@ const WorkCard = ({
     <Reveal>
       <Link href={link}>
         <div
-          className={`${background} bg-main pt-[430px] pb-[30px] bg-cover bg-center cursor-pointer hover:opacity-[80%] transition-all`}
+          className={`${background} bg-main pt-[500px] pb-[30px] bg-cover bg-center cursor-pointer hover:opacity-[80%] transition-all rounded-[14px]`}
         >
           <div className="w-[86%] mx-auto">
             <p className="text-white font-[400]">{date}</p>
-            <h1 className="text-white text-[30px] font-[500]">{heading}</h1>
+            <h1 className="text-white text-[30px] font-[300]">{heading}</h1>
           </div>
         </div>
       </Link>

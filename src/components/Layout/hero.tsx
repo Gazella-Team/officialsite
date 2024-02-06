@@ -14,7 +14,7 @@ export default function Hero({
   return (
     <section className={`${background} pt-[400px] pb-[70px] w-[100%] mx-auto`}>
       <Reveal>
-        <div className="w-[92%] mx-auto">
+        <div className="w-[92%] mx-auto max-w-main">
           <p className="text-second mb-[14px] uppercase font-[300]">/ {section}</p>
           <div className="flex items-center gap-[20px]">
             <div className="mid:hidden">{icon}</div>

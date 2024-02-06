@@ -15,7 +15,7 @@ export default function Appudvikling() {
       background="bg-[linear-gradient(rgba(5,29,64,0.30),rgba(5,29,64,1)),url(/herobg/saas.jpg)] bg-center bg-cover"
         heading="Appudvikling"
         section="Ydelser"
-        icon={<MonitorSmartphone color="#ffffff" size={80} />}
+        icon={<MonitorSmartphone strokeWidth={1.3} color="#ffffff" size={80} />}
       />
       <Description description="Har du en god ide, som kræver en app? Hos Gazella Team tror vi på, at app er fremtiden af software-løsninger. Vi kombinerer funktionelle features, hurtige frameworks og intuitive unikke brugerflader for at skabe de bedste forudsætninger for dit kommende app-projekt." />
       <Features

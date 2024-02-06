@@ -2,9 +2,9 @@ import { Reveal } from "./Animations/Reveal";
 
 export default function ContactInfo() {
   return (
-    <section className="py-[60px] border-b-[1px]">
+    <section className="py-[100px] border-b-[1px]">
       <Reveal>
-        <div className="w-[90%] mx-auto max-w-main grid grid-cols-contact mid:grid-cols-1">
+        <div className="w-[92%] mx-auto max-w-main grid grid-cols-contact mid:grid-cols-1">
           <div className="mid:mb-[60px]">
             <h1 className="text-[32px] font-[600] mb-[14px] text-main">
               Kontakt os

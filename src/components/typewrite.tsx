@@ -4,7 +4,7 @@ export default function Typewrite() {
   return (
     <Typewriter
       options={{
-        strings: ["skaber v", "World"],
+        strings: ["virksomheder", "projekter", "startups", "private"],
         autoStart: true,
         loop: true,
       }}

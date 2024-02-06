@@ -13,23 +13,23 @@ export default function Privatlivspolitik() {
       />
       <Hero
       background="bg-[linear-gradient(rgba(5,29,64,0.30),rgba(5,29,64,1)),url(/herobg/webdev.jpg)] bg-top bg-cover"
-        icon={<BookLock color="#ffffff" size={70} />}
+        icon={<BookLock strokeWidth={1.3} color="#ffffff" size={70} />}
         section="legal"
         heading="Privatlivspolitik"
       />
       <section className="py-[10px] bg-gray-50 border-y-[1px]">
-        <div className="w-[90%] mx-auto max-w-main">
+        <div className="w-[92%] mx-auto max-w-main">
           <Reveal>
             <p className="text-gray-600">Senest opdateret d. 25.1.2024</p>
           </Reveal>
         </div>
       </section>
-      <section className="py-[60px] text-main">
-        <div className="w-[90%] mx-auto max-w-main">
+      <section className="py-[100px] text-main">
+        <div className="w-[92%] mx-auto max-w-main">
           <h1 className="text-[30px] font-[600] mb-[30px]">
             Hvordan dit privatliv beskyttes
           </h1>
-          <p className="text-[18px] text-gray-600">
+          <p className="text-[18px] font-[300] text-gray-600">
             Som mange andre virksomheder og hjemmesider anvender vi
             'cookie-teknologi' på vores hjemmeside. Cookies er stykker af
             information, som en hjemmeside gemmer på den besøgendes harddisk

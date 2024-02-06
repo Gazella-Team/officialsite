@@ -17,13 +17,13 @@ export default function BlogList() {
         description="Vi arbejder hele tiden på at skrive nye artikler, hvor vores team deler ud af tips & tricks i forhold til hvordan du laver din hjemmeside."
       />
       <Hero
-      background="bg-[linear-gradient(rgba(5,29,64,0.70),rgba(5,29,64,1)),url(/herobg/blog.jpg)] bg-center bg-cover"
+      background="bg-[linear-gradient(rgba(5,29,64,0.30),rgba(5,29,64,1)),url(/herobg/blog.jpg)] bg-center bg-cover"
         heading="Blog"
         section="læring"
-        icon={<BookCopy fontWeight={100} color="#ffffff" size={70} />}
+        icon={<BookCopy strokeWidth={1.3} fontWeight={100} color="#ffffff" size={70} />}
       />
       <Description description="At opsætte og drifte sin egen software kan være en svær opgave. Læs mere og nyttige tips og tricks til, hvordan du gør din virksomheds interne softwarestyring så gnidningsfri som muligt." />
-      <div className="w-[92%] mx-auto py-[60px] flex flex-col gap-10">
+      <div className="w-[92%] max-w-main mx-auto py-[60px] flex flex-col gap-10">
         <div className="max-w-lg flex flex-col gap-2">
           <h1 className="text-main text-4xl font-[600]">Seneste artikler</h1>
           <p className="text-gray-600 font-[400]">

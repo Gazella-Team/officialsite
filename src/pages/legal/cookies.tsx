@@ -13,7 +13,7 @@ export default function Cookies() {
       />
       <Hero
       background="bg-[linear-gradient(rgba(5,29,64,0.30),rgba(5,29,64,1)),url(/herobg/webdev.jpg)] bg-top bg-cover"
-        icon={<Cookie color="#ffffff" size={70} />}
+        icon={<Cookie strokeWidth={1.3} color="#ffffff" size={70} />}
         section="legal"
         heading="Cookies"
       />
@@ -24,12 +24,12 @@ export default function Cookies() {
           </Reveal>
         </div>
       </section>
-      <section className="py-[60px] text-main">
+      <section className="py-[100px] text-main">
         <div className="w-[92%] mx-auto max-w-main">
           <h1 className="text-[30px] font-[600] mb-[30px]">
             Derfor bruger vi cookies
           </h1>
-          <p className="text-[18px] text-gray-600">
+          <p className="text-[18px] text-gray-600 font-[300]">
             Som mange andre virksomheder og hjemmesider anvender vi
             'cookie-teknologi' på vores hjemmeside. Cookies er stykker af
             information, som en hjemmeside gemmer på den besøgendes harddisk

@@ -58,7 +58,7 @@ const config = {
         caseDisplayOne: {max: "1169px"}
       },
       maxWidth: {
-        main: "1400px",
+        main: "1500px",
       },
       gridTemplateColumns: {
         contact: "40% 1fr",

@@ -14,21 +14,21 @@ export default function Navbar() {
   return (
     <>
       <nav className="fixed w-full bg-white h-[75px] flex items-center z-[10] membersSm:top-0">
-        <div className="w-[92%] mx-auto max-w-[1500px] flex justify-between items-center phoneSm:w-[90%]">
+        <div className="w-[96%] mx-auto max-w-[1500px] flex justify-between items-center phoneSm:w-[90%]">
           <Link href={"/"}>
             <img className="w-[90px]" src="/logosvg.svg"></img>
           </Link>
           <div className="flex items-center gap-[40px] font-[400]">
-            <div className="flex items-center justify-end gap-[30px] text-[16px] lg:hidden">
+            <div className="flex items-center justify-end gap-[30px] text-[16px] font-[400] lg:hidden">
               <Link href={"/ydelser"}>Ydelser</Link>
               <Link href={"/arbejde/cases"}>Arbejde</Link>
               <Link href={"/team"}>Teamet</Link>
               <Link href={"/blog"}>Blog</Link>
               <Link href={"/kontakt"}>Kontakt</Link>
             </div>
-          <div className="flex items-center gap-[40px] font-medium">
+          <div className="flex items-center gap-[40px] font-medium border-l-[2px] pl-[12px] border-main">
             <EstimateSheet>
-              <div className="hidden md:flex cursor-pointer select-none px-6 py-2 font-medium items-center gap-[6px] text-center transition-all bg-white border-[1px] rounded-[8px] text-main hover:text-white hover:bg-main">
+              <div className="hidden md:flex cursor-pointer select-none px-6 py-2 font-medium items-center gap-[6px] text-center transition-all bg-white rounded-[14px] text-main">
                 <p className="font-[400]">Få et estimat på dit projekt</p>
                 <ArrowUpRight size={20} />
               </div>

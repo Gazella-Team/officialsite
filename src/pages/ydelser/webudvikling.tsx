@@ -16,7 +16,7 @@ export default function Webudvikling() {
       background="bg-[linear-gradient(rgba(5,29,64,0.30),rgba(5,29,64,1)),url(/herobg/webdev.jpg)] bg-top bg-cover"
         heading="Web Udvikling"
         section="Ydelser"
-        icon={<Layers color="#ffffff" size={80} />}
+        icon={<Layers strokeWidth={1.3} color="#ffffff" size={80} />}
       />
       <Description description="Vi specialiserer os inden for web udviklingsprojekter fra A-Z. Med vores web udviklingsservice står vi til rådighed uanset om dit projekt kræver en funktionsfyldt web app eller bare et professionelt online visitkort. Uanset projektets størrelse, garanterer vi en unik, responsiv og fremtidssikret løsning." />
       <Features
