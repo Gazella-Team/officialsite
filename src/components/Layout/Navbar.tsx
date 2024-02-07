@@ -19,10 +19,12 @@ export default function Navbar() {
             <img className="w-[90px]" src="/logosvg.svg"></img>
           </Link>
           <div className="flex items-center gap-[40px]">
-            <div className="flex items-center justify-end gap-[30px] text-[16px] font-[500] text-main lg:hidden">
+            <div className="flex items-center justify-end gap-[30px] text-[16px] font-[500] text-main footer:hidden">
               <Link href={"/ydelser"}>Ydelser</Link>
               <Link href={"/arbejde/cases"}>Arbejde</Link>
+              <Link href={"/arbejde/cases"}>Udvikling</Link>
               <Link href={"/team"}>Teamet</Link>
+              <Link href={"/arbejde/priser"}>Priser</Link>
               <Link href={"/kontakt"}>Kontakt</Link>
             </div>
           <div className="flex items-center gap-[40px] font-medium ">
@@ -35,7 +37,7 @@ export default function Navbar() {
           </div>
           <div
               onClick={() => setMenuClicked(!menuClicked)}
-              className="hidden lg:flex items-center gap-[8px] cursor-pointer"
+              className="hidden footer:flex items-center gap-[8px] cursor-pointer"
             >
               <p className="font-[500]">Menu</p>
               {menuClicked ? <X size={20} /> : <Menu size={20} />}

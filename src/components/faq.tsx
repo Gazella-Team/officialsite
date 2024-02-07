@@ -10,32 +10,32 @@ import { Reveal } from "./Animations/Reveal";
 const questions = [
   {
     question:
-      "Hvem står for den fremtidige drift og optimering af min udviklede løsning?",
+      "Hvad koster en webløsning?",
     answer:
       "While Centox is tailored for gaming communities, its robust features and flexibility make it an excellent choice for any forum-based community seeking seamless Discord integration.",
   },
   {
-    question: "Hvornår faktureres jeg for min udviklede løsning?",
+    question: "Hvad koster en appløsning?",
     answer:
       "Not at all! Centox is designed to be user-friendly. With our drag-n-drop interface, even those without technical know-how can easily set up and customize their forums.",
   },
   {
-    question: "Hvordan regnes prisen på min løsning?",
+    question: "Hvad koster SaaS webløsning?",
     answer:
       "No problem. While you can choose a subdomain, Centox also allows you to connect your forum to your unique domain, making it appear as your standalone website. (require paid plan)",
   },
   {
-    question: "Har i en tilfredshedsgaranti?",
+    question: "Hvordan beregnes prisen for mit projekt?",
     answer:
       "Absolutely. Every piece of information submitted through our forms, including passwords, is encrypted to ensure maximum security and privacy.",
   },
   {
-    question: "Can I assign roles or staff members to manage applications?",
+    question: "Har i en tilfredshedsgaranti?",
     answer:
       "Yes, Centox comes with a built-in staff system. You can add members to your organization, allowing them to comment on and approve applications.",
   },
   {
-    question: "How often is Centox updated?",
+    question: "Hvordan forgår betaling for min kommende softwareløsning?",
     answer:
       "We believe in continuous improvement. Centox receives regular updates to introduce new features, enhance existing ones, and ensure overall platform stability.",
   },

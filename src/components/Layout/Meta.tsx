@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 const Meta = ({
-  title = "Gazella Team | Softwareløsninger der skaber værdi",
+  title = "Gazella Team | Et software bureau med passion for profitable løsninger.",
   keywords = "Softwareløsninger der skaber værdi",
   description = "Softwareløsninger der skaber værdi",
   icon = "/favicon.ico",

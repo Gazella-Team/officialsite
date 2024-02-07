@@ -2,7 +2,7 @@ import { Reveal } from "./Animations/Reveal";
 
 export default function ContactInfo() {
   return (
-    <section className="py-[50px] bg-[#f2f2f5]">
+    <section className="py-[50px] bg-gray-50">
       <Reveal>
         <div className="w-[92%] mx-auto max-w-main grid grid-cols-contact mid:grid-cols-1">
           <div className="mid:mb-[60px]">

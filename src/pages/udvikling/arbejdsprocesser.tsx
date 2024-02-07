@@ -14,6 +14,7 @@ export default function Arbejdsprocesser() {
         icon={<ArrowLeftRight strokeWidth={1.3} color="#ffffff" size={70} />}
       />
       <Description description="Få et indblik i, hvordan vi eksekverer udviklingen af din kommende web-løsning fra start til slut. For os er det altafgørende at have en struktureret process, som gør projektet så overskueligt og effektivt som muligt for begge parter. De bedste løsninger skabes af god planlægning." />
+    <Processes />
     </Layout>
   );
 }

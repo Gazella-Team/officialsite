@@ -34,7 +34,10 @@ export default function OrganicMasterclass() {
             <p className="text-[22px] font-[500]">Sebastian Madsen,<br></br><span className="text-gray-600 font-[400] text-[18px]">Co-founder, Organic Masterclass</span></p>
           </div>
         </div>
-        <img className="w-[92%] mx-auto rounded-[14px] ctao:mb-[100px]" src="/cases/organicmasterclass/organicmasterclasscase.svg"></img>
+        <div className="bg-[#f1faff] w-[92%] mx-auto rounded-[14px]">
+        <img className="w-[100%] mx-auto rounded-[14px] ctao:mb-[100px]" src="/cases/organicmasterclass/organicmasterclasscase.svg"></img>
+        </div>
+        
     </Layout>
   );
 }

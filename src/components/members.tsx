@@ -9,24 +9,28 @@ const memberData = [
     position: "Stifter & Frontend Udvikler",
     imageUrl: "/team/lasseosmann.jpg",
     secondImageUrl: "/team/lasseosmann.jpg",
+    linkedIn: "https://www.linkedin.com/in/lasse-osmann-%F0%9F%91%8B-1b6ab9243/"
   },
   {
     name: "Simon Maribo",
     position: "Medstifter & backend Udvikler",
     imageUrl: "/team/simonmaribo.jpg",
     secondImageUrl: "/team/simonmaribo.jpg",
+    linkedIn: "https://www.linkedin.com/in/simonmaribo/"
   },
   {
     name: "Mik Lønborg",
     position: "Head of outbound",
     imageUrl: "/team/miklonborg.jpg",
     secondImageUrl: "/team/miklonborg.jpg",
+    linkedIn: "https://www.linkedin.com/in/mik-l%C3%B8nborg/"
   },
   {
     name: "Malte Pedersen",
     position: "Lead Manager",
     imageUrl: "/emptymember.jpg",
     secondImageUrl: "/emptymember.jpg",
+    linkedIn: "https://www.linkedin.com/in/malte-pedersen-2689772ab/"
   },
 ];
 
@@ -47,7 +51,7 @@ export default function Members() {
 const MemberCard = (props: any) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <Reveal>
+    <Link target="_blank" href={props.Obj.linkedIn} className="hover:opacity-70 transition-all">
       <div>
         <img
           onMouseEnter={() => setIsHovered(true)}
@@ -59,6 +63,6 @@ const MemberCard = (props: any) => {
         <h1 className="text-[20px] font-[500] text-main">{props.Obj.name}</h1>
         <p className="text-gray-600 font-[400]">{props.Obj.position}</p>
       </div>
-    </Reveal>
+    </Link>
   );
 };

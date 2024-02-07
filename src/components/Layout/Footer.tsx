@@ -6,10 +6,10 @@ export default function Footer() {
     <>
       <footer className="py-[60px] pb-[40px] bg-main text-white">
         <div className="w-[92%] mx-auto max-w-main">
-          <div className="flex justify-between border-b-[1px] pb-[60px] mb-[20px] footer:flex-col footer: gap-[80px]">
+          <div className="flex justify-between pb-[60px] mb-[20px] footer:flex-col footer: gap-[80px]">
             <div className="w-[16%] footer:w-full">
               <img className="w-[100px] mb-[20px]" src="/logo.svg"></img>
-              <p className="mb-[20px] text-gray-200 font-light">
+              <p className="mb-[20px] text-gray-200 font-[400]">
                 Vi udvikler brugbar software til virksomheder
               </p>
               <a href="tel:+4550695272" className="font-[500] text-white">
@@ -52,7 +52,7 @@ export default function Footer() {
                     className="transition-all hover:text-white"
                     href={"/arbejde/cases"}
                   >
-                    Kunde cases
+                    Cases
                   </Link>
                   <Link
                     className="transition-all hover:text-white"
@@ -103,25 +103,6 @@ export default function Footer() {
                     href={"/support"}
                   >
                     Support
-                  </Link>
-                </div>
-              </div>
-              <div>
-                <h1 className="text-[18px] font-[600] mb-[20px] text-white">
-                  Juridisk
-                </h1>
-                <div className="flex flex-col gap-[12px] text-gray-200 font-[400]">
-                  <Link
-                    className="transition-all hover:text-white"
-                    href={"/legal/privatlivspolitik"}
-                  >
-                    Privatlivspolitik
-                  </Link>
-                  <Link
-                    className="transition-all hover:text-white"
-                    href={"/legal/cookies"}
-                  >
-                    Cookies
                   </Link>
                 </div>
               </div>

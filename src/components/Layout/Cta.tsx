@@ -31,10 +31,7 @@ export default function Cta() {
           Har du en idé til <span className="text-main">{IdentifySection()}?</span>
         </h1>
         <p className="text-[20px] text-gray-600 w-[60%] font-[400] mb-[40px] z-[999] ctao:w-full">
-          Få et indblik i hvilke værktøjer samt eksterne software vi hver dag
-          bruger til at udvikle de bedst mulige løsninger for vores kunder. Hos
-          Gazella Team holder vi os konstant opdateret på de seneste
-          teknologier, således vi altid sikrer top-kvalitet.
+          Vi elsker at høre om dine projekter. Vi tilbyder en uforpligtende samtale, hvor du får mulighed for at fastslå dine krav til din kommende løsning samt få professionel sparring og rådgivning - helt gratis og uforpligtende
         </p>
         <div className="flex gap-[20px]">
         <EstimateSheet>
