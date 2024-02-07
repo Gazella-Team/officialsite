@@ -14,8 +14,7 @@ const config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       boxShadow: {
-        navigation: "box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;",
-        navbar: "box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;",
+        main: "box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px);",
       },
       fontFamily: {
         mainFont: "Oxygen",

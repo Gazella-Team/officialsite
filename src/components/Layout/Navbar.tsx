@@ -18,8 +18,8 @@ export default function Navbar() {
           <Link href={"/"}>
             <img className="w-[90px]" src="/logosvg.svg"></img>
           </Link>
-          <div className="flex items-center gap-[40px] font-[400]">
-            <div className="flex items-center justify-end gap-[30px] text-[16px] font-[400] lg:hidden">
+          <div className="flex items-center gap-[40px]">
+            <div className="flex items-center justify-end gap-[30px] text-[16px] font-[500] text-main lg:hidden">
               <Link href={"/ydelser"}>Ydelser</Link>
               <Link href={"/arbejde/cases"}>Arbejde</Link>
               <Link href={"/team"}>Teamet</Link>

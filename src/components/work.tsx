@@ -32,12 +32,42 @@ const workData = [
     url: "https://centox.io/",
     link: "/arbejde/cases/organicmasterclass",
   },
+  {
+    company: "COAD",
+    date: "01/01/2024",
+    description:
+      "Cross-platform solution for managing micro-investments and savings, compatible with SAMA fintech regulations including multi-factor authorization and KYC verification",
+    imageUrl:
+      "bg-[linear-gradient(rgba(5,29,64,0.0),rgba(5,29,64,2)),url(/cases/coad/coad.jpg)]",
+    url: "https://centox.io/",
+    link: "/arbejde/cases/coad",
+  },
+  {
+    company: "Organic Masterclass",
+    date: "01/01/2024",
+    description:
+      "Cross-platform solution for managing micro-investments and savings, compatible with SAMA fintech regulations including multi-factor authorization and KYC verification",
+    imageUrl:
+      "bg-[linear-gradient(rgba(5,29,64,0.0),rgba(5,29,64,1)),url(/cases/organicmasterclass/organicmasterclass.jpg)]",
+    url: "https://centox.io/",
+    link: "/arbejde/cases/organicmasterclass",
+  },
+  {
+    company: "Centox",
+    date: "01/01/2024",
+    description:
+      "Cross-platform solution for managing micro-investments and savings, compatible with SAMA fintech regulations including multi-factor authorization and KYC verification",
+    imageUrl:
+      "bg-[linear-gradient(rgba(5,29,64,0.0),rgba(5,29,64,1)),url(/cases/organicmasterclass/organicmasterclass.jpg)]",
+    url: "https://centox.io/",
+    link: "/arbejde/cases/organicmasterclass",
+  },
 ];
 
 export default function Work() {
   return (
-    <section className="py-[100px]">
-      <div className="w-[92%] max-w-main z-[1] mx-auto grid grid-cols-3 gap-x-[20px] gap-y-[30px]  small:grid-cols-1">
+    <section className="py-[100px] pt-[50px]">
+      <div className="w-[95%] max-w-main z-[1] mx-auto grid grid-cols-3 gap-x-[20px] gap-y-[20px]  small:grid-cols-1">
         {workData.map((v, index) => (
           <WorkCard
             date={v.date}
@@ -67,7 +97,7 @@ const WorkCard = ({
     <Reveal>
       <Link href={link}>
         <div
-          className={`${background} bg-main pt-[500px] pb-[30px] bg-cover bg-center cursor-pointer hover:opacity-[80%] transition-all`}
+          className={`${background} bg-main pt-[500px] pb-[30px] bg-cover bg-center cursor-pointer hover:opacity-[80%] transition-all rounded-[14px]`}
         >
           <div className="w-[86%] mx-auto">
             <p className="text-white font-[400]">{date}</p>

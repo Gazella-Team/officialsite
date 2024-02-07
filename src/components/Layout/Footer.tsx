@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <>
       <footer className="py-[60px] pb-[40px]">
-        <div className="w-[92%] mx-auto max-w-main">
+        <div className="w-[95%] mx-auto max-w-main">
           <div className="flex justify-between border-b-[1px] pb-[60px] mb-[20px] footer:flex-col footer: gap-[80px]">
             <div className="w-[16%] footer:w-full">
               <img className="w-[100px] mb-[20px]" src="/logosvg.svg"></img>
@@ -26,13 +26,13 @@ export default function Footer() {
                     className="transition-all hover:text-main"
                     href={"/ydelser/webudvikling"}
                   >
-                    Web udvikling
+                    Webudvikling
                   </Link>
                   <Link
                     className="transition-all hover:text-main"
                     href={"/ydelser/appudvikling"}
                   >
-                    App udvikling
+                    Appudvikling
                   </Link>
                   <Link
                     className="transition-all hover:text-main"
