@@ -25,7 +25,7 @@ export default function Index() {
             <h1 className="text-[70px] font-[500] text-main mb-[8px] w-[90%] leading-[70px] lg:text-[60px] lg:leading-[70px]">
               Unikke værdiskabende softwareløsninger til virksomheder
             </h1>
-            <p className="text-[22px] font-[300] w-[80%] ">Hos Gazella Team specialiserer vi os i at udvikle skrædersyede softwareløsninger til virksomheder. </p>
+            <p className="text-[22px] text-gray-600 font-[400] w-[80%]">Hos Gazella Team specialiserer vi os i at udvikle skrædersyede softwareløsninger til virksomheder. </p>
           </div>
         </div>
       </Reveal>

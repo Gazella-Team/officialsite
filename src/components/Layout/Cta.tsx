@@ -24,7 +24,7 @@ export default function Cta() {
   }
   return (
     <div className="bg-white">
-          <section className="bg-main py-[100px] w-[100%] mx-auto text-white">
+          <section className="bg-main py-[100px] w-[100%] mx-auto text-white rounded-[50px]">
       <div className="w-[95%] mx-auto max-w-main">
         <h1 className="text-[40px] font-[500] mb-[20px]">
           Har du en idé til <span className="text-white">{IdentifySection()}?</span>
