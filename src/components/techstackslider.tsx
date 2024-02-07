@@ -13,10 +13,10 @@ const techStackSliderData = [
 
 export default function TechStackSlider() {
   return (
-    <section className="py-[60px] bg-gray-50 border-y-[1px] mt-[200px]">
+    <section className="py-[200px] ">
       <div className="w-[100%] mx-auto">
         <Slider
-          width="320px"
+          width="230px"
           duration={50}
           pauseOnHover={true}
           blurBorders={false}
@@ -37,9 +37,9 @@ const TechStackSliderCard = ({ image }: { image: string }) => {
   return (
     <Link
       href={"/udvikling/techstack"}
-      className="p-[20px] px-[70px] border-[1px] bg-white rounded-[8px]"
+      className="p-[20px] px-[10px] bg-white rounded-[8px]"
     >
-      <img className="w-[150px]" src={image}></img>
+      <img className="w-[130px]" src={image}></img>
     </Link>
   );
 };

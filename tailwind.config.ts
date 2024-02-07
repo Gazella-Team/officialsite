@@ -14,7 +14,7 @@ const config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       boxShadow: {
-        main: "box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px);",
+        main: "box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px",
       },
       fontFamily: {
         mainFont: "Oxygen",
@@ -24,11 +24,12 @@ const config = {
         second:"#fcf3eb"
       },
       screens: {
-        "2xl": { max: "1535px" },
+        "2xl": { min: "1535px" },
         // => @media (max-width: 1535px) { ... }
 
-        xl: { max: "1279px" },
+        xl: { min: "1579px" },
         // => @media (max-width: 1279px) { ... }
+        hro: {max: "1300px"},
 
         lg: { max: "1023px" },
         leg: { max: "1023px" },

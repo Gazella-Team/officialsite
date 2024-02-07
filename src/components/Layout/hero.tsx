@@ -15,7 +15,7 @@ export default function Hero({
     <section className={`pt-[20px] pb-[70px] w-[100%] mx-auto`}>
       <Reveal>
         <div className="w-[92%] mx-auto max-w-main">
-          <img className="w-[500px] ml-[-100px]" src="/heropattern.png"></img>
+          <img className="w-[500px] ml-[-100px]" src="/heropattern.webp"></img>
           <div className="mt-[-300px]">
             <p className="mb-[14px] uppercase font-[400] text-main">/ {section}</p>
           <div className="flex items-center gap-[20px]">

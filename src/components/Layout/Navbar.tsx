@@ -23,7 +23,6 @@ export default function Navbar() {
               <Link href={"/ydelser"}>Ydelser</Link>
               <Link href={"/arbejde/cases"}>Arbejde</Link>
               <Link href={"/team"}>Teamet</Link>
-              <Link href={"/blog"}>Blog</Link>
               <Link href={"/kontakt"}>Kontakt</Link>
             </div>
           <div className="flex items-center gap-[40px] font-medium ">
@@ -38,7 +37,7 @@ export default function Navbar() {
               onClick={() => setMenuClicked(!menuClicked)}
               className="hidden lg:flex items-center gap-[8px] cursor-pointer"
             >
-              <p className="font-light">Menu</p>
+              <p className="font-[500]">Menu</p>
               {menuClicked ? <X size={20} /> : <Menu size={20} />}
             </div>
           </div>

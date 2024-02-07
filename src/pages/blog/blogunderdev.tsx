@@ -18,7 +18,7 @@ export default function BlogList() {
       />
       <Hero
       background="bg-[linear-gradient(rgba(5,29,64,0.30),rgba(5,29,64,1)),url(/herobg/blog.jpg)] bg-center bg-cover"
-        heading="Blog og læring"
+        heading="Blog"
         section="læring"
         icon={<BookCopy strokeWidth={1.3} fontWeight={100} color="#ffffff" size={70} />}
       />
