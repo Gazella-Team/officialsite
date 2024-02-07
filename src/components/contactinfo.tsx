@@ -2,7 +2,7 @@ import { Reveal } from "./Animations/Reveal";
 
 export default function ContactInfo() {
   return (
-    <section className="py-[100px] bg-[#f2f2f5]">
+    <section className="py-[50px] bg-[#f2f2f5]">
       <Reveal>
         <div className="w-[92%] mx-auto max-w-main grid grid-cols-contact mid:grid-cols-1">
           <div className="mid:mb-[60px]">
@@ -42,7 +42,7 @@ export default function ContactInfo() {
                   href="mailto:info@gazellateam.com"
                   className="text-gray-600 text-[18px]"
                 >
-                  support@gazellateam.com
+                  admin@gazellateam.com
                 </a>
               </Reveal>
             </div>

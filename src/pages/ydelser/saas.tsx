@@ -8,7 +8,7 @@ export default function Saas() {
     <Layout>
       <Hero
       background="bg-[linear-gradient(rgba(5,29,64,0.30),rgba(5,29,64,1)),url(/herobg/saas.jpg)] bg-center bg-cover"
-        heading="SaaS"
+        heading="SaaS."
         section="Ydelser"
         icon={<Laptop strokeWidth={1.3} color="#ffffff" size={80} />}
       />
@@ -16,7 +16,7 @@ export default function Saas() {
       <Features
         Obj={[
           {
-            heading: "Hosting",
+            heading: "Fuld produktudviking",
             description:
               "We bring together public and commercial healthcare organizations, offering a 360-degree industry approach to solving",
           },

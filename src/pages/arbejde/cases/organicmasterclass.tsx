@@ -1,105 +1,40 @@
 import { Reveal } from "@/components/Animations/Reveal";
 import Layout from "@/components/Layout";
+import Hero from "@/components/Layout/hero";
+import Description from "@/components/description";
 import { ExternalLink } from "lucide-react";
 import Link from "next/link";
 
 export default function OrganicMasterclass() {
   return (
     <Layout>
-      <>
-        <section className="bg-[linear-gradient(rgba(5,29,64,0.80),rgba(5,29,64,1)),url(/cases/organicmasterclass/organicmasterclass.jpg)] bg-center bg-cover py-[180px] pt-[260px]">
-          <div className="w-[92%] mx-auto max-w-main">
-            <Reveal>
-              <p className="text-white mb-[14px] uppercase">/ CASE</p>
-            </Reveal>
-
-            <Reveal>
-              <h1 className="text-[80px] leading-[90px] w-[76%] font-[500] text-white mb-[20px]">
-                Organic Masterclass
-              </h1>
-            </Reveal>
-          </div>
-        </section>
-        <div className="w-[92%] max-w-main mx-auto bg-white mt-[-140px] rounded-[6px] py-[50px] px-[50px] mb-[60px] border-[1px] grid grid-cols-1 gap-[30px]">
-          <div className="grid grid-cols-4 gap-[20px] caseDisplayOne:grid-cols-2">
-            <Reveal>
-              <div className="bg-gray-100 rounded-[6px] p-[30px] border-[1px]">
-                <h1 className="font-[600] text-[20px] mb-[6px] text-main">Klient</h1>
-                <p className="text-gray-600 font-[400]">Organic Masterclass</p>
-              </div>
-            </Reveal>
-            <Reveal>
-              <div className="bg-gray-100 rounded-[6px] p-[30px] border-[1px]">
-                <h1 className="font-[600] text-[20px] mb-[6px] text-main">Ydelse</h1>
-                <p className="text-gray-600 font-[400]">Landingsside</p>
-              </div>
-            </Reveal>
-            <Reveal>
-              <div className="bg-gray-100 rounded-[6px] p-[30px] border-[1px]">
-                <h1 className="font-[600] text-[20px] mb-[6px] text-main">Dato</h1>
-                <p className="text-gray-600 font-[400]">25/01/2024</p>
-              </div>
-            </Reveal>
-
-            <Link
-              target="_blank"
-              href={"https://site.organicmasterclass.com/"}
-              className="bg-main rounded-[6px] p-[30px] flex items-center justify-center cursor-pointer"
-            >
-              <h1 className="font-[600] text-[20px] mb-[6px] text-white flex items-center gap-[10px]">
-                <p>Se case</p>
-                <ExternalLink size={30} />
-              </h1>
-            </Link>
-          </div>
-
+      <Hero background={""} icon={null} section="case" heading="Organic Masterclass" />
+      <Description description="Fra et simpelt mockup til en skrædersyet landingsside. Organic Masterclass er et glimrende eksempel på, hvor stor betydning en gennemarbejdet hjemmeside har for det samlede antal af konverterende besøgende." />
+      <div className="w-[92%] mb-[200px] mx-auto max-w-main flex flex-col items-end justify-center gap-[20px] mt-[-100px]">
+          <p className="text-[44px] w-[68%] text-main font-[500] lg:text-[24px] lg:leading-[34px] lg:w-[90%] mid:w-full mid:text-[22px] mid:leading-[32px]">
+            +800%
+            <span className="text-[20px] ml-[20px]">måndelige konverterende</span>
+          </p>
+          <p className="text-[44px] mb-[50px] w-[68%] text-main font-[500] lg:text-[24px] lg:leading-[34px] lg:w-[90%] mid:w-full mid:text-[22px] mid:leading-[32px]">
+            {"<"}0.4ms
+            <span className="text-[20px] ml-[20px]">hjemmeside hastighed</span>
+          </p>
           <div>
-            <Reveal>
-              <div className="bg-gray-100 rounded-[6px] p-[100px] border-[1px]">
-                <Reveal>
-                  <img className="w-[130px] mb-[40px]" src="/trust.png"></img>
-                </Reveal>
-                <div className="flex flex-col items-center justify-center">
-                  <Reveal>
-                    <h1 className="italic text-[20px] font-[400] text-gray-700 mb-[50px]">
-                      " Vi hos Organic Masterclass har haft fornøjelsen af at
-                      samarbejde med Gazella Team, og vi kan kun takke for den
-                      fantastiske service og den imponerende hjemmeside, de har
-                      skabt for vores vores virksomhed. Hele processen fra start
-                      til slut var en glæde. Teamet hos Gazella Team viste en
-                      enestående professionalisme, og de forstod virkelig at
-                      gribe vores vision og omsætte den til en visuelt
-                      tiltalende og funktionel hjemmeside. Hver detalje blev
-                      håndteret med omhu, de svarede hurtigt på alle vores
-                      løbende forslag til ændringer og leverede til slut et
-                      produkt der overgik alle vores forventninger. "
-                    </h1>
-                  </Reveal>
-                </div>
+          <Link className="border-[2px] rounded-full px-10 py-4 border-main mb-[50px] w-[68%] text-main font-[500]  hover:text-white hover:bg-main transition-all" target="_blank" href={"https://site.organicmasterclass.com/"}>
+            Besøg Organic Masterclass
+          </Link>
+          </div>
 
-                <div className="flex items-center justify-center gap-[20px]">
-                  <Reveal>
-                    <img
-                      className="w-[80px] h-[80px] object-cover rounded-[100px] object-top"
-                      src="/lasseosmann.jpg"
-                    ></img>
-                  </Reveal>
-                  <Reveal>
-                    <div>
-                      <h1 className="text-[20px] font-[600] text-main">
-                        Sebastian Madsen
-                      </h1>
-                      <p className="text-gray-600 font-[400]">
-                        Medstifter, Organic Masterclass
-                      </p>
-                    </div>
-                  </Reveal>
-                </div>
-              </div>
-            </Reveal>
+        </div>
+        <div className="w-[92%] mb-[100px] mx-auto max-w-main">
+          <img className="w-[140px] mb-[30px]" src="/trust.png"></img>
+          <p className="w-[50%] text-[20px] italic text-gray-600 mb-[50px] lg:w-full">"Fuldkommen perfekt hjemmeside. Jeg har arbejdet sammen med Lasse og hans team da jeg stod og manglede en ny hjemmeside til mit agency. Der er ikke andet at sige end at resultatet er blevet virkelig lækkert og lige hvad jeg søgte. Kan varmt anbefales til alle der leder efter en hjemmeside fra øverste hylde!"</p>
+          <div className="flex items-center gap-[30px]">
+            <p className="text-[30px]">-</p>
+            <p className="text-[22px] font-[500]">Sebastian Madsen,<br></br><span className="text-gray-600 font-[400] text-[18px]">Co-founder, Organic Masterclass</span></p>
           </div>
         </div>
-      </>
+        <img className="w-[92%] mx-auto rounded-[14px] ctao:mb-[100px]" src="/cases/organicmasterclass/organicmasterclasscase.svg"></img>
     </Layout>
   );
 }

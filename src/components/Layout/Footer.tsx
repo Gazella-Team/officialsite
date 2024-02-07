@@ -23,19 +23,19 @@ export default function Footer() {
                 </h1>
                 <div className="flex flex-col gap-[12px] text-gray-200 font-[400]">
                   <Link
-                    className="transition-all hover:text-main"
+                    className="transition-all hover:text-white"
                     href={"/ydelser/webudvikling"}
                   >
                     Webudvikling
                   </Link>
                   <Link
-                    className="transition-all hover:text-main"
+                    className="transition-all hover:text-white"
                     href={"/ydelser/appudvikling"}
                   >
                     Appudvikling
                   </Link>
                   <Link
-                    className="transition-all hover:text-main"
+                    className="transition-all hover:text-white"
                     href={"/ydelser/saas"}
                   >
                     SaaS
@@ -49,13 +49,13 @@ export default function Footer() {
                 </h1>
                 <div className="flex flex-col gap-[12px] text-gray-200 font-[400]">
                   <Link
-                    className="transition-all hover:text-main"
+                    className="transition-all hover:text-white"
                     href={"/arbejde/cases"}
                   >
                     Kunde cases
                   </Link>
                   <Link
-                    className="transition-all hover:text-main"
+                    className="transition-all hover:text-white"
                     href={"/arbejde/priser"}
                   >
                     Priser
@@ -68,13 +68,13 @@ export default function Footer() {
                 </h1>
                 <div className="flex flex-col gap-[12px] text-gray-200 font-[400]">
                   <Link
-                    className="transition-all hover:text-main"
+                    className="transition-all hover:text-white"
                     href={"/udvikling/arbejdsprocesser"}
                   >
                     Arbejdsprocesser
                   </Link>
                   <Link
-                    className="transition-all hover:text-main"
+                    className="transition-all hover:text-white"
                     href={"/udvikling/techstack"}
                   >
                     Tech stack
@@ -87,19 +87,19 @@ export default function Footer() {
                 </h1>
                 <div className="flex flex-col gap-[12px] text-gray-200 font-[400]">
                   <Link
-                    className="transition-all hover:text-main"
+                    className="transition-all hover:text-white"
                     href={"/team"}
                   >
                     Teamet
                   </Link>
                   <Link
-                    className="transition-all hover:text-main"
+                    className="transition-all hover:text-white"
                     href={"/kontakt"}
                   >
                     Kontakt
                   </Link>
                   <Link
-                    className="transition-all hover:text-main"
+                    className="transition-all hover:text-white"
                     href={"/support"}
                   >
                     Support
@@ -112,13 +112,13 @@ export default function Footer() {
                 </h1>
                 <div className="flex flex-col gap-[12px] text-gray-200 font-[400]">
                   <Link
-                    className="transition-all hover:text-main"
+                    className="transition-all hover:text-white"
                     href={"/legal/privatlivspolitik"}
                   >
                     Privatlivspolitik
                   </Link>
                   <Link
-                    className="transition-all hover:text-main"
+                    className="transition-all hover:text-white"
                     href={"/legal/cookies"}
                   >
                     Cookies

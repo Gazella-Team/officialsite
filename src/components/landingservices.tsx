@@ -1,84 +1,103 @@
-import { CheckIcon} from "lucide-react"
-import Link from "next/link"
+import { CheckIcon, ChevronRight} from "lucide-react";
+import Link from "next/link";
+import { Reveal } from "./Animations/Reveal";
 
 export default function LandigServices() {
-    return (
-        <section className="py-[100px] pt-0">
-            <div className="w-[92%] mx-auto max-w-main">
-                <h1 className="text-[36px] font-[600] text-main">Software udvikling vi tilbyder</h1>
-                <p className="text-gray-600 text-[20px] mb-[60px]">Skrædersyede løsninger til alle projekter og budgeter</p>
-                <div className="grid grid-cols-3 gap-[20px] small:grid-cols-1">
-                    <div className="bg-white shadow-xl rounded-[14px] p-[30px] small:mb-[60px]">
-                        <h1 className="text-[22px] font-[600] text-main mb-[10px]">Webudvikling</h1>
-                        <p className="text-[16px] text-gray-600 mb-[40px]">Unikke løsninger med alt fra simple landingssider til funktionelle web-apps</p>
-                        <div className="flex flex-col justify-center gap-[14px] mb-[50px]">
-                            <div className="flex items-center gap-[10px]">
-                                <CheckIcon color="#051d40" />
-                                <p className="text-main font-[500]">Hosting & domain</p>
-                            </div>
-                            <div className="flex items-center gap-[10px]">
-                                <CheckIcon color="#051d40" />
-                                <p className="text-main font-[500]">Backend funktioner</p>
-                            </div>
-                            <div className="flex items-center gap-[10px]">
-                                <CheckIcon color="#051d40" />
-                                <p className="text-main font-[500]">Skrædersyet design</p>
-                            </div>
-                            <div className="flex items-center gap-[10px]">
-                                <CheckIcon color="#051d40" />
-                                <p className="text-main font-[500]">SEO-optimering</p>
-                            </div>
-                        </div>
-                        <Link className="bg-main flex text-white p-[10px] text-[15px] font-[500] rounded-[14px] items-center justify-center" href={"/ydelser/webudvikling"}>Læs mere</Link>
-                    </div>
-                    <div className="bg-white shadow-xl rounded-[14px] p-[30px] small:mb-[60px]">
-                        <h1 className="text-[22px] font-[600] text-main mb-[10px]">Webudvikling</h1>
-                        <p className="text-[16px] text-gray-600 mb-[40px]">Unikke løsninger med alt fra simple landingssider til funktionelle web-apps</p>
-                        <div className="flex flex-col justify-center gap-[14px] mb-[50px]">
-                            <div className="flex items-center gap-[10px]">
-                                <CheckIcon color="#051d40" />
-                                <p className="text-main font-[500]">Hosting & domain</p>
-                            </div>
-                            <div className="flex items-center gap-[10px]">
-                                <CheckIcon color="#051d40" />
-                                <p className="text-main font-[500]">Backend funktioner</p>
-                            </div>
-                            <div className="flex items-center gap-[10px]">
-                                <CheckIcon color="#051d40" />
-                                <p className="text-main font-[500]">Skrædersyet design</p>
-                            </div>
-                            <div className="flex items-center gap-[10px]">
-                                <CheckIcon color="#051d40" />
-                                <p className="text-main font-[500]">SEO-optimering</p>
-                            </div>
-                        </div>
-                        <Link className="bg-main flex text-white p-[10px] text-[15px] font-[500] rounded-[14px] items-center justify-center" href={"/ydelser/webudvikling"}>Læs mere</Link>
-                    </div>
-                    <div className="bg-white shadow-xl rounded-[14px] p-[30px]">
-                        <h1 className="text-[22px] font-[600] text-main mb-[10px]">Webudvikling</h1>
-                        <p className="text-[16px] text-gray-600 mb-[40px]">Unikke løsninger med alt fra simple landingssider til funktionelle web-apps</p>
-                        <div className="flex flex-col justify-center gap-[14px] mb-[50px]">
-                            <div className="flex items-center gap-[10px]">
-                                <CheckIcon color="#051d40" />
-                                <p className="text-main font-[500]">Hosting & domain</p>
-                            </div>
-                            <div className="flex items-center gap-[10px]">
-                                <CheckIcon color="#051d40" />
-                                <p className="text-main font-[500]">Backend funktioner</p>
-                            </div>
-                            <div className="flex items-center gap-[10px]">
-                                <CheckIcon color="#051d40" />
-                                <p className="text-main font-[500]">Skrædersyet design</p>
-                            </div>
-                            <div className="flex items-center gap-[10px]">
-                                <CheckIcon color="#051d40" />
-                                <p className="text-main font-[500]">SEO-optimering</p>
-                            </div>
-                        </div>
-                        <Link className="bg-main flex text-white p-[10px] text-[15px] font-[500] rounded-[14px] items-center justify-center" href={"/ydelser/webudvikling"}>Læs mere</Link>
-                    </div>
-                </div>
+  return (
+    <section className="py-[70px] bg-[#f2f2f5]">
+      <div className="w-[92%] max-w-main mx-auto grid grid-cols-features xl:grid-cols-1">
+        <div className="grid grid-cols-3 gap-[20px] gap-y-[20px] mid:grid-cols-1">
+        <Reveal>
+      <div className="bg-white p-[50px] rounded-[14px] shadow-main">
+        <h2 className="text-[24px] font-[500] mb-[14px] text-main">
+          Webudvikling
+        </h2>
+        <p className="text-[18px] font-[400] text-gray-600">
+        We bring together public and commercial healthcare sites
+        </p>
+        <div className="mt-[40px] flex flex-col gap-[20px] mb-[70px]">
+            <div className="flex items-center gap-[14px]">
+            <CheckIcon />
+            <p className="text-[18px] text-main font-[500]">Layout & opstilling</p>
             </div>
-        </section>
-    )
+            <div className="flex items-center gap-[14px]">
+            <CheckIcon />
+            <p className="text-[18px] text-main font-[500]">Skrædersyet design</p>
+            </div>
+            <div className="flex items-center gap-[14px]">
+            <CheckIcon />
+            <p className="text-[18px] text-main font-[500]">SEO Optimering</p>
+            </div>
+            <div className="flex items-center gap-[14px]">
+            <CheckIcon />
+            <p className="text-[18px] text-main font-[500]">Hastighedsoptimering</p>
+            </div>
+        </div>
+        <Link className="flex text-[18px] font-[500] border-[2px] rounded-full px-10 py-4 border-main text-main items-center justify-center hover:bg-main hover:text-white transition-all" href={"/ydelser/webudvikling"}>Læs mere</Link>
+      </div>
+    </Reveal>
+    <Reveal>
+      <div className="bg-white p-[50px] rounded-[14px] shadow-main">
+        <h2 className="text-[24px] font-[500] mb-[14px] text-main">
+          Appudvikling
+        </h2>
+        <p className="text-[18px] font-[400] text-gray-600">
+        We bring together public and commercial healthcare sites
+        </p>
+        <div className="mt-[40px] flex flex-col gap-[20px] mb-[70px]">
+            <div className="flex items-center gap-[14px]">
+            <CheckIcon />
+            <p className="text-[18px] text-main font-[500]">Dit projekt</p>
+            </div>
+            <div className="flex items-center gap-[14px]">
+            <CheckIcon />
+            <p className="text-[18px] text-main font-[500]">Dit projekt</p>
+            </div>
+            <div className="flex items-center gap-[14px]">
+            <CheckIcon />
+            <p className="text-[18px] text-main font-[500]">Dit projekt</p>
+            </div>
+            <div className="flex items-center gap-[14px]">
+            <CheckIcon />
+            <p className="text-[18px] text-main font-[500]">Dit projekt</p>
+            </div>
+        </div>
+        <Link className="flex text-[18px] font-[500] border-[2px] rounded-full px-10 py-4 border-main text-main items-center justify-center hover:bg-main hover:text-white transition-all" href={"/ydelser/webudvikling"}>Læs mere</Link>
+      </div>
+    </Reveal>
+    <Reveal>
+      <div className="bg-white p-[50px] rounded-[14px] shadow-main">
+        <h2 className="text-[24px] font-[500] mb-[14px] text-main">
+          SaaS udvikling
+        </h2>
+        <p className="text-[18px] font-[400] text-gray-600">
+        We bring together public and commercial healthcare sites
+        </p>
+        <div className="mt-[40px] flex flex-col gap-[20px] mb-[70px]">
+            <div className="flex items-center gap-[14px]">
+            <CheckIcon />
+            <p className="text-[18px] text-main font-[500]">Dit projekt</p>
+            </div>
+            <div className="flex items-center gap-[14px]">
+            <CheckIcon />
+            <p className="text-[18px] text-main font-[500]">Dit projekt</p>
+            </div>
+            <div className="flex items-center gap-[14px]">
+            <CheckIcon />
+            <p className="text-[18px] text-main font-[500]">Dit projekt</p>
+            </div>
+            <div className="flex items-center gap-[14px]">
+            <CheckIcon />
+            <p className="text-[18px] text-main font-[500]">Dit projekt</p>
+            </div>
+        </div>
+        <Link className="flex text-[18px] font-[500] border-[2px] rounded-full px-10 py-4 border-main text-main items-center justify-center hover:bg-main hover:text-white transition-all" href={"/ydelser/webudvikling"}>Læs mere</Link>
+      </div>
+    </Reveal>
+        </div>
+      </div>
+    </section>
+  );
 }
+
+

@@ -30,7 +30,7 @@ export default function Cta() {
         <h1 className="text-[40px] font-[600] mb-[20px] z-[999]">
           Har du en idé til <span className="text-main">{IdentifySection()}?</span>
         </h1>
-        <p className="text-[20px] text-gray-600 w-[80%] font-[400] mb-[40px] z-[999] ctao:w-full">
+        <p className="text-[20px] text-gray-600 w-[60%] font-[400] mb-[40px] z-[999] ctao:w-full">
           Få et indblik i hvilke værktøjer samt eksterne software vi hver dag
           bruger til at udvikle de bedst mulige løsninger for vores kunder. Hos
           Gazella Team holder vi os konstant opdateret på de seneste
@@ -50,7 +50,7 @@ export default function Cta() {
       </div>
     </section>
     <div className="flex items-center justify-end z-[0] ctao:hidden">
-    <img className="mr-[-100px] w-[700px] z-[0] relative" src="/footerpattern.webp"></img>
+    <img className="select-none mr-[-100px] w-[700px] z-[0] relative" src="/footerpattern.webp"></img>
     </div>
 
     </div>
