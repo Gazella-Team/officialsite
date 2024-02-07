@@ -8,7 +8,7 @@ const workData = [
     description:
       "Cross-platform solution for managing micro-investments and savings, compatible with SAMA fintech regulations including multi-factor authorization and KYC verification",
     imageUrl:
-      "bg-[linear-gradient(rgba(5,29,64,0.0),rgba(5,29,64,2)),url(/cases/coad/coad.jpg)]",
+      "/cases/coad/coad.jpg",
     url: "https://centox.io/",
     link: "/arbejde/cases/coad",
   },
@@ -18,7 +18,7 @@ const workData = [
     description:
       "Cross-platform solution for managing micro-investments and savings, compatible with SAMA fintech regulations including multi-factor authorization and KYC verification",
     imageUrl:
-      "bg-[linear-gradient(rgba(5,29,64,0.0),rgba(5,29,64,1)),url(/cases/organicmasterclass/organicmasterclass.jpg)]",
+      "/cases/organicmasterclass/organicmasterclass.jpg",
     url: "https://centox.io/",
     link: "/arbejde/cases/organicmasterclass",
   },
@@ -28,37 +28,7 @@ const workData = [
     description:
       "Cross-platform solution for managing micro-investments and savings, compatible with SAMA fintech regulations including multi-factor authorization and KYC verification",
     imageUrl:
-      "bg-[linear-gradient(rgba(5,29,64,0.0),rgba(5,29,64,1)),url(/cases/organicmasterclass/organicmasterclass.jpg)]",
-    url: "https://centox.io/",
-    link: "/arbejde/cases/organicmasterclass",
-  },
-  {
-    company: "COAD",
-    date: "01/01/2024",
-    description:
-      "Cross-platform solution for managing micro-investments and savings, compatible with SAMA fintech regulations including multi-factor authorization and KYC verification",
-    imageUrl:
-      "bg-[linear-gradient(rgba(5,29,64,0.0),rgba(5,29,64,2)),url(/cases/coad/coad.jpg)]",
-    url: "https://centox.io/",
-    link: "/arbejde/cases/coad",
-  },
-  {
-    company: "Organic Masterclass",
-    date: "01/01/2024",
-    description:
-      "Cross-platform solution for managing micro-investments and savings, compatible with SAMA fintech regulations including multi-factor authorization and KYC verification",
-    imageUrl:
-      "bg-[linear-gradient(rgba(5,29,64,0.0),rgba(5,29,64,1)),url(/cases/organicmasterclass/organicmasterclass.jpg)]",
-    url: "https://centox.io/",
-    link: "/arbejde/cases/organicmasterclass",
-  },
-  {
-    company: "Centox",
-    date: "01/01/2024",
-    description:
-      "Cross-platform solution for managing micro-investments and savings, compatible with SAMA fintech regulations including multi-factor authorization and KYC verification",
-    imageUrl:
-      "bg-[linear-gradient(rgba(5,29,64,0.0),rgba(5,29,64,1)),url(/cases/organicmasterclass/organicmasterclass.jpg)]",
+    "/cases/mobile.webp",
     url: "https://centox.io/",
     link: "/arbejde/cases/organicmasterclass",
   },
@@ -67,7 +37,7 @@ const workData = [
 export default function Work() {
   return (
     <section className="py-[100px] pt-[50px]">
-      <div className="w-[95%] max-w-main z-[1] mx-auto grid grid-cols-3 gap-x-[20px] gap-y-[20px]  small:grid-cols-1">
+      <div className="w-[92%] max-w-main z-[1] mx-auto grid grid-cols-3 gap-x-[20px] gap-y-[50px]  small:grid-cols-1">
         {workData.map((v, index) => (
           <WorkCard
             date={v.date}
@@ -96,14 +66,9 @@ const WorkCard = ({
   return (
     <Reveal>
       <Link href={link}>
-        <div
-          className={`${background} bg-main pt-[500px] pb-[30px] bg-cover bg-center cursor-pointer hover:opacity-[80%] transition-all rounded-[14px]`}
-        >
-          <div className="w-[86%] mx-auto">
-            <p className="text-white font-[400]">{date}</p>
-            <h1 className="text-white text-[30px] font-[300]">{heading}</h1>
-          </div>
-        </div>
+        <img className="h-[450px] w-full object-cover rounded-[14px] mb-[20px] hover:opacity-65 transition-all" src={background}></img>
+        <h1 className="font-[600] text-[26px] text-main mb-[6px]">{heading}</h1>
+        <p className="text-gray-600 text-[18px]">{date}</p>
       </Link>
     </Reveal>
   );

@@ -14,7 +14,7 @@ export default function Team() {
       />
       <Hero
       background="bg-[linear-gradient(rgba(5,29,64,0.80),rgba(5,29,64,1)),url(/flyout.jpg)] bg-top bg-cover"
-        heading="Teamet"
+        heading="Vores team"
         section="om os"
         icon={<Users strokeWidth={2} color="#ffffff" size={80} />}
       />

@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <>
       <nav className="fixed w-full bg-white h-[95px] flex items-center z-[10] membersSm:top-0">
-        <div className="w-[96%] mx-auto max-w-[1500px] flex justify-between items-center phoneSm:w-[90%]">
+        <div className="w-[94%] mx-auto max-w-[1500px] flex justify-between items-center phoneSm:w-[90%]">
           <Link href={"/"}>
             <img className="w-[90px]" src="/logosvg.svg"></img>
           </Link>
@@ -28,8 +28,8 @@ export default function Navbar() {
             </div>
           <div className="flex items-center gap-[40px] font-medium ">
             <EstimateSheet>
-              <div className="hidden md:flex cursor-pointer select-none px-6 py-2 font-medium items-center gap-[6px] text-center transition-all bg-main rounded-full text-white">
-                <p className="font-[400]">Få et estimat på dit projekt</p>
+              <div className="hidden md:flex cursor-pointer font-[500] select-none px-6 py-2 items-center gap-[6px] text-center transition-all border-[2px] border-main rounded-full text-main">
+                <p>Få et estimat på dit projekt</p>
                 <ArrowUpRight size={20} />
               </div>
             </EstimateSheet>

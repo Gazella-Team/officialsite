@@ -63,8 +63,8 @@ const toolData = [
 
 export default function Tools() {
   return (
-    <section className="py-[100px] pt-[50px] w-full">
-      <div className="w-[95%] mx-auto z-[1] grid grid-cols-2 gap-[30px] lg:grid-cols-1">
+    <section className="py-[50px] pt-[50px] bg-[#f2f2f5] w-full">
+      <div className="w-[92%] mx-auto z-[1] grid grid-cols-2 gap-[30px] lg:grid-cols-1">
         {toolData.map((v) => (
           <ToolCard Obj={v} key={v} />
         ))}
@@ -76,7 +76,7 @@ export default function Tools() {
 const ToolCard = (props: any) => {
   return (
     <Reveal>
-      <div className="border-[1px] bg-gray-50 rounded-[8px] p-[30px] h-full lg:h-full">
+      <div className=" bg-white rounded-[14px] p-[30px] h-full lg:h-full">
         <div className="flex items-center mb-[30px] justify-between">
           <div className=" bg-white inline-block p-[10px] rounded-[8px] border-[1px]">
             <img
