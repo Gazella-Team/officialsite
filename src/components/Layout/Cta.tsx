@@ -10,7 +10,7 @@ export default function Cta() {
   const currentPath = router.pathname;
 
   const IdentifySection = () => {
-    if (currentPath === "/ydelser/app") {
+    if (currentPath === "/ydelser/appudvikling") {
       return "en app"
     }
     else if (currentPath === "/ydelser/saas") {

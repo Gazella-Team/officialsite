@@ -12,7 +12,7 @@ export default function Saas() {
         section="Ydelser"
         icon={<Laptop strokeWidth={1.3} color="#ffffff" size={80} />}
       />
-      <Description description="Et godt design og en god brugeroplevelse har markant betydning for, hvor professionel dine besøgende opfatter dig. Hos os lægger vi vægt i, at hvert projekt fremhæves af en unik brugerflade, som gør det så let for den besøgende at navigere rundt i som muligt." />
+      <Description description="En god ide, kombineret med den rette software i form af et SaaS, kan skabe banebrydende resultater. Gazella Team står til rådighed for den fulde udvikling af dit kommende SaaS projekt uden binding eller ejerskab." />
       <Features
         Obj={[
           {
