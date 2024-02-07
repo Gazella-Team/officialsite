@@ -30,6 +30,7 @@ const config = {
         xl: { min: "1579px" },
         // => @media (max-width: 1279px) { ... }
         hro: {max: "1300px"},
+        ctao: {max:"1000px"},
 
         lg: { max: "1023px" },
         leg: { max: "1023px" },

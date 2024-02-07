@@ -1,0 +1,18 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1007 522" width="1007" height="522">
+	<title>New Project</title>
+	<defs>
+		<image  width="1080" height="1080" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABDgAAAQ4AQMAAADW3v7MAAAAAXNSR0IB2cksfwAAAANQTFRFBR1AKAHSvQAAAKVJREFUeJztwTEBAAAAwqD1T20JT6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeBo93gABOp3GkgAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 300px;line-height: 290px;fill: #ffffff;font-weight: 800;font-family: "Ruda-ExtraBold", "Ruda" } 
+		.t1 { font-size: 300px;line-height: 290px;fill: #ffffff;font-weight: 400;font-family: "Ruda-Regular", "Ruda" } 
+	</style>
+	<use id="Background" href="#img1" x="-36" y="-278"/>
+	<text id="gazella team" style="transform: matrix(1,0,0,1,-8.75,228.25)" >
+		<tspan x="0" y="0" class="t0">g</tspan><tspan  y="0" class="t0">a</tspan><tspan  y="0" class="t0">z</tspan><tspan  y="0" class="t0">e</tspan><tspan  y="0" class="t0">l</tspan><tspan  y="0" class="t0">l</tspan><tspan  y="0" class="t0">a</tspan><tspan  y="0" class="t1">
+</tspan>
+		<tspan x="0" y="290" class="t1">t</tspan><tspan  y="290" class="t1">e</tspan><tspan  y="290" class="t1">a</tspan><tspan  y="290" class="t1">m
+</tspan>
+	</text>
+</svg>

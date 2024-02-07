@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import EstimateSheet from "../Modals/EstimateSheet";
 import { ArrowUpRight } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 
 export default function Cta() {
   const router = useRouter();
@@ -24,12 +25,12 @@ export default function Cta() {
   }
   return (
     <div className="bg-white">
-          <section className="bg-main py-[100px] w-[100%] mx-auto text-white rounded-[50px]">
-      <div className="w-[95%] mx-auto max-w-main">
-        <h1 className="text-[40px] font-[500] mb-[20px]">
-          Har du en idé til <span className="text-white">{IdentifySection()}?</span>
+          <section className="bg-transparent py-[100px] w-[100%] mx-auto text-main mb-[-500px] mt-[200px] z-[1] relative ctao:mb-0 ctao:mt-0 ctao:bg-[#f1faff]">
+      <div className="w-[92%] mx-auto max-w-main z-[0]">
+        <h1 className="text-[40px] font-[600] mb-[20px] z-[999]">
+          Har du en idé til <span className="text-main">{IdentifySection()}?</span>
         </h1>
-        <p className="text-[20px] text-gray-200 w-[85%] font-[300] mb-[40px]">
+        <p className="text-[20px] text-gray-600 w-[80%] font-[400] mb-[40px] z-[999] ctao:w-full">
           Få et indblik i hvilke værktøjer samt eksterne software vi hver dag
           bruger til at udvikle de bedst mulige løsninger for vores kunder. Hos
           Gazella Team holder vi os konstant opdateret på de seneste
@@ -37,17 +38,21 @@ export default function Cta() {
         </p>
         <div className="flex gap-[20px]">
         <EstimateSheet>
-              <div className="flex cursor-pointer select-none px-10 py-4 font-medium items-center gap-[6px] text-center transition-all bg-white border-[1px] rounded-full text-main hover:text-white hover:bg-main">
+              <div className="flex cursor-pointer select-none px-10 py-4 font-medium items-center gap-[6px] text-center transition-all border-[2px] border-main bg-main rounded-full text-[#f1faff] hover:text-white hover:bg-main">
                 <p className="font-[400]">Få et gratis prisestimat</p>
                 <ArrowUpRight size={20} />
               </div>
             </EstimateSheet>
 
-            <Link className="flex cursor-pointer select-none px-10 py-4 font-medium items-center gap-[6px] text-center transition-all bg-white border-[1px] rounded-full text-main hover:text-white hover:bg-main" href={"/kontakt"}>Kontakt os</Link>
+            <Link className="flex cursor-pointer select-none px-10 py-4 font-medium items-center gap-[6px] text-center transition-all border-[2px] border-main rounded-full text-main hover:text-white hover:bg-main ctao:hidden" href={"/kontakt"}>Kontakt os <ChevronRight size={22}/></Link>
         </div>
 
       </div>
     </section>
+    <div className="flex items-center justify-end z-[0] ctao:hidden">
+    <img className="mr-[-100px] w-[700px] z-[0] relative" src="/footerpattern.webp"></img>
+    </div>
+
     </div>
 
   );
