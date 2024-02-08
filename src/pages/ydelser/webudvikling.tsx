@@ -24,32 +24,32 @@ export default function Webudvikling() {
           {
             heading: "Layout og opstilling",
             description:
-              "We bring together public and commercial healthcare organizations, offering a 360-degree industry approach to solving",
+              "Undersider, layout og sektioner til webløsningen - vi opstiller alt ud fra dine behov",
           },
           {
             heading: "Skrædersyet design",
             description:
-              "We bring together public and commercial healthcare organizations, offering a 360-degree industry approach to solving",
+              "Vi står for at skrædersy et design, som gør dig og dit brand unikke og genkendelige online.",
           },
           {
             heading: "Enhedskompatibel",
             description:
-              "We bring together public and commercial healthcare organizations, offering a 360-degree industry approach to solving",
+              "Alle webløsninger, vi udvikler, er enhedsoptimeret til måde mobil, tablet, laptop og desktop",
           },
           {
             heading: "Domain & hosting",
             description:
-              "We bring together public and commercial healthcare organizations, offering a 360-degree industry approach to solving",
+              "Vi sørger for, at din webløsning tilsluttes dit ønskede domain på en sikker og overskuelig måde",
           },
           {
             heading: "Hastighedsoptimering",
             description:
-              "We bring together public and commercial healthcare organizations, offering a 360-degree industry approach to solving",
+              "Komplet optimering af webløsningens hastighed, som øger brugeroplevelsen og antallet af konverteringer",
           },
           {
             heading: "SEO Optimering",
             description:
-              "We bring together public and commercial healthcare organizations, offering a 360-degree industry approach to solving",
+              "Vi øger din webløsnings synlighed på Google samt antallet af besøgende ved en komplet SEO optimering",
           },
         ]}
       />

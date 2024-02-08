@@ -20,8 +20,8 @@ export default function Index() {
     <>
       <Meta />
       <Layout>
-      <img className="select-none mt-[-500px] ml-[-200px] items-end w-[1300px] xl:w-[1600px] hro:hidden" src="/heropattern.webp"></img>
-      <section className="py-[100px] pb-[0px] w-[100%] mx-auto max-w-none mt-[-780px] xl:mt-[-1000px] xl:mb-[600px] mb-[400px] hro:mt-0 hro:bg-[#f1faff] hro:py-[100px] hro:mb-[100px]">
+
+      <section className="py-[100px] bg-[url(/heropatternsvg.svg)] bg-cover pb-[300px] w-[100%] mx-auto max-w-none hro:mt-0 hro:bg-[#f1faff] hro:py-[100px] hro:mb-[100px]">
       <Reveal>
         <div className="w-[92%] mx-auto max-w-main">
           <div className="flex flex-col justify-center gap-[20px] mb-[50px]">
