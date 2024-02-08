@@ -21,8 +21,8 @@ export default function Navbar() {
           <div className="flex items-center gap-[40px]">
             <div className="flex items-center justify-end gap-[30px] text-[16px] font-[500] text-main footer:hidden">
               <Link href={"/ydelser"}>Ydelser</Link>
-              <Link href={"/arbejde/cases"}>Arbejde</Link>
-              <Link href={"/arbejde/cases"}>Udvikling</Link>
+              <Link href={"/arbejde"}>Arbejde</Link>
+              <Link href={"/udvikling"}>Udvikling</Link>
               <Link href={"/team"}>Teamet</Link>
               <Link href={"/arbejde/priser"}>Priser</Link>
               <Link href={"/kontakt"}>Kontakt</Link>

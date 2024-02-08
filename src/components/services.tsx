@@ -5,8 +5,13 @@ import { DatabaseBackup, Layers, Workflow, Laptop } from "lucide-react";
 const serviceData = [
   {
     icon: <Layers size={40} />,
-    headline: "Web udvikling",
+    headline: "Webudvikling",
     link: "/ydelser/webudvikling",
+  },
+  {
+    icon: <Workflow size={40} />,
+    headline: "Appudvikling",
+    link: "/ydelser/appudvikling",
   },
   {
     icon: <Laptop size={40} />,
@@ -14,23 +19,18 @@ const serviceData = [
     link: "/ydelser/saas",
   },
   {
-    icon: <Workflow size={40} />,
-    headline: "API integrationer",
-    link: "/ydelser/integrationer",
-  },
-  {
-    icon: <DatabaseBackup size={40} />,
-    headline: "Automatisering",
-    link: "/ydelser/automatisering",
+    icon: <Laptop size={40} />,
+    headline: "Webshop",
+    link: "/ydelser/saas",
   },
 ];
 
 export default function Services() {
   return (
-    <section className="py-[60px] w-full">
+    <section className="py-[130px] w-full bg-[url(/otherpattern.svg)] bg-cover">
       <Reveal>
-        <div className="mt-[76px] w-[92%] mx-auto py-[60px]">
-          <h1 className="text-[40px]">Hvad kan vi hjælpe dig med?</h1>
+        <div className="w-[92%] mx-auto py-[60px]">
+          <h1 className="text-[40px] text-main font-[600]">Hvad kan vi hjælpe dig med?</h1>
         </div>
       </Reveal>
 
@@ -48,9 +48,8 @@ const ServiceCard = (props: any) => {
     <Reveal>
       <Link
         href={props.Obj.link}
-        className="border-[1px] bg-gray-50 rounded-[8px] p-[20px] py-[80px] flex items-center flex-col justify-center"
+        className="border-[1px] bg-white rounded-[14px] p-[20px] py-[80px] flex items-center flex-col justify-center"
       >
-        <div className="mb-[20px]">{props.Obj.icon}</div>
         <h1 className="text-[24px] font-[500]">{props.Obj.headline}</h1>
       </Link>
     </Reveal>
