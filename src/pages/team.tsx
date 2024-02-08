@@ -10,7 +10,7 @@ export default function Team() {
     <Layout>
         <Meta
         title="Teamet | Gazella Team"
-        description="Vi specialiserer os inden for web udviklingsprojekter fra A-Z. Med vores web udviklingsservice står vi til rådighed uanset om dit projekt kræver en funktionsfyldt web app eller bare et professionelt online visitkort."
+        description="Gazella Team udgør et hold af ambitiøse, nytænkende og storsmilende programmøre og designere"
       />
       <Hero
       background="bg-[linear-gradient(rgba(5,29,64,0.80),rgba(5,29,64,1)),url(/flyout.jpg)] bg-top bg-cover"
