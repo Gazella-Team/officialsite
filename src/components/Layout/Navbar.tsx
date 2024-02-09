@@ -16,7 +16,7 @@ export default function Navbar() {
       <nav className="fixed w-full bg-white h-[95px] flex items-center z-[10] membersSm:top-0">
         <div className="w-[94%] mx-auto max-w-[1500px] flex justify-between items-center phoneSm:w-[90%]">
           <Link href={"/"}>
-            <img className="w-[200px]" src="/gazellateam.svg"></img>
+            <img className="w-[200px]" src="/bluesvg.svg"></img>
           </Link>
           <div className="flex items-center gap-[40px]">
             <div className="flex items-center justify-end gap-[30px] text-[16px] font-[500] text-main footer:hidden">
