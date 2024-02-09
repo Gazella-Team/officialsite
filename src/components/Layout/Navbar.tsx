@@ -7,33 +7,36 @@ import { Menu, X } from "lucide-react";
 import EstimateSheet from "../Modals/EstimateSheet";
 import { Phone, Mail } from "lucide-react";
 import { Reveal } from "../Animations/Reveal";
-//
+import { Globe } from "lucide-react";
+
 export default function Navbar() {
   const [menuClicked, setMenuClicked] = useState(false);
 
   return (
     <>
       <nav className="fixed w-full bg-white h-[95px] flex items-center z-[10] membersSm:top-0">
-        <div className="w-[94%] mx-auto max-w-[1500px] flex justify-between items-center phoneSm:w-[90%]">
+        <div className="w-[96%] mx-auto max-w-[1500px] flex justify-between items-center phoneSm:w-[90%]">
           <Link href={"/"}>
             <img className="w-[200px]" src="/bluesvg.svg"></img>
           </Link>
           <div className="flex items-center gap-[40px]">
             <div className="flex items-center justify-end gap-[30px] text-[16px] font-[500] text-main footer:hidden">
-              <Link href={"/ydelser"}>Ydelser</Link>
+              <p className="cursor-pointer select-none" >Ydelser</p>
               <Link href={"/arbejde"}>Arbejde</Link>
-              <Link href={"/udvikling"}>Udvikling</Link>
-              <Link href={"/team"}>Teamet</Link>
-              <Link href={"/arbejde/priser"}>Priser</Link>
+              <Link href={"/udvikling"}>Firma</Link>
               <Link href={"/kontakt"}>Kontakt</Link>
             </div>
-          <div className="flex items-center gap-[40px] font-medium ">
+          <div className="flex items-center gap-[20px] font-medium ">
             <EstimateSheet>
               <div className="hidden md:flex cursor-pointer font-[500] select-none px-6 py-2 items-center gap-[6px] text-center transition-all border-[2px] border-main rounded-full text-main">
                 <p>Få et estimat på dit projekt</p>
                 <ArrowUpRight size={20} />
               </div>
             </EstimateSheet>
+            <Link className="flex items-center text-main gap-[6px]" href={"gazellateam.dk"}>
+            <Globe />
+              Danish
+            </Link>
           </div>
           <div
               onClick={() => setMenuClicked(!menuClicked)}
