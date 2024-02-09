@@ -33,7 +33,7 @@ export default function Navbar() {
                 <ArrowUpRight size={20} />
               </div>
             </EstimateSheet>
-            <Link className="flex items-center text-main gap-[6px]" href={"gazellateam.dk"}>
+            <Link className="flex items-center text-main gap-[6px]" href={"https://officialsitedanish.vercel.app/"}>
             <Globe />
               Danish
             </Link>

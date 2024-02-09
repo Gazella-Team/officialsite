@@ -27,7 +27,7 @@ export default function Index() {
           <div className="flex flex-col justify-center gap-[20px] mb-[50px]">
           
             <h1 className="text-[80px] font-[500] text-main mb-[8px] w-[76%] leading-[80px] lg:text-[60px] lg:leading-[70px] hro:w-full">
-              Et software bureau med passion for profitable løsninger.
+              A software agency wih passion for profitable solutions.
             </h1>
             <p className="text-[22px] text-gray-600 font-[400] mb-[30px] w-[40%] hro:w-full">Hos Gazella Team specialiserer vi os i at udvikle skrædersyede softwareløsninger til virksomheder. </p>
             <div className="flex items-center gap-[14px]">
