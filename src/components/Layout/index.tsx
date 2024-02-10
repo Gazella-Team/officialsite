@@ -3,6 +3,7 @@ import Meta from "./Meta";
 import Navbar from "./Navbar";
 import Script from "next/script";
 import Cta from "./Cta";
+import Follower from "./follower";
 
 export default function Layout({
   className,
@@ -20,7 +21,6 @@ export default function Layout({
           strategy="lazyOnload"
         />
         <Meta />
-
         <div className={`${className}`}>
           <Meta />
 
