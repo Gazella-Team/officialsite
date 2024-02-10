@@ -25,17 +25,17 @@ export default function Appudvikling() {
       <Features
         Obj={[
           {
-            heading: "Hosting",
+            heading: "Cross-platform development",
             description:
               "We bring together public and commercial healthcare organizations, offering a 360-degree industry approach to solving",
           },
           {
-            heading: "Backend Integration",
+            heading: "Scaleable and flexible solutions",
             description:
               "We bring together public and commercial healthcare organizations, offering a 360-degree industry approach to solving",
           },
           {
-            heading: "Backend Integration",
+            heading: "Agile development",
             description:
               "We bring together public and commercial healthcare organizations, offering a 360-degree industry approach to solving",
           },

@@ -10,17 +10,17 @@ export default function Cta() {
   const currentPath = router.pathname;
 
   const IdentifySection = () => {
-    if (currentPath === "/ydelser/appudvikling") {
-      return "en app"
+    if (currentPath === "/services/app-development") {
+      return "an app"
     }
-    else if (currentPath === "/ydelser/saas") {
-      return "et SaaS projekt"
+    else if (currentPath === "/services/saas") {
+      return "a SaaS project"
     }
-    else if (currentPath === "/ydelser/webudvikling") {
-      return "en hjemmeside"
+    else if (currentPath === "/services/web-development") {
+      return "a web-project"
     }
     else { 
-      return "et projekt"
+      return "a project"
     }
   }
   return (
@@ -28,11 +28,10 @@ export default function Cta() {
           <section className="bg-[url(/ctapattern.svg)] bg-cover bg-center py-[100px] w-[100%] mx-auto text-main mt-[200px] z-[1] relative ctao:mb-0 ctao:mt-0 ctao:bg-[#f1faff]">
       <div className="w-[92%] mx-auto max-w-main z-[0]">
         <h1 className="text-[40px] font-[500] mb-[20px] z-[999]">
-          Har du en idé til <span className="text-main">{IdentifySection()}?</span>
+          Do you have an idea for <span className="text-main">{IdentifySection()}?</span>
         </h1>
         <p className="text-[20px] text-gray-600 w-[60%] font-[400] mb-[40px] z-[999] ctao:w-full">
-          Vi elsker at høre om dine projekter. Vi tilbyder en uforpligtende samtale, hvor du får mulighed for at fastslå dine krav til din kommende løsning samt få professionel sparring og rådgivning - helt gratis og uforpligtende
-        </p>
+        We love hearing about your projects. We offer a non-binding meeting where you get the opportunity to determine your vision and requirements for your future project while we supply with professional and constructive advice.</p>
         <div className="flex gap-[20px]">
         <EstimateSheet>
               <div className="flex cursor-pointer select-none px-10 py-4 font-medium items-center gap-[6px] text-center transition-all border-[2px] border-main bg-main rounded-full text-[#f1faff] hover:text-white hover:bg-main">
@@ -41,7 +40,7 @@ export default function Cta() {
               </div>
             </EstimateSheet>
 
-            <Link className="flex cursor-pointer select-none px-10 py-4 font-medium items-center gap-[6px] text-center transition-all border-[2px] border-main rounded-full text-main hover:text-white hover:bg-main ctao:hidden" href={"/kontakt"}>Kontakt os <ChevronRight size={22}/></Link>
+            <Link className="flex cursor-pointer select-none px-10 py-4 font-medium items-center gap-[6px] text-center transition-all border-[2px] border-main rounded-full text-main hover:text-white hover:bg-main ctao:hidden" href={"/contact"}>Let's talk<ChevronRight size={22}/></Link>
         </div>
 
       </div>

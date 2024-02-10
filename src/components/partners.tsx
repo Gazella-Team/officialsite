@@ -4,7 +4,7 @@ export default function Partners() {
             <div className="grid grid-cols-3 w-[92%] gap-[20px] mx-auto">
                 <img className="rounded-[14px] h-[260px] w-full object-cover" src="/partners/ui.jpg"></img>
                 <img className="rounded-[14px] h-[260px] w-full object-cover" src="/partners/plexit.jpg"></img>
-                <img className="rounded-[14px] h-[260px] w-full object-cover" src="/partners/lonborg.jpg"></img>
+                <img className="rounded-[14px] h-[260px] w-full object-cover" src="/partners/lonborg.png"></img>
             </div>
         </section>
     )

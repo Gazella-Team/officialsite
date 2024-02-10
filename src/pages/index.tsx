@@ -29,10 +29,10 @@ export default function Index() {
             <h1 className="text-[80px] font-[500] text-main mb-[8px] w-[76%] leading-[80px] lg:text-[60px] lg:leading-[70px] hro:w-full">
               A software agency wih passion for profitable solutions.
             </h1>
-            <p className="text-[22px] text-gray-600 font-[400] mb-[30px] w-[40%] hro:w-full">Hos Gazella Team specialiserer vi os i at udvikle skrædersyede softwareløsninger til virksomheder. </p>
+            <p className="text-[22px] text-gray-600 font-[400] mb-[30px] w-[40%] hro:w-full">We specialise in building unique, useful and profitable software for businesses and projects.</p>
             <div className="flex items-center gap-[14px]">
-              <Link className="inline-block cursor-pointer font-[500] select-none px-6 py-2 items-center gap-[6px] text-center transition-all border-[2px] border-main rounded-full text-white bg-main" href={"/arbejde/cases"}>Se vores arbejde</Link>
-              <Link className="flex cursor-pointer font-[500] select-none px-6 py-2 items-center gap-[6px] text-center transition-all border-[2px] border-main rounded-full text-main" href={"/kontakt"}>Kontakt os <ChevronRight size={22}/></Link>
+              <Link className="inline-block cursor-pointer font-[500] select-none px-6 py-2 items-center gap-[6px] text-center transition-all border-[2px] border-main rounded-full text-white bg-main" href={"/work/cases"}>See our work</Link>
+              <Link className="flex cursor-pointer font-[500] select-none px-6 py-2 items-center gap-[6px] text-center transition-all border-[2px] border-main rounded-full text-main" href={"/contact"}>Contact us<ChevronRight size={22}/></Link>
             </div>
           </div>
         </div>
