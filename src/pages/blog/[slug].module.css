@@ -1,0 +1,22 @@
+.blog {
+    @apply relative md:flex-1 w-full mx-auto max-w-none
+}
+
+.blog h1 {
+    @apply text-3xl font-medium text-main;
+    scroll-margin-top: calc(100px + 2.5em);
+}
+
+.blog h2 {
+    @apply text-3xl font-medium text-main;
+    scroll-margin-top: calc(100px + 2.5em);
+}
+
+.blog h3 {
+    @apply text-3xl font-medium text-main;
+    scroll-margin-top: calc(100px + 2.5em);
+}
+
+.blog p {
+    @apply text-base text-gray-600;
+}

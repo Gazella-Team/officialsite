@@ -7,3 +7,4 @@ Host: https://gazellateam.com
 
 # Sitemaps
 Sitemap: https://gazellateam.com/sitemap.xml
+Sitemap: https://gazellateam.com/sitemap-1.xml
