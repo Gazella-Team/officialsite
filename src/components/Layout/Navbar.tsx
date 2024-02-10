@@ -8,6 +8,7 @@ import EstimateSheet from "../Modals/EstimateSheet";
 import { Phone, Mail } from "lucide-react";
 import { Reveal } from "../Animations/Reveal";
 import { Globe } from "lucide-react";
+import Flyout from "../flyout";
 
 export default function Navbar() {
   const [menuClicked, setMenuClicked] = useState(false);
@@ -21,10 +22,25 @@ export default function Navbar() {
           </Link>
           <div className="flex items-center gap-[40px]">
             <div className="flex items-center justify-end gap-[30px] text-[16px] font-[500] text-main footer:hidden">
-              <p className="cursor-pointer select-none" >Ydelser</p>
-              <Link href={"/arbejde"}>Arbejde</Link>
-              <Link href={"/udvikling"}>Firma</Link>
-              <Link href={"/kontakt"}>Kontakt</Link>
+            <Flyout sublinks={[
+  { name: 'Webdevelopment', description: 'Get a better understanding of your traffic', href: '#', icon: null, },
+  { name: 'Appdevelopment', description: 'Speak directly to your customers', href: '#', icon: null, },
+  { name: 'SaaS', description: "Your customers' data will be safe and secure", href: '#', icon: null, },
+]} linkName="Services" />
+            <Flyout sublinks={[
+  { name: 'Cases', description: 'Get a better understanding of your traffic', href: '#', icon: null, },
+  { name: 'Pricing', description: 'Speak directly to your customers', href: '#', icon: null, },
+]} linkName="Work" /> 
+              <Flyout sublinks={[
+  { name: 'Tech stack', description: 'Get a better understanding of your traffic', href: '#', icon: null, },
+  { name: 'Processes', description: 'Speak directly to your customers', href: '#', icon: null, },
+]} linkName="Development" />
+              <Flyout sublinks={[
+  { name: 'Team', description: 'Get a better understanding of your traffic', href: '#', icon: null, },
+  { name: 'Partners', description: 'Speak directly to your customers', href: '#', icon: null, },
+  { name: 'Recommendations', description: "Your customers' data will be safe and secure", href: '#', icon: null, },
+  { name: 'Support', description: 'Connect with third-party tools', href: '#', icon: null },
+]} linkName="Company" />
             </div>
           <div className="flex items-center gap-[20px] font-medium ">
             <EstimateSheet>

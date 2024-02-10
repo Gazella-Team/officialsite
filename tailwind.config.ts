@@ -31,7 +31,7 @@ const config = {
         // => @media (max-width: 1279px) { ... }
         hro: {max: "1300px"},
         ctao: {max:"1000px"},
-
+        secondLg: {min:"1023px"},
         lg: { max: "1023px" },
         leg: { max: "1023px" },
         // => @media (max-width: 1023px) { ... }
