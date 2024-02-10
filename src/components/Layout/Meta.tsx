@@ -4,7 +4,7 @@ const Meta = ({
   title = "Gazella Team | Et software bureau med passion for profitable løsninger.",
   keywords = "Softwareløsninger der skaber værdi",
   description = "Softwareløsninger der skaber værdi",
-  icon = "/favicon.ico",
+  icon = "/favicon.png",
   banner = "/seo/banner.png",
   url = "https://gazellateam.com",
   children,
