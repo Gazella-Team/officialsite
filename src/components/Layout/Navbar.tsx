@@ -34,9 +34,9 @@ export default function Navbar() {
     </section>
 
       <nav className="fixed w-full bg-white h-[95px] top-[42px] flex items-center z-[10]">
-        <div className="w-[96%] mx-auto max-w-[1500px] flex justify-between items-center phoneSm:w-[90%]">
+        <div className="w-[96%] mx-auto max-w-[1500px] flex justify-between items-center phoneSm:w-[92%]">
           <Link href={"/"}>
-            <img className="w-[170px]" src="/bluesvg.svg"></img>
+            <img className="w-[200px]" src="/bluesvg.svg"></img>
           </Link>
           <div className="flex items-center gap-[40px]">
             <div className="flex items-center justify-end gap-[20px] text-[15px] font-[500] text-main footer:hidden">
@@ -86,7 +86,7 @@ export default function Navbar() {
             <div className="w-[90%] max-w-[1400px] overflow-y-auto mx-auto flex text-main flex-col justify-between py-[50px] text-[70px] leading-[130px] hero:text-[70px] hero:leading-[110px] membersSm:text-[50px] phoneSm:text-[30px] phoneSm:leading-[70px]">
               <MenuAnimation dlay={0.0}>
                 <div className="w-full border-b-[1px] flex items-center gap-[100px] font-[600] py-[0px] leading-[120px] membersSm:leading-[100px] phoneSm:leading-[70px]">
-                  <h1>01.</h1>
+  
                   <Link href={"/ydelser"}>Ydelser</Link>
                 </div>
               </MenuAnimation>{" "}
