@@ -14,9 +14,10 @@ export default function Hero({
   description: JSX.Element
 }) {
   return (
-    <section className={`pt-[140px] pb-[10px] w-[100%] mx-auto bg-[url(/mainherobg.svg)] bg-cover bg-center`}>
+    <>
+        <section className={`pt-[140px] pb-[100px] w-[100%] mx-auto bg-[url(/mainherobg.svg)] bg-cover bg-top`}>
       <Reveal>
-        <div className="w-[92%] mx-auto max-w-main pb-[100px]">
+        <div className="w-[92%] mx-auto max-w-main pb-[100px] lg:pb-0">
           <div>
             <p className="mb-[14px] uppercase font-[400] text-main">/ {section}</p>
           <div className="flex items-center gap-[20px]">
@@ -27,13 +28,17 @@ export default function Hero({
           </div>
         </div>
       </Reveal>
-      <div className="mb-[100px] mt-[100px]">
-          <section className="py-[60px] pt-[0px] w-[100%] mx-auto">
+    </section>
+    <div className="mb-[100px] mt-[40px] mid:mt-0">
+          <section className="py-[60px] pt-[0px] mx-auto">
       <Reveal>
+
         {description}
+
       </Reveal>
     </section>
     </div>
-    </section>
+    </>
+
   );
 }

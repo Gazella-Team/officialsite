@@ -26,7 +26,7 @@ interface FlyoutProps {
 export default function Flyout({ linkName, sublinks }: FlyoutProps) {
   return (
     <Popover className="relative">
-      <Popover.Button className="inline-flex items-center gap-x-1 text-[15px] font-[500] leading-6 text-gray-900">
+      <Popover.Button className="inline-flex items-center gap-x-1 text-[15px] font-[500] leading-6 text-main">
         <span>{linkName}</span>
         <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />
       </Popover.Button>
@@ -46,7 +46,7 @@ export default function Flyout({ linkName, sublinks }: FlyoutProps) {
               {sublinks.map((item: Sublink) => (
                 <div key={item.name} className="group relative flex gap-x-6 rounded-lg p-4 hover:bg-[#f1faff]">
                   <div>
-                    <Link href={item.href} className="font-[600] text-[16px] text-gray-900">
+                    <Link href={item.href} className="font-[600] text-[16px] text-main">
                       {item.name}
                       <span className="absolute inset-0" />
                     </Link>
