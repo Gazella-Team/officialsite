@@ -15,13 +15,31 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="fixed w-full bg-white h-[95px] flex items-center z-[10] membersSm:top-0">
+    <section className="fixed top-0 left-0 right-0 h-[42px] bg-main flex items-center justify-between z-[999]">
+    <div className="w-[96%] mx-auto max-w-[1500px] text-white flex items-center justify-between gap-[10px]">
+      <Link href={"/"}>{null}</Link>
+      <div className="flex items-center gap-[20px]">
+      <Link className="flex items-center text-white text-[13px] gap-[6px]" href={"https://officialsitedanish.vercel.app/"}>
+              Blog
+            </Link>
+      <Link className="flex items-center text-white text-[13px] gap-[6px]" href={"https://officialsitedanish.vercel.app/"}>
+              Support
+            </Link>
+      <Link className="flex items-center text-white text-[13px] gap-[6px]" href={"https://officialsitedanish.vercel.app/"}>
+            <Globe size={16} />
+              Danish
+            </Link>
+      </div>
+    </div>
+    </section>
+
+      <nav className="fixed w-full bg-white h-[95px] top-[42px] flex items-center z-[10] membersSm:top-0">
         <div className="w-[96%] mx-auto max-w-[1500px] flex justify-between items-center phoneSm:w-[90%]">
           <Link href={"/"}>
-            <img className="w-[200px]" src="/bluesvg.svg"></img>
+            <img className="w-[170px]" src="/bluesvg.svg"></img>
           </Link>
           <div className="flex items-center gap-[40px]">
-            <div className="flex items-center justify-end gap-[30px] text-[16px] font-[500] text-main footer:hidden">
+            <div className="flex items-center justify-end gap-[20px] text-[15px] font-[500] text-main footer:hidden">
             <Flyout sublinks={[
   { name: 'Webdevelopment', description: 'Get a better understanding of your traffic', href: '#', icon: null, },
   { name: 'Appdevelopment', description: 'Speak directly to your customers', href: '#', icon: null, },
@@ -44,15 +62,11 @@ export default function Navbar() {
             </div>
           <div className="flex items-center gap-[20px] font-medium ">
             <EstimateSheet>
-              <div className="hidden md:flex cursor-pointer font-[500] select-none px-6 py-2 items-center gap-[6px] text-center transition-all border-[2px] border-main rounded-full text-main">
+              <div className="hidden md:flex text-[15px] cursor-pointer font-[500] select-none px-6 py-2 items-center gap-[6px] text-center transition-all border-[2px] border-main rounded-full text-main">
                 <p>Få et estimat på dit projekt</p>
                 <ArrowUpRight size={20} />
               </div>
             </EstimateSheet>
-            <Link className="flex items-center text-main gap-[6px]" href={"https://officialsitedanish.vercel.app/"}>
-            <Globe />
-              Danish
-            </Link>
           </div>
           <div
               onClick={() => setMenuClicked(!menuClicked)}

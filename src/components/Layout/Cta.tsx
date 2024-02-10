@@ -25,7 +25,7 @@ export default function Cta() {
   }
   return (
     <div className="bg-white">
-          <section className="bg-transparent py-[100px] w-[100%] mx-auto text-main mb-[-500px] mt-[200px] z-[1] relative ctao:mb-0 ctao:mt-0 ctao:bg-[#f1faff]">
+          <section className="bg-[url(/ctapattern.svg)] bg-cover bg-center py-[100px] w-[100%] mx-auto text-main mt-[200px] z-[1] relative ctao:mb-0 ctao:mt-0 ctao:bg-[#f1faff]">
       <div className="w-[92%] mx-auto max-w-main z-[0]">
         <h1 className="text-[40px] font-[600] mb-[20px] z-[999]">
           Har du en idé til <span className="text-main">{IdentifySection()}?</span>
@@ -47,7 +47,7 @@ export default function Cta() {
       </div>
     </section>
     <div className="flex items-center justify-end z-[0] ctao:hidden">
-    <img className="select-none mr-[-100px] w-[700px] z-[0] relative" src="/footerpattern.webp"></img>
+
     </div>
 
     </div>
