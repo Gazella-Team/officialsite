@@ -20,7 +20,7 @@ export default function Privatlivspolitik() {
       background="bg-[linear-gradient(rgba(5,29,64,0.30),rgba(5,29,64,1)),url(/herobg/webdev.jpg)] bg-top bg-cover"
         icon={<BookLock strokeWidth={1.3} color="#ffffff" size={70} />}
         section="legal"
-        heading="Privatlivspolitik"
+        heading="Privacy policy"
       />
       <section className="py-[10px] bg-gray-50 border-y-[1px]">
         <div className="w-[92%] mx-auto max-w-main">

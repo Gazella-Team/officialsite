@@ -1,16 +1,16 @@
 import Layout from "@/components/Layout";
 import Hero from "@/components/Layout/hero";
 import Description from "@/components/description";
-import Members from "@/components/members";
-import { Users } from "lucide-react";
-import Partners from "@/components/partners";
+import { ArrowLeftRight } from "lucide-react";
 import Meta from "@/components/Layout/Meta";
-export default function Team() {
+import Processes from "@/components/processes";
+
+export default function Arbejdsprocesser() {
   return (
     <Layout>
-        <Meta
-        title="Teamet | Gazella Team"
-        description="Gazella Team udgør et hold af ambitiøse, nytænkende og storsmilende programmøre og designere"
+                    <Meta
+        title="Arbejdsprocesser | Gazella Team"
+        description="Vi kombinerer funktionelle features, hurtige frameworks og intuitive unikke brugerflader for at skabe de bedste forudsætninger for dit kommende app-projekt."
       />
       <Hero
             description={<div className="w-[92%] mx-auto max-w-main flex items-center justify-end">
@@ -18,12 +18,12 @@ export default function Team() {
             Gazella Team udgør et hold af ambitiøse, nytænkende og storsmilende programmøre og designere, som hver dag brænder for at skabe unikke digitale produkter. Vi fokuserer på, at tilpasse hver enkel løsning til det pågældende projekt. Derfor kan du hos os forvente en fast kompetent sparingspartner, som supplerer med viden og leverer til tiden til den aftalte pris.
             </p>
           </div>}
-      background="bg-[linear-gradient(rgba(5,29,64,0.80),rgba(5,29,64,1)),url(/flyout.jpg)] bg-top bg-cover"
-        heading="Vores team."
-        section="om os"
-        icon={<Users strokeWidth={2} color="#ffffff" size={80} />}
+      background="bg-[linear-gradient(rgba(5,29,64,0.30),rgba(5,29,64,1)),url(/herobg/webdev.jpg)] bg-top bg-cover"
+        heading="Processes."
+        section="development"
+        icon={<ArrowLeftRight strokeWidth={1.3} color="#ffffff" size={70} />}
       />
-      <Members />
+    <Processes />
     </Layout>
   );
 }

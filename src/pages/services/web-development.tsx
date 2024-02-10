@@ -19,8 +19,8 @@ export default function Webudvikling() {
             </p>
           </div>}
       background="bg-[linear-gradient(rgba(5,29,64,0.30),rgba(5,29,64,1)),url(/herobg/webdev.jpg)] bg-top bg-cover"
-        heading="Webudvikling."
-        section="Ydelser"
+        heading="Web development."
+        section="services"
         icon={<Layers strokeWidth={1.3} color="#ffffff" size={80} />}
       />
       <Features

@@ -27,7 +27,7 @@ export default function Cta() {
     <div className="bg-white">
           <section className="bg-[url(/ctapattern.svg)] bg-cover bg-center py-[100px] w-[100%] mx-auto text-main mt-[200px] z-[1] relative ctao:mb-0 ctao:mt-0 ctao:bg-[#f1faff]">
       <div className="w-[92%] mx-auto max-w-main z-[0]">
-        <h1 className="text-[40px] font-[600] mb-[20px] z-[999]">
+        <h1 className="text-[40px] font-[500] mb-[20px] z-[999]">
           Har du en idé til <span className="text-main">{IdentifySection()}?</span>
         </h1>
         <p className="text-[20px] text-gray-600 w-[60%] font-[400] mb-[40px] z-[999] ctao:w-full">

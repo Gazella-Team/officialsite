@@ -33,7 +33,7 @@ export default function Navbar() {
     </div>
     </section>
 
-      <nav className="fixed w-full bg-white h-[95px] top-[42px] flex items-center z-[10] membersSm:top-0">
+      <nav className="fixed w-full bg-white h-[95px] top-[42px] flex items-center z-[10]">
         <div className="w-[96%] mx-auto max-w-[1500px] flex justify-between items-center phoneSm:w-[90%]">
           <Link href={"/"}>
             <img className="w-[170px]" src="/bluesvg.svg"></img>
@@ -41,29 +41,30 @@ export default function Navbar() {
           <div className="flex items-center gap-[40px]">
             <div className="flex items-center justify-end gap-[20px] text-[15px] font-[500] text-main footer:hidden">
             <Flyout sublinks={[
-  { name: 'Webdevelopment', description: 'Get a better understanding of your traffic', href: '#', icon: null, },
-  { name: 'Appdevelopment', description: 'Speak directly to your customers', href: '#', icon: null, },
-  { name: 'SaaS', description: "Your customers' data will be safe and secure", href: '#', icon: null, },
+  { name: 'Web development', description: 'Get a better understanding of your traffic', href: '/services/web-development', icon: null, },
+  { name: 'App development', description: 'Speak directly to your customers', href: '/services/app-development', icon: null, },
+  { name: 'SaaS', description: "Your customers' data will be safe and secure", href: '/services/saas', icon: null, },
 ]} linkName="Services" />
             <Flyout sublinks={[
-  { name: 'Cases', description: 'Get a better understanding of your traffic', href: '#', icon: null, },
-  { name: 'Pricing', description: 'Speak directly to your customers', href: '#', icon: null, },
+  { name: 'Cases', description: 'Get a better understanding of your traffic', href: '/work/cases', icon: null, },
+  { name: 'Pricing', description: 'Speak directly to your customers', href: '/work/pricing', icon: null, },
 ]} linkName="Work" /> 
               <Flyout sublinks={[
-  { name: 'Tech stack', description: 'Get a better understanding of your traffic', href: '#', icon: null, },
-  { name: 'Processes', description: 'Speak directly to your customers', href: '#', icon: null, },
+  { name: 'Tech stack', description: 'Get a better understanding of your traffic', href: '/development/techstack', icon: null, },
+  { name: 'Processes', description: 'Speak directly to your customers', href: '/development/processes', icon: null, },
 ]} linkName="Development" />
               <Flyout sublinks={[
-  { name: 'Team', description: 'Get a better understanding of your traffic', href: '#', icon: null, },
-  { name: 'Partners', description: 'Speak directly to your customers', href: '#', icon: null, },
-  { name: 'Recommendations', description: "Your customers' data will be safe and secure", href: '#', icon: null, },
-  { name: 'Support', description: 'Connect with third-party tools', href: '#', icon: null },
+  { name: 'Team', description: 'Get a better understanding of your traffic', href: '/company/team', icon: null, },
+  { name: 'Partners', description: 'Speak directly to your customers', href: '/company/partners', icon: null, },
+  { name: 'Recommendations', description: "Your customers' data will be safe and secure", href: '/company/recommendations', icon: null, },
+  { name: 'Support', description: 'Connect with third-party tools', href: '/company/support', icon: null },
 ]} linkName="Company" />
+<Link href={"/contact"}>Contact</Link>
             </div>
           <div className="flex items-center gap-[20px] font-medium ">
             <EstimateSheet>
               <div className="hidden md:flex text-[15px] cursor-pointer font-[500] select-none px-6 py-2 items-center gap-[6px] text-center transition-all border-[2px] border-main rounded-full text-main">
-                <p>Få et estimat på dit projekt</p>
+                <p>Estimate your project</p>
                 <ArrowUpRight size={20} />
               </div>
             </EstimateSheet>
