@@ -25,10 +25,12 @@ export default function Navbar() {
       <Link className="flex items-center text-white text-[13px] gap-[6px]" href={"https://officialsitedanish.vercel.app/"}>
               Support
             </Link>
-      <Link className="flex items-center text-white text-[13px] gap-[6px]" href={"https://officialsitedanish.vercel.app/"}>
-            <Globe size={16} />
-              Danish
-            </Link>
+            <div className="flex items-center text-white text-[13px] gap-[6px]">
+              <Link href={"/dansk"}>DK</Link>
+              <p>|</p>
+              <Link href={"/dansk"}>EN</Link>
+
+            </div>
       </div>
     </div>
     </section>
