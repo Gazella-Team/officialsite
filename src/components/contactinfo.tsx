@@ -4,7 +4,7 @@ export default function ContactInfo() {
   return (
     <section className="py-[70px] bg-gray-50">
       <Reveal>
-        <div className="w-[92%] mx-auto max-w-main grid grid-cols-3 gap-[20px]">
+        <div className="w-[92%] mx-auto max-w-main grid grid-cols-3 gap-[20px] footer:grid-cols-1">
         <div className="bg-white p-[50px] rounded-[14px]">
               <Reveal>
                 <h1 className="font-[600] text-[22px] mb-[10px] text-main">

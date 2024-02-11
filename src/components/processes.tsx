@@ -2,17 +2,17 @@ import { Reveal } from "./Animations/Reveal";
 
 const processData = [
   {
-    heading: "Konceptfasen",
+    heading: "Koncept phase",
     description:
       "Our data protection program encompasses data governance and security, proactive system maintenance, and threat response. From strategy through implementation, we have the resources  ",
   },
   {
-    heading: "Designfasen",
+    heading: "Design phase",
     description:
       "Our data protection program encompasses data governance and security, proactive system maintenance, and threat response. From strategy through implementation, we have the resources  ",
   },
   {
-    heading: "Udviklingsfasen",
+    heading: "Development phase",
     description:
       "Our data protection program encompasses data governance and security, proactive system maintenance, and threat response. From strategy through implementation, we have the resources  ",
   },
@@ -22,12 +22,12 @@ const processData = [
       "Our data protection program encompasses data governance and security, proactive system maintenance, and threat response. From strategy through implementation, we have the resources  ",
   },
   {
-    heading: "Drift og bug-fixing",
+    heading: "Maintenance",
     description:
       "Our data protection program encompasses data governance and security, proactive system maintenance, and threat response. From strategy through implementation, we have the resources  ",
   },
   {
-    heading: "Yderligere drift",
+    heading: "Further development",
     description:
       "Our data protection program encompasses data governance and security, proactive system maintenance, and threat response. From strategy through implementation, we have the resources  ",
   },
@@ -37,7 +37,7 @@ const processData = [
 export default function Processes(props: any) {
   return (
     <section className="py-[70px] bg-gray-50">
-      <div className="w-[92%] max-w-main mx-auto grid grid-cols-features xl:grid-cols-1">
+      <div className="w-[95%] max-w-main mx-auto grid grid-cols-features xl:grid-cols-1">
         <div className="grid grid-cols-3 gap-[20px] gap-y-[20px] mid:grid-cols-1">
           {processData.map((v: any, index:any) => (
             <ProcessCard key={v} Obj={v} count={index + 1} />

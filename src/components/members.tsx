@@ -6,14 +6,14 @@ import { Opc } from "./Animations/Opc";
 const memberData = [
   {
     name: "Lasse Osmann",
-    position: "Stifter & Frontend Udvikler",
+    position: "Founder & Developer",
     imageUrl: "/team/lasseosmann.jpg",
     secondImageUrl: "/team/lasseosmann.jpg",
     linkedIn: "https://www.linkedin.com/in/lasse-osmann-%F0%9F%91%8B-1b6ab9243/"
   },
   {
     name: "Simon Maribo",
-    position: "Medstifter & backend Udvikler",
+    position: "Co-Founder & Developer",
     imageUrl: "/team/simonmaribo.jpg",
     secondImageUrl: "/team/simonmaribo.jpg",
     linkedIn: "https://www.linkedin.com/in/simonmaribo/"
@@ -37,7 +37,7 @@ const memberData = [
 export default function Members() {
   return (
     <section className="py-[100px] pt-[50px]">
-      <div className="w-[92%] mx-auto max-w-main">
+      <div className="w-[95%] mx-auto max-w-main">
         <div className="grid grid-cols-4 gap-x-[20px] gap-y-[50px] members:grid-cols-3 membersSm:grid-cols-2 membersSmallest:grid-cols-1">
           {memberData.map((v) => (
             <MemberCard key={v} Obj={v} />

@@ -23,7 +23,7 @@ export default function Index() {
 
       <section className="py-[100px] bg-[url(/heropatternsvg.svg)] bg-cover pb-[300px] w-[100%] mx-auto max-w-none hro:mt-0 hro:bg-[#f1faff] hro:py-[100px] hro:mb-[100px]">
       <Reveal>
-        <div className="w-[92%] mx-auto max-w-main">
+        <div className="w-[95%] mx-auto max-w-main">
           <div className="flex flex-col justify-center gap-[20px] mb-[50px]">
           
             <h1 className="text-[80px] font-[500] text-main mb-[8px] w-[76%] leading-[80px] lg:text-[60px] lg:leading-[70px] hro:w-full">

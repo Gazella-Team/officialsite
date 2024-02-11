@@ -46,7 +46,7 @@ export default function Flyout({ linkName, sublinks }: FlyoutProps) {
               {sublinks.map((item: Sublink) => (
                 <div key={item.name} className="group relative flex gap-x-6 rounded-lg p-4 hover:bg-[#f1faff]">
                   <div>
-                    <Link href={item.href} className="font-[600] text-[16px] text-main">
+                    <Link target={item.href === "https://dk.trustpilot.com/review/gazellateam.com" ? "_blank":""} href={item.href} className="font-[600] text-[16px] text-main">
                       {item.name}
                       <span className="absolute inset-0" />
                     </Link>

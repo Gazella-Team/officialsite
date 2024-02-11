@@ -13,9 +13,9 @@ export default function Webudvikling() {
         description="Vi specialiserer os inden for web udviklingsprojekter fra A-Z. Med vores web udviklingsservice står vi til rådighed uanset om dit projekt kræver en funktionsfyldt web app eller bare et professionelt online visitkort."
       />
       <Hero
-            description={<div className="w-[92%] mx-auto max-w-main flex items-center justify-end">
+            description={<div className="w-[95%] mx-auto max-w-main flex items-center justify-end">
             <p className="text-[22px] w-[68%] text-gray-600 font-[400] lg:text-[24px] lg:leading-[34px] lg:w-[90%] mid:w-full mid:text-[22px] mid:leading-[32px]">
-            Gazella Team udgør et hold af ambitiøse, nytænkende og storsmilende programmøre og designere, som hver dag brænder for at skabe unikke digitale produkter. Vi fokuserer på, at tilpasse hver enkel løsning til det pågældende projekt. Derfor kan du hos os forvente en fast kompetent sparingspartner, som supplerer med viden og leverer til tiden til den aftalte pris.
+                    We specialise in building web-projects from A-Z. By combining unique user-friendly designs and innovative technology, we're able to develop everything from static websites to more complex webapps.  
             </p>
           </div>}
       background="bg-[linear-gradient(rgba(5,29,64,0.30),rgba(5,29,64,1)),url(/herobg/webdev.jpg)] bg-top bg-cover"
@@ -26,17 +26,17 @@ export default function Webudvikling() {
       <Features
         Obj={[
           {
-            heading: "Layout og opstilling",
+            heading: "Layout & structure",
             description:
               "Undersider, layout og sektioner til webløsningen - vi opstiller alt ud fra dine behov",
           },
           {
-            heading: "Skrædersyet design",
+            heading: "Tailormade design",
             description:
               "Vi står for at skrædersy et design, som gør dig og dit brand unikke og genkendelige online.",
           },
           {
-            heading: "Enhedskompatibel",
+            heading: "All-device compatibel",
             description:
               "Alle webløsninger, vi udvikler, er enhedsoptimeret til måde mobil, tablet, laptop og desktop",
           },
@@ -46,12 +46,12 @@ export default function Webudvikling() {
               "Vi sørger for, at din webløsning tilsluttes dit ønskede domain på en sikker og overskuelig måde",
           },
           {
-            heading: "Hastighedsoptimering",
+            heading: "Speed optimization",
             description:
               "Komplet optimering af webløsningens hastighed, som øger brugeroplevelsen og antallet af konverteringer",
           },
           {
-            heading: "SEO Optimering",
+            heading: "SEO optimization",
             description:
               "Vi øger din webløsnings synlighed på Google samt antallet af besøgende ved en komplet SEO optimering",
           },

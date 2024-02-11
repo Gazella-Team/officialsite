@@ -17,7 +17,7 @@ export default function Hero({
     <>
         <section className={`pt-[140px] pb-[100px] w-[100%] mx-auto bg-[url(/mainherobg.svg)] bg-cover bg-top`}>
       <Reveal>
-        <div className="w-[92%] mx-auto max-w-main pb-[100px] lg:pb-0">
+        <div className="w-[95%] mx-auto max-w-main pb-[100px] lg:pb-0">
           <div>
             <p className="mb-[14px] uppercase font-[400] text-main">/ {section}</p>
           <div className="flex items-center gap-[20px]">
