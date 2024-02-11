@@ -26,7 +26,7 @@ export default function Index() {
         <div className="w-[95%] mx-auto max-w-main">
           <div className="flex flex-col justify-center gap-[20px] mb-[50px]">
           
-            <h1 className="text-[80px] font-[500] text-main mb-[8px] w-[76%] leading-[80px] lg:text-[60px] lg:leading-[70px] hro:w-full">
+            <h1 className="text-[80px] font-[500] text-main mb-[8px] w-[76%] leading-[80px] lg:text-[60px] lg:leading-[70px] hro:w-full mid:text-[40px] mid:leading-[40px]">
               A software agency wih passion for profitable solutions.
             </h1>
             <p className="text-[22px] text-gray-600 font-[400] mb-[30px] w-[40%] hro:w-full">We specialise in building unique, useful and profitable software for businesses and projects.</p>

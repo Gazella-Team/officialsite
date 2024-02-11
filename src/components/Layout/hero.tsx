@@ -15,9 +15,9 @@ export default function Hero({
 }) {
   return (
     <>
-        <section className={`pt-[140px] pb-[100px] w-[100%] mx-auto bg-[url(/mainherobg.svg)] bg-cover bg-top`}>
+        <section className={`pt-[140px] pb-[100px] w-[100%] mx-auto bg-[url(/mainherobg.svg)] bg-cover bg-top min-h-[600px]`}>
       <Reveal>
-        <div className="w-[95%] mx-auto max-w-main pb-[100px] lg:pb-0">
+        <div className="w-[95%] mx-auto max-w-main pb-[100px] lg:pb-0 hro:w-[90%]">
           <div>
             <p className="mb-[14px] uppercase font-[400] text-main">/ {section}</p>
           <div className="flex items-center gap-[20px]">
@@ -29,15 +29,11 @@ export default function Hero({
         </div>
       </Reveal>
     </section>
-    <div className="mb-[100px] mt-[40px] mid:mt-0">
-          <section className="py-[60px] pt-[0px] mx-auto">
-      <Reveal>
-
-        {description}
-
-      </Reveal>
+    <section className="pb-[100px] mt-[-120px] lg:mt-[-230px]">
+      <div className="flex justify-end w-[90%] mx-auto">
+        <p className="text-[22px] w-[68%] lg:w-full lg:text-[20px]">Gazella Team consists of a team of ambitious, innovative and smiling developers and designers who are passionate about creating unique digital solutions every day. We focus on tailormaking each solution to the specific project. Therefore you can expect a reliable competent partner who supplies with knowledge and delivers on time at the agreed price.</p>
+      </div>
     </section>
-    </div>
     </>
 
   );

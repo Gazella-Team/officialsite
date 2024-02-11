@@ -13,8 +13,8 @@ export default function Team() {
         description="Gazella Team udgør et hold af ambitiøse, nytænkende og storsmilende programmøre og designere"
       />
       <Hero
-            description={<div className="w-[90%] mx-auto max-w-main flex items-center justify-end">
-            <p className="text-[22px] w-[68%] text-gray-600 font-[400] lg:text-[20px] lg:leading-[34px] lg:w-[90%] mid:w-full mid:text-[20px] mid:leading-[32px]">
+            description={<div className="w-[90%] mx-auto max-w-main flex items-center justify-end mid:justify-start">
+            <p className="text-[22px] w-[68%] text-gray-600 font-[400] lg:text-[20px] lg:leading-[34px] lg:w-[100%]">
             Gazella Team consists of a team of ambitious, innovative and smiling developers and designers who are passionate about creating unique digital solutions every day. We focus on tailormaking each solution to the specific project. Therefore you can expect a reliable competent partner who supplies with knowledge and delivers on time at the agreed price.
             </p>
           </div>}

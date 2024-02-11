@@ -36,7 +36,7 @@ export default function Navbar() {
       <nav className="fixed w-full bg-white h-[95px] top-[42px] flex items-center z-[10]">
         <div className="w-[96%] mx-auto max-w-[1500px] flex justify-between items-center phoneSm:w-[92%]">
           <Link href={"/"}>
-            <img className="w-[200px]" src="/bluesvg.svg"></img>
+            <img className="w-[200px]" src="/newlogoconcept.png"></img>
           </Link>
           <div className="flex items-center gap-[40px]">
             <div className="flex items-center justify-end gap-[20px] text-[15px] font-[500] text-main footer:hidden">
