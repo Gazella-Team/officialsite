@@ -12,6 +12,8 @@ import styles from './[slug].module.css'
 import { prettyDate } from '@/utils/date'
 import { useMemo } from 'react'
 import { createTableOfContents, Heading } from '@/utils/toc'
+import Link from 'next/link'
+import { ArrowLeft } from 'lucide-react'
 
 function TocItem({ item }: { item: Heading }) {
     return (
@@ -74,6 +76,15 @@ export default function BlogPost({
                 <div className="py-12 flex flex-col justify-center">
                     <div className="w-[90%] mx-auto max-w-4xl">
                         <div className="flex flex-col justify-center text-center items-center h-full gap-4">
+                            <div>
+                                <Link
+                                    href="/blog"
+                                    className="flex flex-row gap-2 items-center active:scale-[0.98] justify-center text-main font-medium hover:underline transition-all"
+                                >
+                                    <ArrowLeft size={20} />
+                                    <p className="font-medium">Back to blogs</p>
+                                </Link>
+                            </div>
                             <h1 className="text-3xl secondLg:text-4xl font-bold text-main">
                                 {post.title}
                             </h1>
