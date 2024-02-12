@@ -1,5 +1,5 @@
 import { Reveal } from "../Animations/Reveal";
-
+//
 export default function Hero({
   section,
   icon,
@@ -17,7 +17,7 @@ export default function Hero({
     <>
         <section className={`pt-[140px] pb-[100px] w-[100%] mx-auto bg-[url(/mainherobg.svg)] bg-cover bg-top min-h-[600px]`}>
       <Reveal>
-        <div className="w-[95%] mx-auto max-w-main pb-[100px] lg:pb-0 hro:w-[90%]">
+        <div className="w-[95%] mx-auto max-w-main pb-[100px] lg:pb-0">
           <div>
             <p className="mb-[14px] uppercase font-[400] text-main font-[Inter]">/ {section}</p>
           <div className="flex items-center gap-[20px]">
