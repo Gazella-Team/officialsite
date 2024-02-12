@@ -36,9 +36,9 @@ export default function Navbar() {
     </section>
 
       <nav className="fixed w-full bg-white h-[95px] top-[42px] flex items-center z-[10]">
-        <div className="w-[98%] mx-auto max-w-[1500px] flex justify-between items-center phoneSm:w-[92%]">
+        <div className="w-[95%] mx-auto max-w-[1500px] flex justify-between items-center phoneSm:w-[92%]">
           <Link href={"/"}>
-            <img className="w-[100px]" src="/logowhitebg.svg"></img>
+            <img className="w-[90px]" src="/logowhitebg.svg"></img>
           </Link>
           <div className="flex items-center gap-[40px]">
             <div className="flex items-center justify-end gap-[20px] text-[15px] font-[500] text-main footer:hidden">
@@ -58,7 +58,7 @@ export default function Navbar() {
               <Flyout sublinks={[
   { name: 'Team', description: 'Speak directly to your customers', href: '/company/team', icon: null},
   { name: 'Partners', description: 'Speak directly to your customers', href: '/company/partners', icon: null},
-  { name: 'Recommendations', description: "Your customers' data will be safe and secure", href: 'https://dk.trustpilot.com/review/gazellateam.com', icon: null},
+  { name: 'Products', description: "Your customers' data will be safe and secure", href: 'https://dk.trustpilot.com/review/gazellateam.com', icon: null},
   { name: 'Support', description: 'Connect with third-party tools', href: '/company/support', icon: null},
   { name: 'Career', description: 'Connect with third-party tools', href: '/company/career', icon: null},
 
