@@ -19,7 +19,7 @@ const workData = [
     description:
       "Cross-platform solution for managing micro-investments and savings, compatible with SAMA fintech regulations including multi-factor authorization and KYC verification",
     imageUrl:
-      "/cases/organicmasterclass/organicmasterclass.jpg",
+      "bg-[url(/herobg/auto.jpg)]",
     url: "https://centox.io/",
     link: "/arbejde/cases/organicmasterclass",
     tag: "hjemmeside",
@@ -40,7 +40,7 @@ const workData = [
 export default function Work() {
   return (
     <section className="py-[100px] pt-[50px] ">
-      <div className="w-[92%] max-w-main z-[1] mx-auto grid grid-cols-3 gap-x-[20px] gap-y-[50px] small:grid-cols-1">
+      <div className="w-[98%] max-w-main z-[1] mx-auto grid grid-cols-3 gap-x-[10px] gap-y-[50px] small:grid-cols-1">
         {workData.map((v, index) => (
           <WorkCard
             date={v.desc}
@@ -71,14 +71,12 @@ const WorkCard = ({
 }) => {
   return (
     <Reveal>
-      <Link href={link}>
-      <div className="flex items-center justify-end absolute">
-          <p className="p-[10px] rounded-br-[14px] rounded-tl-[13px] bg-[#f1faff]">{tag}</p>
+      <div className={`bg-[linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.70)),url(/cases/centox/centox.jpg)] h-[600px] bg-cover bg-center flex flex-col justify-end hover:opacity-90 transition-all`}>
+        <div className="p-[40px]">
+        <h1 className="font-[500] text-[26px] text-white mb-[4px]">{heading}</h1>
+        <p className="text-gray-200 font-[400] text-[18px]">{date}</p>
         </div>
-        <img className="h-[450px] w-full object-cover rounded-[14px] mb-[20px]" src={background}></img>
-        <h1 className="font-[600] text-[26px] text-main mb-[4px]">{heading}</h1>
-        <p className="text-gray-600 text-[18px]">{date}</p>
-      </Link>
+      </div>
     </Reveal>
   );
 };

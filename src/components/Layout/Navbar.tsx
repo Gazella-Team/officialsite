@@ -36,7 +36,7 @@ export default function Navbar() {
     </section>
 
       <nav className="fixed w-full bg-white h-[95px] top-[42px] flex items-center z-[10]">
-        <div className="w-[96%] mx-auto max-w-[1500px] flex justify-between items-center phoneSm:w-[92%]">
+        <div className="w-[98%] mx-auto max-w-[1500px] flex justify-between items-center phoneSm:w-[92%]">
           <Link href={"/"}>
             <img className="w-[200px]" src="/newlogoconcept.png"></img>
           </Link>
@@ -60,6 +60,8 @@ export default function Navbar() {
   { name: 'Partners', description: 'Speak directly to your customers', href: '/company/partners', icon: null},
   { name: 'Recommendations', description: "Your customers' data will be safe and secure", href: 'https://dk.trustpilot.com/review/gazellateam.com', icon: null},
   { name: 'Support', description: 'Connect with third-party tools', href: '/company/support', icon: null},
+  { name: 'Career', description: 'Connect with third-party tools', href: '/company/career', icon: null},
+
 ]} linkName="Company" />
 <Link href={"/contact"}>Contact</Link>
             </div>
