@@ -15,7 +15,7 @@ import { createTableOfContents, Heading } from '@/utils/toc'
 
 function TocItem({ item }: { item: Heading }) {
     return (
-        <li className="my-1.5 pl-2">
+        <li className="my-2.5 pl-2">
             <a
                 className="hover:text-main font-medium transition-all"
                 href={`#${item.content}`}
@@ -71,22 +71,35 @@ export default function BlogPost({
                 }
             `}</style>
             <div className="bg-white relative">
-                <div className="pb-32 pt-24 bg-gradient-to-r from-[#062c63] via-main to-[#062c63] flex flex-col justify-center">
-                    <div className="w-[90%] mx-auto max-w-2xl">
+                <div className="py-12 flex flex-col justify-center">
+                    <div className="w-[90%] mx-auto max-w-4xl">
                         <div className="flex flex-col justify-center text-center items-center h-full gap-4">
-                            <h1 className="text-4xl text-white font-medium">
+                            <h1 className="text-3xl secondLg:text-4xl font-bold text-main">
                                 {post.title}
                             </h1>
-                            <summary className="text-white/90 text-base text-medium">
+                            <summary className="max-w-2xl mx-auto font-medium text-base secondLg:text-lg text-main">
                                 {post.summary || ''}
                             </summary>
                             <div className="flex justify-center">
-                                <p className="text-white text-sm">
+                                <p className="text-gray-700 font-semibold text-sm">
                                     {prettyDate(post.publishedAt)}
                                 </p>
                             </div>
                         </div>
                     </div>
+                    {post.coverURL && (
+                        <div className="w-[90%] flex secondLg:grid secondLg:grid-cols-[192px_minmax(0px,1fr)_192px] max-w-[1300px] mx-auto gap-14">
+                            <div />
+                            <div className="mx-auto w-full h-full mt-8">
+                                <img
+                                    alt={post.title}
+                                    className="w-full object-cover rounded-lg"
+                                    src={post.coverURL}
+                                />
+                            </div>
+                            <div />
+                        </div>
+                    )}
                 </div>
                 {/*
                     <motion.div
@@ -94,14 +107,14 @@ export default function BlogPost({
                         style={{ scaleX: scrollYProgress }}
                     />
                 */}
-                <div className="w-[95%] py-8 pt-16 mx-auto max-w-main flex flex-col md:flex-row gap-8 md:gap-16">
+                <div className="w-[95%] mx-auto py-8 flex flex-col md:grid md:grid-cols-[300px_minmax(0px,1fr)_0px] secondLg:grid-cols-[300px_minmax(0px,1fr)_100px] max-w-[1300px] gap-14">
                     <aside className="relative flex-shrink">
                         <div className="sticky top-48 flex flex-col gap-4">
                             <div className="flex flex-col gap-1">
-                                <p className="text-lg font-medium text-main">
+                                <p className="text-2xl font-semibold text-main">
                                     Table of Contents
                                 </p>
-                                <ul className="text-base text-gray-600">
+                                <ul className="text-base  text-gray-600">
                                     {toc.map((item) => (
                                         <TocItem
                                             key={item.content}
@@ -112,7 +125,7 @@ export default function BlogPost({
                             </div>
                             <div className="h-[2px] bg-gray-200 rounded-full" />
                             <div className="flex flex-col gap-2">
-                                <p className="text-lg font-medium text-main">
+                                <p className="text-lg font-semibold text-main">
                                     Authors
                                 </p>
                                 <div className="flex items-center gap-4">
@@ -135,25 +148,15 @@ export default function BlogPost({
                             </div>
                         </div>
                     </aside>
-                    <div className={styles.blog}>
-                        {post.coverURL && (
-                            <div className="mb-8">
-                                <img
-                                    alt={post.title}
-                                    className="w-full h-96 object-cover rounded-lg"
-                                    src={post.coverURL}
-                                />
-                            </div>
-                        )}
-                        <article
-                            className={styles.blog}
-                            dangerouslySetInnerHTML={{
-                                __html: formattedHtml || '',
-                            }}
-                        />
-                    </div>
+                    <article
+                        className={styles.blog}
+                        dangerouslySetInnerHTML={{
+                            __html: formattedHtml || '',
+                        }}
+                    />
+                    <div />
                 </div>
-                {/*<div className="w-[95%] py-8 mb-16 mx-auto max-w-main flex flex-col gap-6">
+                <div className="w-[95%] py-8 mb-16 mx-auto max-w-main flex flex-col gap-6">
                     <p className="text-2xl font-medium text-main">
                         Lignende artikler
                     </p>
@@ -189,7 +192,7 @@ export default function BlogPost({
                             href="/blog/soadan-maler-du-effekten-af-brand-awareness-kampagner"
                         />
                     </div>
-                </div>*/}
+                </div>
             </div>
         </Layout>
     )

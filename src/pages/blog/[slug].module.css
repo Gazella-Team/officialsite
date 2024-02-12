@@ -1,24 +1,63 @@
 .blog {
-    @apply relative md:flex-1 w-full mx-auto max-w-none
+    @apply relative md:flex-1 w-full;
 }
 
 .blog h1 {
-    @apply text-3xl font-medium text-main;
+    @apply text-4xl font-bold text-main;
     scroll-margin-top: calc(100px + 2.5em);
+    margin: 1rem 0;
 }
 
 .blog h2 {
-    @apply text-3xl font-medium text-main;
+    @apply text-3xl font-semibold text-main;
     scroll-margin-top: calc(100px + 2.5em);
+    margin: 1rem 0;
 }
 
 .blog h3 {
-    @apply text-3xl font-medium text-main;
+    @apply text-2xl font-semibold text-main;
     scroll-margin-top: calc(100px + 2.5em);
+    margin: 1rem 0;
 }
 
 .blog p {
-    @apply text-base text-gray-600;
+    @apply text-main text-lg;
+    padding: 3px 2px;
+    margin: 10px 0;
+}
+
+.blog a {
+    @apply text-main border-b border-main;
+    text-decoration: none;
+    transition: border-bottom 0.2s ease;
+}
+.blog ul {
+    margin: 1rem 0;
+    padding: 0 0 0 1rem;
+}
+.blog li {
+    margin: 0.5rem 0;
+    list-style-type: disc;
+}
+.blog li > p {
+    margin: 0.5rem 0;
+}
+.blog li::marker {
+    @apply text-main;
+}
+.blog hr {
+    border: 0;
+    height: 1px;
+    background: #000;
+    margin: 2rem 0;
+}
+
+.blog blockquote {
+    @apply p-4 my-4 text-gray-700 bg-gray-200 border-l-4 border-main rounded;
+}
+
+.blog pre {
+    @apply p-4 my-4 text-gray-700 bg-gray-200 rounded;
 }
 
 
