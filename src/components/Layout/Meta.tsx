@@ -1,5 +1,5 @@
 import Head from "next/head";
-
+//
 const Meta = ({
   title = "Gazella Team | A software agency wih passion for profitable solutions",
   keywords = "A software agency wih passion for profitable solutions",
