@@ -5,33 +5,33 @@ import { useState } from "react";
 const workData = [
   {
     company: "COAD",
-    desc: "Unik bureau landingsside",
+    desc: "Agency landing page",
     description:
       "Cross-platform solution for managing micro-investments and savings",
     imageUrl:
-      "/work/cases/coad",
+      "https://coad.dk/en",
     url: "https://centox.io/",
-    link: "/flyout.jpg",
+    link: "/cases/coad/coad.jpeg",
     tag: "hjemmeside",
   },
   {
-    company: "COAD",
-    desc: "Unik bureau landingsside",
+    company: "Organic Masterclass",
+    desc: "Online education landing page",
     description:
       "Cross-platform solution for managing micro-investments and savings",
     imageUrl:
-      "/work/cases/coad",
+      "https://site.organicmasterclass.com/",
     url: "https://centox.io/",
-    link: "/flyout.jpg",
+    link: "/cases/organicmasterclass/organicmasterclass.jpg",
     tag: "hjemmeside",
   },
     {
-    company: "COAD",
-    desc: "Unik bureau landingsside",
+    company: "Centox",
+    desc: "Forum website builder app",
     description:
       "Cross-platform solution for managing micro-investments and savings",
     imageUrl:
-      "/work/cases/coad",
+      "https://centox.io/",
     url: "https://centox.io/",
     link: "/flyout.jpg",
     tag: "hjemmeside",
@@ -63,12 +63,12 @@ export default function Work() {
 const WorkCard = (props: any) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <Link href={props.background} className="hover:opacity-70 transition-all">
+    <Link target="_blank" href={props.background} className="hover:opacity-70 transition-all">
       <div className="aspect-w-1 aspect-h-1">
         <img
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
-          className="aspect-w-1 aspect-h-1 object-top h-[400px] mb-[20px] w-full object-cover transition-all rounded-[14px]"
+          className="aspect-w-1 aspect-h-1 object-cover h-[400px] mb-[20px] w-full object-cover transition-all rounded-[14px]"
           src={props.link}
         ></img>
 

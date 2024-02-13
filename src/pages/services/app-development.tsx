@@ -24,32 +24,32 @@ export default function Appudvikling() {
           {
             heading: "Cross-platform",
             description:
-              "We bring together public and commercial healthcare organizations, offering a 360-degree industry approach to solving",
+              "All our app-solutins function on both Android and iOS.",
           },
           {
             heading: "Scaleable and flexible",
             description:
-              "We bring together public and commercial healthcare organizations, offering a 360-degree industry approach to solving",
+              "Our app solutions can be adapted as your business experiences change.",
           },
           {
             heading: "Agile development",
             description:
-              "We bring together public and commercial healthcare organizations, offering a 360-degree industry approach to solving",
+              "Constant iteration and continuous feedback to ensure your satisfaction.",
           },
           {
             heading: "UI/UX Design",
             description:
-              "We bring together public and commercial healthcare organizations, offering a 360-degree industry approach to solving",
+            "We always ensure that your app is intuitive and easy to navigate.",
           },
           {
-            heading: "Fast delivery",
+            heading: "API Integration",
             description:
-              "We bring together public and commercial healthcare organizations, offering a 360-degree industry approach to solving",
+              "We connect your app to third party tools to ensure the best functionality.",
           },
           {
-            heading: "Backend Integration",
+            heading: "Post-Launch Support",
             description:
-              "We bring together public and commercial healthcare organizations, offering a 360-degree industry approach to solving",
+              "After launching your app, we're available to adjust any changes you might need.",
           },
         ]}
       />

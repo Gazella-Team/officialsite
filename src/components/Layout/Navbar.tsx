@@ -36,11 +36,8 @@ export default function Navbar() {
   { name: 'Pricing', description: 'How much does a project cost?', href: '/work/pricing', icon: null},
 ]} linkName="Work" /> 
               <Flyout sublinks={[
-  { name: 'Tech stack', description: 'Technology we use for efficiency', href: '/development/techstack', icon: null},
-  { name: 'Processes', description: 'From idea to functioning solution', href: '/development/processes', icon: null},
-]} linkName="Development" />
-              <Flyout sublinks={[
   { name: 'Team', description: 'People behind Gazella Team', href: '/company/team', icon: null},
+  { name: 'Processes', description: 'From idea to functioning solution', href: '/company/processes', icon: null},
   { name: 'Career', description: 'Become a part of our team', href: '/company/career', icon: null},
 
 ]} linkName="Company" />
