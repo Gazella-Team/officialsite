@@ -39,7 +39,7 @@ const Meta = ({
       <meta property="og:title" content={title} key="og:title" />
       <meta
         property="og:site_name"
-        content="Unge Iværksættere"
+        content="Gazella Team"
         key="og:site_name"
       />
       <meta property="og:url" content={url} key="og:url" />
