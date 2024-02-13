@@ -42,7 +42,7 @@ export default function Appudvikling() {
               "We bring together public and commercial healthcare organizations, offering a 360-degree industry approach to solving",
           },
           {
-            heading: "",
+            heading: "Fast delivery",
             description:
               "We bring together public and commercial healthcare organizations, offering a 360-degree industry approach to solving",
           },
