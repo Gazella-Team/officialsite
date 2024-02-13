@@ -15,27 +15,8 @@ export default function Navbar() {
 
   return (
     <>
-    <section className="fixed top-0 left-0 right-0 h-[42px] bg-main flex items-center justify-between z-[999]">
-    <div className="w-[96%] mx-auto max-w-[1500px] text-white flex items-center justify-between gap-[10px]">
-      <Link href={"/"}>{null}</Link>
-      <div className="flex items-center gap-[20px]">
-      <Link className="flex items-center text-white text-[13px] gap-[6px]" href={"https://officialsitedanish.vercel.app/"}>
-              Blog
-            </Link>
-      <Link className="flex items-center text-white text-[13px] gap-[6px]" href={"https://officialsitedanish.vercel.app/"}>
-              Support
-            </Link>
-            <div className="flex items-center text-white text-[13px] gap-[6px]">
-              <Link href={"/dansk"}>DK</Link>
-              <p>|</p>
-              <Link href={"/dansk"}>EN</Link>
 
-            </div>
-      </div>
-    </div>
-    </section>
-
-      <nav className="fixed w-full bg-white h-[95px] top-[42px] flex items-center z-[10]">
+      <nav className="fixed w-full bg-white h-[95px] flex items-center z-[10]">
         <div className="w-[95%] mx-auto max-w-[1500px] flex justify-between items-center phoneSm:w-[92%]">
           <Link href={"/"}>
             <img className="w-[90px]" src="/logowhitebg.svg"></img>
@@ -65,14 +46,7 @@ export default function Navbar() {
 ]} linkName="Company" />
 <Link href={"/contact"}>Contact</Link>
             </div>
-          <div className="flex items-center gap-[20px] font-medium ">
-            <EstimateSheet>
-              <div className="hidden md:flex text-[15px] cursor-pointer font-[500] select-none px-6 py-2 items-center gap-[6px] text-center transition-all border-[2px] border-main rounded-full text-main">
-                <p>Estimate your project</p>
-                <ArrowUpRight size={20} />
-              </div>
-            </EstimateSheet>
-          </div>
+
           <div
               onClick={() => setMenuClicked(!menuClicked)}
               className="hidden footer:flex items-center gap-[8px] cursor-pointer"
@@ -81,7 +55,23 @@ export default function Navbar() {
               {menuClicked ? <X size={20} /> : <Menu size={20} />}
             </div>
           </div>
+          <div className="flex items-center gap-[20px] font-medium ">
+            <EstimateSheet>
+              <div className="hidden md:flex text-[15px] cursor-pointer font-[500] bg-main text-white select-none px-6 py-2 items-center gap-[6px] text-center transition-all border-[2px] border-main rounded-full text-main">
+                <p>Estimate your project</p>
+                <ArrowUpRight size={20} />
+              </div>
+            </EstimateSheet>
+            <div className="flex items-center text-main gap-[6px]">
+              <Link href={"/dansk"}>DK</Link>
+              <p>|</p>
+              <Link href={"/dansk"}>EN</Link>
+
+            </div>
+          </div>
+          
         </div>
+        
       </nav>
 
       {menuClicked ? (

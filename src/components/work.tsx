@@ -10,7 +10,7 @@ const workData = [
     imageUrl:
       "/cases/coad/coad.jpg",
     url: "https://centox.io/",
-    link: "/arbejde/cases/coad",
+    link: "/work/cases/coad",
     tag: "hjemmeside",
   },
   {
@@ -21,7 +21,7 @@ const workData = [
     imageUrl:
       "bg-[url(/herobg/auto.jpg)]",
     url: "https://centox.io/",
-    link: "/arbejde/cases/organicmasterclass",
+    link: "/work/cases/organicmasterclass",
     tag: "hjemmeside",
   },
   {
@@ -40,7 +40,7 @@ const workData = [
 export default function Work() {
   return (
     <section className="py-[100px] pt-[50px] ">
-      <div className="w-[95%] max-w-main z-[1] mx-auto grid grid-cols-3 gap-x-[10px] gap-y-[50px] small:grid-cols-1">
+      <div className="w-[95%] max-w-main z-[1] mx-auto grid grid-cols-3 gap-x-[20px] gap-y-[50px] small:grid-cols-1">
         {workData.map((v, index) => (
           <WorkCard
             date={v.desc}
@@ -71,12 +71,12 @@ const WorkCard = ({
 }) => {
   return (
     <Reveal>
-      <div className={`bg-[linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.70)),url(/cases/centox/centox.jpg)] h-[600px] bg-cover bg-center flex flex-col justify-end hover:opacity-90 transition-all`}>
+      <Link href={link} className={`bg-[linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.70)),url(/cases/centox/centox.jpg)] h-[600px] bg-cover bg-center flex flex-col justify-end hover:opacity-90 transition-all rounded-[14px]`}>
         <div className="p-[40px]">
         <h1 className="font-[500] text-[26px] text-white mb-[4px]">{heading}</h1>
         <p className="text-gray-200 font-[400] text-[18px]">{date}</p>
         </div>
-      </div>
+      </Link>
     </Reveal>
   );
 };

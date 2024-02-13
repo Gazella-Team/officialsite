@@ -22,7 +22,7 @@ export default function Coad() {
           </div>
 
         </div>
-        <img className="w-[92%] mx-auto rounded-[14px] ctao:mb-[100px]" src="/cases/coad/coadcase.svg"></img>
+        <img className="w-[95%] mx-auto rounded-[14px] ctao:mb-[100px]" src="/cases/coad/coadcase.svg"></img>
     </Layout>
   );
 }
