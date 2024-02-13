@@ -9,11 +9,11 @@ export default function Cases() {
   return (
     <Layout>
               <Meta
-        title="Arbejde | Gazella Team"
-        description="Vi specialiserer os inden for web udviklingsprojekter fra A-Z. Med vores web udviklingsservice står vi til rådighed uanset om dit projekt kræver en funktionsfyldt web app eller bare et professionelt online visitkort."
+        title="Cases | Gazella Team"
+        description="We take pride in our ability to turn challenges into opportunities through innovative and tailored software solutions"
       />
       <Hero
-            description="We tailormake each solution to fit the customers needs the best way possible. Read about cases we're proud of "
+            description="At Gazella Team, we take pride in our ability to turn challenges into opportunities through innovative and tailored software solutions. Dive into these compelling narratives to witness firsthand how we collaborated with diverse industries to overcome obstacles, optimize processes, and achieve remarkable results."
       background="bg-[linear-gradient(rgba(5,29,64,0.30),rgba(5,29,64,1)),url(/herobg/flyout02.jpg)] bg-top bg-cover"
         heading="Cases."
         section="work"

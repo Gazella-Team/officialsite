@@ -8,9 +8,9 @@ import Meta from "@/components/Layout/Meta";
 export default function TechStack() {
   return (
     <Layout>
-      <Meta
-        title="Tech stack - Se hvilke software vi anvender"
-        description="Få et indblik i hvilke værktøjer samt eksterne software vi hver dag bruger til at udvikle de bedst mulige løsninger for vores kunder."
+        <Meta
+        title="Tech stack | Gazella Team"
+        description="Learn about the various technologies we use everyday to build the best possible solutions for our customers"
       />
       <Hero
       description="Learn about the various technologies we use everyday to build the best possible solutions for our customers. By combining the latest frameworks and the best design applications on the market, we're able to provide unique solutions efficiently."

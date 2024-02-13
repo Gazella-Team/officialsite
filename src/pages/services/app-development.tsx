@@ -8,8 +8,8 @@ export default function Appudvikling() {
   return (
     <Layout>
               <Meta
-        title="Appudvikling | Gazella Team"
-        description="Vi kombinerer funktionelle features, hurtige frameworks og intuitive unikke brugerflader for at skabe de bedste forudsætninger for dit kommende app-projekt."
+        title="App development | Gazella Team"
+        description="We strive after developing scalable cross-platform apps, tailormade for your vision."
       />
       <Hero
             description="At Gazella Team we believe app is the future of technology. We strive after developing scalable cross-platform apps, tailormade for your vision. 

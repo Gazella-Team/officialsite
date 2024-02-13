@@ -9,8 +9,8 @@ export default function Webudvikling() {
   return (
     <Layout>
         <Meta
-        title="Webudvikling | Gazella Team"
-        description="Vi specialiserer os inden for web udviklingsprojekter fra A-Z. Med vores web udviklingsservice står vi til rådighed uanset om dit projekt kræver en funktionsfyldt web app eller bare et professionelt online visitkort."
+        title="Web development | Gazella Team"
+        description="We specialize in building web-solutions from A-Z."
       />
       <Hero
       description="We specialize in building web-solutions from A-Z. By combining unique user-friendly designs and innovative technology, we're able to develop everything from static websites to more complex webapps."

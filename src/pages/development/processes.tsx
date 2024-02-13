@@ -9,8 +9,8 @@ export default function Arbejdsprocesser() {
   return (
     <Layout>
                     <Meta
-        title="Arbejdsprocesser | Gazella Team"
-        description="Vi kombinerer funktionelle features, hurtige frameworks og intuitive unikke brugerflader for at skabe de bedste forudsætninger for dit kommende app-projekt."
+        title="How we work | Gazella Team"
+        description="We value a structured process from drawing ideas to launching solutions"
       />
       <Hero
             description="We value a structured process from drawing ideas to launching solutions. As a customer we offer you a clear step-by-step plan and time schedule for your coming solution, to ensure a comfortable process and an outstanding result."

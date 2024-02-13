@@ -33,6 +33,13 @@ const toolData = [
   },
   {
     tag: "design",
+    image: "/reactnative.png",
+    headline: "React Native",
+    description:
+      "We use React for efficient web app development, creating intricate user interfaces by reusing components to reduce redundancy and simplify maintenance. Reacts virtual DOM ensures fast updates, delivering a seamless user experience. Its declarative syntax aids debugging and collaboration, and the extensive ecosystem and community support enable us to build feature-rich apps effectively.",
+  },
+  {
+    tag: "design",
     image: "/figma.png",
     headline: "Figma",
     description:
@@ -42,13 +49,6 @@ const toolData = [
     tag: "design",
     image: "/canva.png",
     headline: "Canva",
-    description:
-      "We use React for efficient web app development, creating intricate user interfaces by reusing components to reduce redundancy and simplify maintenance. Reacts virtual DOM ensures fast updates, delivering a seamless user experience. Its declarative syntax aids debugging and collaboration, and the extensive ecosystem and community support enable us to build feature-rich apps effectively.",
-  },
-  {
-    tag: "design",
-    image: "/tail.png",
-    headline: "Tailwind CSS",
     description:
       "We use React for efficient web app development, creating intricate user interfaces by reusing components to reduce redundancy and simplify maintenance. Reacts virtual DOM ensures fast updates, delivering a seamless user experience. Its declarative syntax aids debugging and collaboration, and the extensive ecosystem and community support enable us to build feature-rich apps effectively.",
   },

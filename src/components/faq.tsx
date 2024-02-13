@@ -17,7 +17,7 @@ const FAQ = () => {
     {
       question: "How is the price for my project calculated?",
       answer:
-        "Absolutely. Every piece of information submitted through our forms, including passwords, is encrypted to ensure maximum security and privacy.",
+        "The price for your project is calculated by taking the estimated project hours multiplied with an hourly salary of $39.",
     },
     {
       question: "Do you have a satisfaction guarantee?",
