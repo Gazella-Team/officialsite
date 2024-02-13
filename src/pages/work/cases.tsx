@@ -9,15 +9,11 @@ export default function Cases() {
   return (
     <Layout>
               <Meta
-        title="Arbejde | Gazella Team"
-        description="Vi specialiserer os inden for web udviklingsprojekter fra A-Z. Med vores web udviklingsservice står vi til rådighed uanset om dit projekt kræver en funktionsfyldt web app eller bare et professionelt online visitkort."
+        title="Cases | Gazella Team"
+        description="We take pride in our ability to turn challenges into opportunities through innovative and tailored software solutions"
       />
       <Hero
-            description={<div className="w-[95%] mx-auto max-w-main flex items-center justify-end">
-            <p className="text-[22px] w-[68%] text-gray-600 font-[400] lg:text-[24px] lg:leading-[34px] lg:w-[90%] mid:w-full mid:text-[22px] mid:leading-[32px]">
-            Gazella Team udgør et hold af ambitiøse, nytænkende og storsmilende programmøre og designere, som hver dag brænder for at skabe unikke digitale produkter. Vi fokuserer på, at tilpasse hver enkel løsning til det pågældende projekt. Derfor kan du hos os forvente en fast kompetent sparingspartner, som supplerer med viden og leverer til tiden til den aftalte pris.
-            </p>
-          </div>}
+            description="At Gazella Team, we take pride in our ability to turn challenges into opportunities through innovative and tailored software solutions. Dive into these compelling narratives to witness firsthand how we collaborated with diverse industries to overcome obstacles, optimize processes, and achieve remarkable results."
       background="bg-[linear-gradient(rgba(5,29,64,0.30),rgba(5,29,64,1)),url(/herobg/flyout02.jpg)] bg-top bg-cover"
         heading="Cases."
         section="work"

@@ -25,15 +25,8 @@ export default function BlogList({
                 description="Vi arbejder hele tiden på at skrive nye artikler, hvor vores team deler ud af tips & tricks i forhold til hvordan du laver din hjemmeside."
             />
             <Hero
-                description={
-                    <div className="w-[92%] mx-auto max-w-main flex items-center justify-end">
-                        <p className="text-[22px] w-[68%] text-gray-600 font-[400] lg:text-[24px] lg:leading-[34px] lg:w-[90%] mid:w-full mid:text-[22px] mid:leading-[32px]">
-                            We are constantly working on writing new articles,
-                            where our team shares tips & tricks in relation to
-                            how you create your website.
-                        </p>
-                    </div>
-                }
+                description="            By collaborating with companies and organizations doing what they do best, we're able to deliver the best possible results for our customers. We live by the philosophy that nothing great is created alone, which is why we value long-term relations with both customers and partners.
+                "
                 background="bg-[linear-gradient(rgba(5,29,64,0.30),rgba(5,29,64,1)),url(/herobg/blog.jpg)] bg-center bg-cover"
                 heading="Blog"
                 section="læring"

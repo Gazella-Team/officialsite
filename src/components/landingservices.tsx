@@ -4,8 +4,8 @@ import { Reveal } from "./Animations/Reveal";
 
 export default function LandigServices() {
   return (
-    <section className="py-[70px] bg-gray-50">
-      <div className="w-[92%] max-w-main mx-auto grid grid-cols-features xl:grid-cols-1">
+    <section className="py-[70px] bg-gray-50 mt-[100px]">
+      <div className="w-[95%] max-w-main mx-auto grid grid-cols-features xl:grid-cols-1">
         <div className="grid grid-cols-3 gap-[20px] gap-y-[20px] lndserv:grid-cols-1">
         <Reveal>
       <div className="bg-white p-[50px] rounded-[14px] shadow-main">

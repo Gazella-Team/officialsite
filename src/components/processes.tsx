@@ -2,34 +2,34 @@ import { Reveal } from "./Animations/Reveal";
 
 const processData = [
   {
-    heading: "Koncept phase",
+    heading: "Concept phase",
     description:
-      "Our data protection program encompasses data governance and security, proactive system maintenance, and threat response. From strategy through implementation, we have the resources  ",
+      "We understand your vision and requirements, and we develop a structured plan and time schedule for your project.",
   },
   {
     heading: "Design phase",
     description:
-      "Our data protection program encompasses data governance and security, proactive system maintenance, and threat response. From strategy through implementation, we have the resources  ",
+      "We design your solution by applying a custom made interface along with a user-friendly system, ensuring a great user experience.",
   },
   {
     heading: "Development phase",
     description:
-      "Our data protection program encompasses data governance and security, proactive system maintenance, and threat response. From strategy through implementation, we have the resources  ",
+      "We develop your solution by connecting your requested functionalities with the agreed design, to ensure a satisfying product.",
   },
   {
     heading: "Launch",
     description:
-      "Our data protection program encompasses data governance and security, proactive system maintenance, and threat response. From strategy through implementation, we have the resources  ",
+      "When you’re satisfied with the result, we launch your solution on your preferred platforms and media, depending on your project.",
   },
   {
     heading: "Maintenance",
     description:
-      "Our data protection program encompasses data governance and security, proactive system maintenance, and threat response. From strategy through implementation, we have the resources  ",
+      "We follow up with the latest technology, and ensure to continuously update your solution, so that it remains bug-free and up to date.",
   },
   {
     heading: "Further development",
     description:
-      "Our data protection program encompasses data governance and security, proactive system maintenance, and threat response. From strategy through implementation, we have the resources  ",
+      "But it doesn’t end here. We’re ready to help you with any further changes or implementations you'll need in the future.",
   },
 ];
 
@@ -37,8 +37,8 @@ const processData = [
 export default function Processes(props: any) {
   return (
     <section className="py-[70px] bg-gray-50">
-      <div className="w-[95%] max-w-main mx-auto grid grid-cols-features xl:grid-cols-1">
-        <div className="grid grid-cols-3 gap-[20px] gap-y-[20px] mid:grid-cols-1">
+      <div className="w-[95%] max-w-main mx-auto grid grid-cols-features xl:grid-cols-1 lg:w-[90%]">
+        <div className="grid grid-cols-3 gap-[20px] gap-y-[20px] lndserv:grid-cols-1 ">
           {processData.map((v: any, index:any) => (
             <ProcessCard key={v} Obj={v} count={index + 1} />
           ))}
