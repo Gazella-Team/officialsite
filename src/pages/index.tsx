@@ -47,34 +47,34 @@ export default function Index() {
                 <Features
                     Obj={[
                         {
-                            heading: 'Layout & structure',
+                            heading: 'Guaranteed satisfaction',
                             description:
-                                'Subpages, pageflow and component placement. We handle it all.',
+                                "We refund all your money, if you're not satisfied with our work.",
                         },
                         {
-                            heading: 'Custom design',
+                            heading: 'Fast delivery',
                             description:
-                                'A user-friendly design boosting your brand identity and conversions.',
+                                'With optimized work processes, we ensure to delivery on record-time.',
                         },
                         {
-                            heading: 'Device compatibility',
+                            heading: 'Firm digital partner',
                             description:
-                                'We ensure that your web-solution is accessible on all devices.',
+                                'We support your digital situation both past and post collaboration.',
                         },
                         {
-                            heading: 'Domain & hosting',
+                            heading: 'Latest technology',
                             description:
-                                'We launch your new web-solution on your preferred domain.',
+                                'All solutions we offer, are build using the best technology on the market.',
                         },
                         {
-                            heading: 'Speed optimization',
+                            heading: 'Non-binding',
                             description:
-                                'We make your website as fast as possible to increase conversions.',
+                                "All collaboration is non-binding, and you can abort if you're dissatisfied.",
                         },
                         {
-                            heading: 'SEO optimization',
+                            heading: 'Everyday support',
                             description:
-                                'We optimize your website for maximum organic results on Google.',
+                                'We offer customers 14 hours digital support all days of the week.',
                         },
                     ]}
                 />

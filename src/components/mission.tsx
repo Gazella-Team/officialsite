@@ -8,9 +8,9 @@ export default function Mission() {
 <br></br><br></br>
 Gazella Team helps your company, project or organization excel in a digital world, by offering software-solutions custom-made to benefit the opportunites and challenges you're facing.
 <br></br><br></br>
-With our +10 years combined experience, we offer you a dedicated partner 
-<br></br><br></br>
-Mulighederne er mange, og potentialet for effektivisering kan være enormt.
+With our +10 years combined experience, we offer you a dedicated partner that understands your needs, and develops a corresponding solution that matches the requirements of your project.
+
+
                 </p>
             </div>
         </section>
