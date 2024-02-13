@@ -33,7 +33,7 @@ export default function Footer() {
       <div className="w-[95%] mx-auto flex items-center justify-between max-w-main gap-[20px] text-gray-200 lg:w-[90%] lg:flex-col lg:items-start">
         <div className="flex items-center gap-[20px] mid:flex-col mid:items-start mid:mb-[40px]">
         <p>Gazella Team © {new Date().getFullYear()}</p>
-        <p>Islands Brygge 38F st th</p>
+        <p>Islands Brygge 38F</p>
         </div>
 
 

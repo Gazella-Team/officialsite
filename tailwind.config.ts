@@ -57,7 +57,8 @@ const config = {
         blogGrid2: { min: "735px" },
         blogGrid3: { min: "1100px" },
         caseDisplayOne: {max: "1169px"},
-        lndserv: {max: "1250px"}
+        lndserv: {max: "1250px"},
+        caselast: {max: "700px"}
       },
       maxWidth: {
         main: "1500px",

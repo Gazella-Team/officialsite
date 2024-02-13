@@ -1,54 +1,58 @@
 import Link from "next/link";
 import { Reveal } from "./Animations/Reveal";
+import { useState } from "react";
 
 const workData = [
   {
     company: "COAD",
     desc: "Unik bureau landingsside",
     description:
-      "Cross-platform solution for managing micro-investments and savings, compatible with SAMA fintech regulations including multi-factor authorization and KYC verification",
+      "Cross-platform solution for managing micro-investments and savings",
     imageUrl:
-      "/cases/coad/coad.jpg",
+      "/work/cases/coad",
     url: "https://centox.io/",
-    link: "/work/cases/coad",
+    link: "/flyout.jpg",
     tag: "hjemmeside",
   },
   {
-    company: "Organic Masterclass",
-    desc: "Forside til sals af onlinekursus",
+    company: "COAD",
+    desc: "Unik bureau landingsside",
     description:
-      "Cross-platform solution for managing micro-investments and savings, compatible with SAMA fintech regulations including multi-factor authorization and KYC verification",
+      "Cross-platform solution for managing micro-investments and savings",
     imageUrl:
-      "bg-[url(/herobg/auto.jpg)]",
+      "/work/cases/coad",
     url: "https://centox.io/",
-    link: "/work/cases/organicmasterclass",
+    link: "/flyout.jpg",
     tag: "hjemmeside",
   },
-  {
-    company: "Centox",
-    desc: "Web-baseret forum website builder",
+    {
+    company: "COAD",
+    desc: "Unik bureau landingsside",
     description:
-      "Cross-platform solution for managing micro-investments and savings, compatible with SAMA fintech regulations including multi-factor authorization and KYC verification",
+      "Cross-platform solution for managing micro-investments and savings",
     imageUrl:
-    "/cases/centox/centox.jpg",
+      "/work/cases/coad",
     url: "https://centox.io/",
-    link: "/arbejde/cases/organicmasterclass",
-    tag: "web-app",
+    link: "/flyout.jpg",
+    tag: "hjemmeside",
   },
 ];
 
 export default function Work() {
   return (
     <section className="py-[100px] pt-[50px] ">
-      <div className="w-[95%] max-w-main z-[1] mx-auto grid grid-cols-3 gap-x-[20px] gap-y-[50px] small:grid-cols-1 lg:w-[90%]">
+      <div className="w-[95%] max-w-main z-[1] mx-auto grid grid-cols-3 gap-x-[20px] gap-y-[50px] lg:w-[90%] lg:grid-cols-2 caselast:grid-cols-1 caselast:gap-y-[100px]">
         {workData.map((v, index) => (
           <WorkCard
             date={v.desc}
             link={v.link}
             heading={v.company}
             background={v.imageUrl}
+            description={v.description}
             key={index}
             tag={v.tag}
+            desc={v.desc}
+            company={v.company}
           />
         ))}
       </div>
@@ -56,27 +60,23 @@ export default function Work() {
   );
 }
 
-const WorkCard = ({
-  background,
-  heading,
-  date,
-  link,
-  tag,
-}: {
-  background: any;
-  heading: any;
-  date: any;
-  link: any;
-  tag: any;
-}) => {
+const WorkCard = (props: any) => {
+  const [isHovered, setIsHovered] = useState(false);
   return (
-    <Reveal>
-      <Link href={link} className={`bg-[linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.70)),url(/cases/centox/centox.jpg)] h-[600px] bg-cover bg-center flex flex-col justify-end hover:opacity-90 transition-all rounded-[14px]`}>
-        <div className="p-[40px]">
-        <h1 className="font-[500] text-[26px] text-white mb-[4px]">{heading}</h1>
-        <p className="text-gray-200 font-[400] text-[18px]">{date}</p>
-        </div>
-      </Link>
-    </Reveal>
+    <Link href={props.background} className="hover:opacity-70 transition-all">
+      <div className="aspect-w-1 aspect-h-1">
+        <img
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+          className="aspect-w-1 aspect-h-1 object-top h-[400px] mb-[20px] w-full object-cover transition-all rounded-[14px]"
+          src={props.link}
+        ></img>
+
+        <h1 className="text-[24px] font-[500] text-main mb-[4px]">{props.company}</h1>
+        <p className="text-gray-600 text-[18px] font-[400]">{props.desc}</p>
+      </div>
+    </Link>
   );
 };
+
+

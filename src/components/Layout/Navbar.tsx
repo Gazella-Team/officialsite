@@ -28,20 +28,20 @@ export default function Navbar() {
           <div className="flex items-center gap-[40px]">
             <div className="flex items-center justify-end gap-[20px] text-[15px] font-[500] text-main footer:hidden">
             <Flyout sublinks={[
-  { name: 'Web development', description: 'Get a better understanding of your traffic', href: '/services/web-development', icon: null},
-  { name: 'App development', description: 'Speak directly to your customers', href: '/services/app-development', icon: null},
+  { name: 'Web development', description: 'Functional web-solutions from A-Z', href: '/services/web-development', icon: null},
+  { name: 'App development', description: 'Scaleable cross-platform development', href: '/services/app-development', icon: null},
 ]} linkName="Services" />
             <Flyout sublinks={[
-  { name: 'Cases', description: 'Get a better understanding of your traffic', href: '/work/cases', icon: null},
-  { name: 'Pricing', description: 'Speak directly to your customers', href: '/work/pricing', icon: null},
+  { name: 'Cases', description: "Work we're proud of", href: '/work/cases', icon: null},
+  { name: 'Pricing', description: 'How much does a project cost?', href: '/work/pricing', icon: null},
 ]} linkName="Work" /> 
               <Flyout sublinks={[
-  { name: 'Tech stack', description: 'Get a better understanding of your traffic', href: '/development/techstack', icon: null},
-  { name: 'Processes', description: 'Speak directly to your customers', href: '/development/processes', icon: null},
+  { name: 'Tech stack', description: 'Technology we use for efficiency', href: '/development/techstack', icon: null},
+  { name: 'Processes', description: 'From idea to functioning solution', href: '/development/processes', icon: null},
 ]} linkName="Development" />
               <Flyout sublinks={[
-  { name: 'Team', description: 'Speak directly to your customers', href: '/company/team', icon: null},
-  { name: 'Career', description: 'Connect with third-party tools', href: '/company/career', icon: null},
+  { name: 'Team', description: 'People behind Gazella Team', href: '/company/team', icon: null},
+  { name: 'Career', description: 'Become a part of our team', href: '/company/career', icon: null},
 
 ]} linkName="Company" />
 <Link href={"/contact"}>Contact</Link>
