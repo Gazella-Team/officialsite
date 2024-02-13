@@ -99,22 +99,6 @@ export default function Navbar() {
                 </div>:null}
               </div>
 
-
-              <div onClick={() => setDevClicked(!devClicked)} className="flex flex-col justify-center border-b-[1px] py-[30px] cursor-pointer text-main">
-                <div className="flex items-center justify-between">
-                <h1 className="text-[20px] font-[500]">Development</h1>
-                {devClicked ? <X />:<Plus />}
-                </div>
-                
-                {devClicked ? <div className="mt-[20px] flex flex-col gap-[10px]">
-                  <Link onClick={() => setMenuClicked(false)} className="text-[18px] flex items-center" href={"/development/techstack"}>Tech stack<span><ChevronRight strokeWidth={1.3}/></span></Link>
-                  <Link onClick={() => setMenuClicked(false)} className="text-[18px] flex items-center" href={"/development/processes"}>Processes<span><ChevronRight strokeWidth={1.3}/></span></Link>
-                </div>:null}
-              </div>
-
-
-
-
               <div onClick={() => setCompanyClicked(!companyClicked)} className="flex flex-col justify-center border-b-[1px] py-[30px] cursor-pointer text-main">
                 <div className="flex items-center justify-between">
                 <h1 className="text-[20px] font-[500]">Company</h1>
@@ -123,6 +107,7 @@ export default function Navbar() {
                 
                 {companyClicked ? <div className="mt-[20px] flex flex-col gap-[10px]">
                   <Link onClick={() => setMenuClicked(false)} className="text-[18px] flex items-center" href={"/company/team"}>Team<span><ChevronRight strokeWidth={1.3}/></span></Link>
+                  <Link onClick={() => setMenuClicked(false)} className="text-[18px] flex items-center" href={"/company/processes"}>Processes<span><ChevronRight strokeWidth={1.3}/></span></Link>
                   <Link onClick={() => setMenuClicked(false)} className="text-[18px] flex items-center" href={"/company/career"}>Career<span><ChevronRight strokeWidth={1.3}/></span></Link>
 
                 </div>:null}
