@@ -10,7 +10,7 @@ export default function Job() {
             {jobData.length > 1 ? <div>{jobData.map(v => <JobCard key={v} Obj={v} />)}</div>:
             <div className="bg-white rounded-[14px] p-[50px]">
                 <h1 className="text-[24px] mb-[14px] text-main font-[500]">There are no open positions at the moment</h1>
-                <p className="text-[18px] font-[400] text-gray-600">Sign up for our newsletter to get notified when a position opens.</p>
+                <p className="text-[18px] font-[400] text-gray-600">You can still feel free to contact us by sending an application to hey@gazellateam.com</p>
             </div>
             
             }
