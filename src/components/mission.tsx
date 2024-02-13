@@ -6,9 +6,9 @@ export default function Mission() {
                 <p className="text-[20px] text-gray-600 mid:text-[18px]">
                 As each day pass, the world becomes more digital. Tasks become automated, information gets stored on the internet and applications handle problems we once had to take care of ourselves.
 <br></br><br></br>
-Gazella Team helps your company, project or organization excel in a digital world, by offering software-solutions custom-made to benefit your business. 
+Gazella Team helps your company, project or organization excel in a digital world, by offering software-solutions custom-made to benefit the opportunites and challenges you're facing.
 <br></br><br></br>
-Vi har erfaring med app udvikling fra en lang række af kunder på tværs af brancher, hvor det at effektivisere interne forretningsgange har været hovedformålet. Derigennem kan I gøre hverdagen nemmere, mens I samtidig sparer penge.
+With our +10 years combined experience, we offer you a dedicated partner 
 <br></br><br></br>
 Mulighederne er mange, og potentialet for effektivisering kan være enormt.
                 </p>

@@ -61,12 +61,6 @@ export default function Navbar() {
                 <ArrowUpRight size={20} />
               </div>
             </EstimateSheet>
-            <div className="flex items-center text-main gap-[6px] footer:hidden">
-              <Link href={"/dansk"}>DK</Link>
-              <p>|</p>
-              <Link href={"/dansk"}>EN</Link>
-
-            </div>
           </div>
           
         </div>
@@ -75,7 +69,13 @@ export default function Navbar() {
 
       {menuClicked ? (
         <Opc>
+        
           <div className="hidden footer:flex fixed w-full bg-white top-[90px] bottom-0 py-[30px] z-20 overflow-auto">
+          <style jsx>{`
+        ::-webkit-scrollbar {
+          display: none;
+        }
+      `}</style>
             <div className="w-[95%] mx-auto phoneSm:w-[92%]">
             <div onClick={() => setServicesClicked(!servicesClicked)} className="flex flex-col justify-center border-b-[1px] py-[30px] cursor-pointer text-main">
                 <div className="flex items-center justify-between">
@@ -140,17 +140,11 @@ export default function Navbar() {
               </div>
               <div className="flex flex-col gap-[20px] font-medium mt-[40px]">
             <EstimateSheet>
-              <div className="hidden footer:flex text-[15px] cursor-pointer font-[500] bg-main text-white select-none px-6 py-2 items-center gap-[6px] text-center transition-all border-[2px] border-main rounded-full text-main ">
+              <div className="hidden mb-[60px] footer:flex text-[15px] cursor-pointer font-[500] bg-main text-white select-none px-6 py-2 items-center gap-[6px] text-center transition-all border-[2px] border-main rounded-full text-main ">
                 <p>Estimate your project</p>
                 <ArrowUpRight size={20} />
               </div>
             </EstimateSheet>
-            <div className="flex items-center text-main gap-[6px]">
-              <Link href={"/dansk"}>DK</Link>
-              <p>|</p>
-              <Link href={"/dansk"}>EN</Link>
-
-            </div>
           </div>
               
               
