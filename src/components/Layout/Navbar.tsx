@@ -41,7 +41,6 @@ export default function Navbar() {
 ]} linkName="Development" />
               <Flyout sublinks={[
   { name: 'Team', description: 'Speak directly to your customers', href: '/company/team', icon: null},
-  { name: 'Products', description: "Your customers' data will be safe and secure", href: '/company/products', icon: null},
   { name: 'Career', description: 'Connect with third-party tools', href: '/company/career', icon: null},
 
 ]} linkName="Company" />
@@ -127,7 +126,6 @@ export default function Navbar() {
                 
                 {companyClicked ? <div className="mt-[20px] flex flex-col gap-[10px]">
                   <Link onClick={() => setMenuClicked(false)} className="text-[18px] flex items-center" href={"/company/team"}>Team<span><ChevronRight strokeWidth={1.3}/></span></Link>
-                  <Link onClick={() => setMenuClicked(false)} className="text-[18px] flex items-center" href={"/company/products"}>Products<span><ChevronRight strokeWidth={1.3}/></span></Link>
                   <Link onClick={() => setMenuClicked(false)} className="text-[18px] flex items-center" href={"/company/career"}>Career<span><ChevronRight strokeWidth={1.3}/></span></Link>
 
                 </div>:null}

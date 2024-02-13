@@ -3,8 +3,8 @@ import { Reveal } from "./Animations/Reveal";
 export default function Features(props: any) {
   return (
     <section className="py-[70px] bg-gray-50">
-      <div className="w-[95%] max-w-main mx-auto grid grid-cols-features xl:grid-cols-1 lg:w-[90%]">
-        <div className="grid grid-cols-3 gap-[20px] gap-y-[20px] mid:grid-cols-1">
+      <div className="w-[95%] max-w-main mx-auto lg:w-[90%]">
+        <div className="grid grid-cols-3 gap-[20px] gap-y-[20px] lndserv:grid-cols-1">
           {props.Obj.map((v: any, index: any) => (
             <FeatureCard key={v} Obj={v} count={index + 1} />
           ))}

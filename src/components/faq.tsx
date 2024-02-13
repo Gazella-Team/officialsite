@@ -22,12 +22,12 @@ const FAQ = () => {
     {
       question: "Do you have a satisfaction guarantee?",
       answer:
-        "Yes, Centox comes with a built-in staff system. You can add members to your organization, allowing them to comment on and approve applications.",
+        "Yes we do! As a customer at Gazella Team you only pay us, when you're satisfied with our work.",
     },
     {
       question: "How is the payment process?",
       answer:
-        "We believe in continuous improvement. Centox receives regular updates to introduce new features, enhance existing ones, and ensure overall platform stability.",
+        "We send you an invoice, with your prefered payment method.",
     },
   ];
 

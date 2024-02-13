@@ -37,12 +37,12 @@ export default function Appudvikling() {
               "We bring together public and commercial healthcare organizations, offering a 360-degree industry approach to solving",
           },
           {
-            heading: "Backend Integration",
+            heading: "UI/UX Design",
             description:
               "We bring together public and commercial healthcare organizations, offering a 360-degree industry approach to solving",
           },
           {
-            heading: "Backend Integration",
+            heading: "",
             description:
               "We bring together public and commercial healthcare organizations, offering a 360-degree industry approach to solving",
           },

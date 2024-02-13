@@ -13,7 +13,8 @@ import EstimateSheet from "@/components/Modals/EstimateSheet";
 import { ArrowUpRight } from "lucide-react";
 import Work from "@/components/work";
 import { ChevronRight } from "lucide-react";
-import LandigServices from "@/components/landingservices";
+import Mission from "@/components/mission";
+import Features from "@/components/features";
 
 export default function Index() {
   return (
@@ -38,7 +39,41 @@ export default function Index() {
         </div>
       </Reveal>
     </section>
-    <LandigServices />
+    <Mission />
+    <Features
+        Obj={[
+          {
+            heading: "Layout & structure",
+            description:
+              "Subpages, pageflow and component placement. We handle it all.",
+          },
+          {
+            heading: "Custom design",
+            description:
+              "A user-friendly design boosting your brand identity and conversions.",
+          },
+          {
+            heading: "Device compatibility",
+            description:
+              "We ensure that your web-solution is accessible on all devices.",
+          },
+          {
+            heading: "Domain & hosting",
+            description:
+              "We launch your new web-solution on your preferred domain.",
+          },
+          {
+            heading: "Speed optimization",
+            description:
+              "We make your website as fast as possible to increase conversions.",
+          },
+          {
+            heading: "SEO optimization",
+            description:
+              "We optimize your website for maximum organic results on Google.",
+          },
+        ]}
+      />
       </Layout>
     </>
   );

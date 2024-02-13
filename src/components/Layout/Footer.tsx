@@ -34,15 +34,12 @@ export default function Footer() {
         <div className="flex items-center gap-[20px] mid:flex-col mid:items-start mid:mb-[40px]">
         <p>Gazella Team © {new Date().getFullYear()}</p>
         <p>Islands Brygge 38F st th</p>
-        <Link href={"/blog"}>Privacy policy</Link>
-        <Link href={"/blog"}>Cookie policy</Link>
         </div>
 
 
         <div className="flex items-center gap-[20px]">
         <Link href={"/blog"}>Blog</Link>
-        <Link href={"/blog"}>Group</Link>
-        <Link href={"/blog"}>Partners</Link>
+        <Link target="_blank" href={"https://dk.trustpilot.com/review/gazellateam.com"}>Recommendations</Link>
         </div>
       </div>
     </footer>
