@@ -12,7 +12,7 @@ const FAQ = () => {
     {
       question: "What does an app-solution cost?",
       answer:
-        "The price of your app-solution depends on the platofr",
+        "The price of your app-solution depends on the number of integrations and functionalities requested.",
     },
     {
       question: "How is the price for my project calculated?",
