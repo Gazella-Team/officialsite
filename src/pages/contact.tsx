@@ -8,7 +8,7 @@ export default function Contact() {
   return (
     <Layout>
       <Hero
-      description="Do you have a project in mind, that requires either a website, an app or a complete SaaS development? We'd love to discuss your idea. We offer you a free talk, where you can determine your vision and requirements for your coming project.   
+      description="Do you have a project in mind, that requires either a website, an app or a timeless design? We'd love to discuss your idea. We offer you a free talk, where you can determine your vision and requirements for your coming project.   
       "
       background="bg-[linear-gradient(rgba(5,29,64,0.30),rgba(5,29,64,1)),url(/herobg/webdev.jpg)] bg-top bg-cover"
         heading="Let's talk."

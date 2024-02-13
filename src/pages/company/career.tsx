@@ -1,8 +1,9 @@
 import Layout from "@/components/Layout";
 import Hero from "@/components/Layout/hero";
-import Description from "@/components/description";
 import { Heart } from "lucide-react";
-import Partners from "@/components/partners";
+import Job from "@/components/job";
+
+
 export default function Career() {
   return (
     <Layout>
@@ -14,7 +15,7 @@ export default function Career() {
         section="company"
         icon={<Heart color="#ffffff" size={70} />}
       />
-    <Partners />
+    <Job />
     </Layout>
   );
 }

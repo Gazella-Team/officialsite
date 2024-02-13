@@ -26,7 +26,6 @@ export default function Navbar() {
             <Flyout sublinks={[
   { name: 'Web development', description: 'Get a better understanding of your traffic', href: '/services/web-development', icon: null},
   { name: 'App development', description: 'Speak directly to your customers', href: '/services/app-development', icon: null},
-  { name: 'SaaS', description: "Your customers' data will be safe and secure", href: '/services/saas', icon: null},
 ]} linkName="Services" />
             <Flyout sublinks={[
   { name: 'Cases', description: 'Get a better understanding of your traffic', href: '/work/cases', icon: null},
@@ -40,7 +39,6 @@ export default function Navbar() {
   { name: 'Team', description: 'Speak directly to your customers', href: '/company/team', icon: null},
   { name: 'Partners', description: 'Speak directly to your customers', href: '/company/partners', icon: null},
   { name: 'Products', description: "Your customers' data will be safe and secure", href: 'https://dk.trustpilot.com/review/gazellateam.com', icon: null},
-  { name: 'Support', description: 'Connect with third-party tools', href: '/company/support', icon: null},
   { name: 'Career', description: 'Connect with third-party tools', href: '/company/career', icon: null},
 
 ]} linkName="Company" />

@@ -7,7 +7,7 @@ export default function ContactInfo() {
         <div className="w-[95%] mx-auto max-w-main grid grid-cols-3 gap-[20px] footer:grid-cols-1">
         <div className="bg-white p-[50px] rounded-[14px]">
               <Reveal>
-                <h1 className="font-[600] text-[22px] mb-[10px] text-main">
+                <h1 className="font-[600] text-[24px] mb-[10px] text-main">
                   Phone
                 </h1>
               </Reveal>
@@ -20,7 +20,7 @@ export default function ContactInfo() {
             </div>
             <div className="bg-white p-[50px] rounded-[14px]">
               <Reveal>
-                <h1 className="font-[600] text-[22px] mb-[10px] text-main">
+                <h1 className="font-[600] text-[24px] mb-[10px] text-main">
                   Mail
                 </h1>
               </Reveal>
@@ -33,7 +33,7 @@ export default function ContactInfo() {
             </div>
             <div className="bg-white p-[50px] rounded-[14px]">
               <Reveal>
-                <h1 className="font-[600] text-[22px] mb-[10px] text-main">
+                <h1 className="font-[600] text-[24px] mb-[10px] text-main">
                   Location
                 </h1>
               </Reveal>
