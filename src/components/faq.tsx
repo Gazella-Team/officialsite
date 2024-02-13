@@ -58,7 +58,7 @@ const FAQ = () => {
 
   return (
     <section className='bg-gray-50 py-[70px]'>
-      <div className="faq-container w-[95%] mx-auto flex flex-col gap-[20px]">
+      <div className="faq-container w-[95%] mx-auto flex flex-col max-w-main gap-[20px] lg:w-[90%]">
       {questions.map((item, index) => (
         <FAQItem
           key={index}

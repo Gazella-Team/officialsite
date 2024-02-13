@@ -128,7 +128,7 @@ export default function Navbar() {
                 {companyClicked ? <div className="mt-[20px] flex flex-col gap-[10px]">
                   <Link onClick={() => setMenuClicked(false)} className="text-[18px] flex items-center" href={"/company/team"}>Team<span><ChevronRight strokeWidth={1.3}/></span></Link>
                   <Link onClick={() => setMenuClicked(false)} className="text-[18px] flex items-center" href={"/company/products"}>Products<span><ChevronRight strokeWidth={1.3}/></span></Link>
-                  <Link onClick={() => setMenuClicked(false)} className="text-[18px] flex items-center" href={"/company/products"}>Career<span><ChevronRight strokeWidth={1.3}/></span></Link>
+                  <Link onClick={() => setMenuClicked(false)} className="text-[18px] flex items-center" href={"/company/career"}>Career<span><ChevronRight strokeWidth={1.3}/></span></Link>
 
                 </div>:null}
               </div>

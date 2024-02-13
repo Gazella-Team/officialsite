@@ -22,16 +22,16 @@ export default function Footer() {
   }
   return (
     <footer className="bg-main pt-[130px] pb-[40px]">
-      <div className="w-[95%] mx-auto text-white mb-[180px]">
-        <h1 className="text-[40px] leading-[50px] mb-[40px] font-[500]">Do you have an idea<br></br> for {IdentifySection()}?</h1>
-        <div className="text-[20px] flex flex-col gap-[4px] font-[400]">
+      <div className="w-[95%] mx-auto text-white mb-[180px] mid:mb-[100px] lg:w-[90%] max-w-main">
+        <h1 className="text-[40px] leading-[50px] mb-[40px] font-[500] mid:text-[30px] mid:leading-[40px]">Do you have an idea<br></br> for {IdentifySection()}?</h1>
+        <div className="text-[20px] flex flex-col gap-[4px] font-[400] mid:text-[16px]">
         <p>+45 5069 5272</p>
         <p>hey@gazellateam.com</p>
         </div>
       </div>
 
-      <div className="w-[95%] mx-auto flex items-center justify-between gap-[20px] text-gray-200 lg:flex-col lg:items-start">
-        <div className="flex items-center gap-[20px]">
+      <div className="w-[95%] mx-auto flex items-center justify-between max-w-main gap-[20px] text-gray-200 lg:w-[90%] lg:flex-col lg:items-start">
+        <div className="flex items-center gap-[20px] mid:flex-col mid:items-start mid:mb-[40px]">
         <p>Gazella Team © {new Date().getFullYear()}</p>
         <p>Islands Brygge 38F st th</p>
         <Link href={"/blog"}>Privacy policy</Link>

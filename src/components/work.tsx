@@ -40,7 +40,7 @@ const workData = [
 export default function Work() {
   return (
     <section className="py-[100px] pt-[50px] ">
-      <div className="w-[95%] max-w-main z-[1] mx-auto grid grid-cols-3 gap-x-[20px] gap-y-[50px] small:grid-cols-1">
+      <div className="w-[95%] max-w-main z-[1] mx-auto grid grid-cols-3 gap-x-[20px] gap-y-[50px] small:grid-cols-1 lg:w-[90%]">
         {workData.map((v, index) => (
           <WorkCard
             date={v.desc}

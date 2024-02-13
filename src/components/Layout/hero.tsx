@@ -21,7 +21,7 @@ export default function Hero({
           <div>
             <p className="mb-[14px] uppercase font-[400] text-main">/ {section}</p>
           <div className="flex items-center gap-[20px]">
-            <h1 className="text-[80px] font-[500] w-[80%] leading-[80px] text-main lg:text-[60px] lg:leading-[70px]">
+            <h1 className="text-[80px] font-[500] w-[80%] leading-[80px] text-main lg:text-[54px] lg:leading-[64px]">
               {heading}
             </h1>
           </div>
@@ -30,7 +30,7 @@ export default function Hero({
       </Reveal>
     </section>
     <section className="pb-[100px] mt-[-120px] lg:mt-[-230px]">
-      <div className="flex justify-end w-[90%] mx-auto">
+      <div className="flex justify-end w-[90%] mx-auto max-w-main">
         <p className="text-[22px] w-[68%] text-gray-600 font-[400] lg:w-full lg:text-[20px]">{description}</p>
       </div>
     </section>
