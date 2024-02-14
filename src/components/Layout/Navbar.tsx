@@ -53,9 +53,9 @@ export default function Navbar() {
           </div>
           <div className="flex items-center gap-[20px] font-medium footer:hidden">
             <EstimateSheet>
-              <div className="hidden md:flex text-[15px] cursor-pointer font-[500] bg-main text-white select-none px-6 py-2 items-center gap-[6px] text-center transition-all border-[2px] border-main rounded-full text-main footer:hidden">
+              <div className="hidden md:flex text-[13px] cursor-pointer font-[500] bg-main text-white select-none px-4 py-2 items-center gap-[6px] text-center transition-all border-[2px] border-main rounded-full text-main footer:hidden">
                 <p>Estimate your project</p>
-                <ArrowUpRight size={20} />
+                <ArrowUpRight size={16} />
               </div>
             </EstimateSheet>
           </div>
