@@ -25,6 +25,7 @@ export default function Navbar() {
           <Link href={"/"}>
             <img className="w-[90px]" src="/logowhitebg.svg"></img>
           </Link>
+          <div className="flex items-center gap-[60px]">
           <div className="flex items-center gap-[40px]">
             <div className="flex items-center justify-end gap-[20px] text-[15px] font-[500] text-main footer:hidden">
             <Flyout sublinks={[
@@ -59,6 +60,8 @@ export default function Navbar() {
               </div>
             </EstimateSheet>
           </div>
+          </div>
+          
           
         </div>
         

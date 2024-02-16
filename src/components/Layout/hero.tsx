@@ -21,7 +21,7 @@ export default function Hero({
           <div>
             <p className="mb-[14px] uppercase font-[400] text-main">/ {section}</p>
           <div className="flex items-center gap-[20px]">
-            <h1 className="text-[80px] font-[500] w-[80%] leading-[80px] text-main lg:text-[54px] lg:leading-[64px]">
+            <h1 className="text-[90px] font-[500] w-[100%] leading-[80px] text-main lg:text-[54px] lg:leading-[64px]">
               {heading}
             </h1>
           </div>
