@@ -9,10 +9,10 @@ const workData = [
     description:
       "Cross-platform solution for managing micro-investments and savings",
     imageUrl:
-      "https://coad.dk/en",
+      "/work/cases/coad",
     url: "https://centox.io/",
     link: "/cases/coad/coad.jpeg",
-    tag: "hjemmeside",
+    tag: "Web",
   },
   {
     company: "Organic Masterclass",
@@ -23,7 +23,7 @@ const workData = [
       "https://site.organicmasterclass.com/",
     url: "https://centox.io/",
     link: "/cases/organicmasterclass/organicmasterclass.jpg",
-    tag: "hjemmeside",
+    tag: "Web",
   },
     {
     company: "Centox",
@@ -34,7 +34,7 @@ const workData = [
       "https://centox.io/",
     url: "https://centox.io/",
     link: "/flyout.jpg",
-    tag: "hjemmeside",
+    tag: "Web App",
   },
 ];
 
@@ -63,17 +63,15 @@ export default function Work() {
 const WorkCard = (props: any) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <Link target="_blank" href={props.background} className="hover:opacity-70 transition-all">
-      <div className="aspect-w-1 aspect-h-1">
-        <img
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
-          className="aspect-w-1 aspect-h-1 object-cover h-[400px] mb-[20px] w-full object-cover transition-all rounded-[14px]"
-          src={props.link}
-        ></img>
-
-        <h1 className="text-[24px] font-[500] text-main mb-[4px]">{props.company}</h1>
-        <p className="text-gray-600 text-[18px] font-[400]">{props.desc}</p>
+    <Link style={{backgroundImage: `linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.6)), url(${props.link})`}} href={props.background} className="hover:opacity-70 transition-all h-[600px] bg-cover bg-center flex flex-col rounded-[14px] justify-between">
+      <div className="inline-block">
+        <div className="bg-white text-main inline-block m-[20px] p-[10px] rounded-full">
+          <p className="font-[500] text-[14px]">{props.tag}</p>
+        </div>
+      </div>
+      <div className="p-[50px] text-white">
+        <h1 className="text-[24px] font-[500]">{props.company}</h1>
+        <p className="text-[18px] font-[300]">{props.desc}</p>
       </div>
     </Link>
   );
